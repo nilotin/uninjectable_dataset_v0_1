@@ -1,0 +1,76 @@
+{
+  "artifact_version": "0.2.6",
+  "artifact_type": "combined_turkish_compact_bert_pool",
+  "schema_version": "agentdojo_turkish_bert_compact_view_v0.2.6",
+  "serialization_version": "v0.2.6",
+  "tokenizer": "google-bert/bert-base-multilingual-cased",
+  "max_length": 512,
+  "sources": {
+    "pilot": {
+      "path": "data/processed/agentdojo_turkish_pilot_v0.2.6/agentdojo_turkish_pilot_bert_compact_v0.2.6.jsonl",
+      "row_count": 24,
+      "sha256_before": "6197a3ff8859235d7cf04043682f2b2c6b50ff4ba71f0ce897a79f45007ee96a",
+      "sha256_after": "6197a3ff8859235d7cf04043682f2b2c6b50ff4ba71f0ce897a79f45007ee96a",
+      "modified": false
+    },
+    "batch_001": {
+      "path": "data/processed/agentdojo_turkish_batch_001_v0.2.6/agentdojo_turkish_batch_001_bert_compact_v0.2.6.jsonl",
+      "row_count": 20,
+      "sha256_before": "31d3a093504e68be788f05e4fb9fd6cbd428bbb7eaf3725d45c19104fc4ce959",
+      "sha256_after": "31d3a093504e68be788f05e4fb9fd6cbd428bbb7eaf3725d45c19104fc4ce959",
+      "modified": false
+    }
+  },
+  "compact_contract": {
+    "priority_order": [
+      "USER_AUTHORIZATION",
+      "ATTEMPTED_ACTION",
+      "RETRIEVED_CONTENT",
+      "SOURCE",
+      "AGENT_FACTS"
+    ],
+    "removed_sections": [
+      "USER_GOAL",
+      "CONTEXT_BINDINGS",
+      "POLICY_CONTEXT",
+      "full_allowed_tools"
+    ]
+  },
+  "validation": {
+    "row_count": 44,
+    "pair_count": 22,
+    "source_counts": {
+      "pilot": 24,
+      "batch_001": 20
+    },
+    "split_counts": {
+      "train": 32,
+      "validation": 12
+    },
+    "label_counts": {
+      "0": 22,
+      "1": 22
+    },
+    "duplicate_row_ids": 0,
+    "duplicate_model_inputs": 0,
+    "session_group_split_leakage": 0,
+    "crosslingual_group_split_leakage": 0,
+    "input_leakage": 0,
+    "test_rows": 0,
+    "token_lengths": {
+      "minimum": 187,
+      "mean": 292.8636363636364,
+      "median": 283.5,
+      "maximum": 449,
+      "rows_requiring_truncation": 0
+    }
+  },
+  "outputs": {
+    "all": "data/processed/agentdojo_turkish_combined_v0.2.6/agentdojo_turkish_combined_bert_compact_v0.2.6.jsonl",
+    "train": "data/processed/agentdojo_turkish_combined_v0.2.6/agentdojo_turkish_combined_bert_compact_v0.2.6_train.jsonl",
+    "validation": "data/processed/agentdojo_turkish_combined_v0.2.6/agentdojo_turkish_combined_bert_compact_v0.2.6_validation.jsonl",
+    "report": "data/processed/agentdojo_turkish_combined_v0.2.6/agentdojo_turkish_combined_v0.2.6_report.json",
+    "sha256_manifest": "data/processed/agentdojo_turkish_combined_v0.2.6/agentdojo_turkish_combined_v0.2.6_sha256.txt"
+  },
+  "important_note": "The pilot and Batch 001 source artifacts were validated and left unchanged. The combined pool contains no sealed test rows."
+}
