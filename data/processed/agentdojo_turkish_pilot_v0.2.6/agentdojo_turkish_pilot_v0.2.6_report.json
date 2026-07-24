@@ -1,0 +1,254 @@
+{
+  "artifact_version": "0.2.6",
+  "migration_type": "compact_serialization_only",
+  "source_artifact": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_contextual_action_attempt_pilot_v0.1.3.jsonl",
+  "source_sha256_before": "03881321dc5e28d3af7d004c13154a5e1e1b667539e17641568f13b86069e170",
+  "source_sha256_after": "03881321dc5e28d3af7d004c13154a5e1e1b667539e17641568f13b86069e170",
+  "source_artifact_modified": false,
+  "structured_rows_rewritten": false,
+  "compact_schema_version": "agentdojo_turkish_bert_compact_view_v0.2.6",
+  "compact_order": [
+    "USER_AUTHORIZATION",
+    "ATTEMPTED_ACTION",
+    "RETRIEVED_CONTENT",
+    "SOURCE",
+    "AGENT_FACTS"
+  ],
+  "removed_sections": [
+    "USER_GOAL",
+    "CONTEXT_BINDINGS",
+    "POLICY_CONTEXT",
+    "full_allowed_tools"
+  ],
+  "row_count": 24,
+  "train_row_count": 16,
+  "validation_row_count": 8,
+  "test_row_count": 0,
+  "validation": {
+    "label_counts": {
+      "1": 12,
+      "0": 12
+    },
+    "split_counts": {
+      "train": 16,
+      "validation": 8
+    },
+    "pair_count": 12,
+    "duplicate_row_ids": 0,
+    "duplicate_model_inputs": 0,
+    "input_leakage": 0,
+    "test_rows": 0,
+    "crosslingual_links": "present"
+  },
+  "tokenizer_analysis": {
+    "tokenizer": "google-bert/bert-base-multilingual-cased",
+    "max_length": 512,
+    "minimum": 187,
+    "mean": 287.2083333333333,
+    "median": 282.5,
+    "maximum": 449,
+    "rows_requiring_truncation": 0,
+    "per_row": [
+      {
+        "row_id": "agentdojo_pair_003_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_003_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 332,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_003_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_003_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 299,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_018_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_018_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 436,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_018_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_018_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 449,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_031_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_031_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 195,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_031_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_031_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 187,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_040_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_040_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 211,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_040_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_040_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 218,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_059_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_059_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 283,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_059_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_059_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 257,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_060_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_060_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 310,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_060_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_060_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 304,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_082_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_082_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 346,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_082_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_082_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 380,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_091_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_091_tr",
+        "split": "train",
+        "variant": "risky",
+        "token_count": 328,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_091_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_091_tr",
+        "split": "train",
+        "variant": "safe",
+        "token_count": 321,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_015_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_015_tr",
+        "split": "validation",
+        "variant": "risky",
+        "token_count": 212,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_015_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_015_tr",
+        "split": "validation",
+        "variant": "safe",
+        "token_count": 211,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_021_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_021_tr",
+        "split": "validation",
+        "variant": "risky",
+        "token_count": 258,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_021_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_021_tr",
+        "split": "validation",
+        "variant": "safe",
+        "token_count": 251,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_050_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_050_tr",
+        "split": "validation",
+        "variant": "risky",
+        "token_count": 264,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_050_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_050_tr",
+        "split": "validation",
+        "variant": "safe",
+        "token_count": 282,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_095_tr::risky::action_attempt",
+        "pair_id": "agentdojo_pair_095_tr",
+        "split": "validation",
+        "variant": "risky",
+        "token_count": 275,
+        "requires_truncation": false
+      },
+      {
+        "row_id": "agentdojo_pair_095_tr::safe::action_attempt",
+        "pair_id": "agentdojo_pair_095_tr",
+        "split": "validation",
+        "variant": "safe",
+        "token_count": 284,
+        "requires_truncation": false
+      }
+    ]
+  },
+  "outputs": {
+    "all": "data/processed/agentdojo_turkish_pilot_v0.2.6/agentdojo_turkish_pilot_bert_compact_v0.2.6.jsonl",
+    "train": "data/processed/agentdojo_turkish_pilot_v0.2.6/agentdojo_turkish_pilot_bert_compact_v0.2.6_train.jsonl",
+    "validation": "data/processed/agentdojo_turkish_pilot_v0.2.6/agentdojo_turkish_pilot_bert_compact_v0.2.6_validation.jsonl",
+    "report": "data/processed/agentdojo_turkish_pilot_v0.2.6/agentdojo_turkish_pilot_v0.2.6_report.json",
+    "manifest": "data/processed/agentdojo_turkish_pilot_v0.2.6/agentdojo_turkish_pilot_v0.2.6_sha256.txt"
+  },
+  "important_note": "The canonical Turkish structured pilot artifact was not modified. Only the compact BERT model view was regenerated under the v0.2.6 serialization contract."
+}
