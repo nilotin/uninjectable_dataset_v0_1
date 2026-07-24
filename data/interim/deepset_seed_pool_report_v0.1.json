@@ -1,0 +1,12 @@
+{
+  "source_dataset": "deepset/prompt-injections",
+  "extraction_version": "0.1",
+  "total_seeds": 662,
+  "seed_type_counts": {
+    "attack_language_candidate": 263,
+    "benign_language_candidate": 399
+  },
+  "unique_normalized_contents": 662,
+  "seeds_in_duplicate_groups": 0,
+  "important_note": "Upstream labels were used only to create candidate seed types. No Uninjectable general risk labels were generated."
+}

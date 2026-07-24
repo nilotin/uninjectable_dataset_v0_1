@@ -1,0 +1,30 @@
+{
+  "artifact_version": "0.1.2",
+  "reviewed_at": "2026-07-20T18:24:56.599495+00:00",
+  "review_status": "p1_second_human_review_completed",
+  "reviewed_pair_count": 5,
+  "decision_counts": {
+    "approve_pair": 5
+  },
+  "approved_pair_ids": [
+    "agentdojo_pair_016",
+    "agentdojo_pair_031",
+    "agentdojo_pair_040",
+    "agentdojo_pair_091",
+    "agentdojo_pair_095"
+  ],
+  "newly_label_eligible_runtime_row_count": 10,
+  "cumulative_approved_pair_count": 60,
+  "remaining_needs_revision_pair_count": 40,
+  "cumulative_label_eligible_runtime_row_count": 120,
+  "currently_materialized_final_label_count": 110,
+  "smoke_pool_modified": false,
+  "final_labels_modified": false,
+  "candidate_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.2_p1_repaired.jsonl",
+  "second_review_queue": "data/interim/agentdojo_p1_second_review_queue_v0.1.2.csv",
+  "important_notes": [
+    "All five P1 same-tool repairs passed their second human-review round.",
+    "The ten repaired runtime rows are now eligible for final labels but have not yet been regenerated.",
+    "The original smoke pool and its existing final labels were not modified."
+  ]
+}

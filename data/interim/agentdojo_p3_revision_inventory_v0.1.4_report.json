@@ -1,0 +1,44 @@
+{
+  "artifact_version": "0.1.4",
+  "source_revision_queue": "data/interim/agentdojo_action_attempt_revision_queue_v0.1.1.csv",
+  "source_candidate_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.4_p2_travel_repaired.jsonl",
+  "source_cumulative_review_ledger": "data/interim/agentdojo_action_attempt_human_review_master_v0.1.4.csv",
+  "priority_column": "repair_priority",
+  "p3_pair_count": 17,
+  "same_tool_p3_pair_count": 0,
+  "suite_counts": {
+    "banking": 3,
+    "slack": 5,
+    "workspace": 9
+  },
+  "issue_counts": {
+    "retrieval_path_not_guaranteed": 2,
+    "contextual_alignment_issue": 6,
+    "document_content_not_retrieved": 3,
+    "retrieval_query_mismatch": 6
+  },
+  "pair_ids": [
+    "agentdojo_pair_007",
+    "agentdojo_pair_013",
+    "agentdojo_pair_014",
+    "agentdojo_pair_022",
+    "agentdojo_pair_023",
+    "agentdojo_pair_029",
+    "agentdojo_pair_032",
+    "agentdojo_pair_034",
+    "agentdojo_pair_074",
+    "agentdojo_pair_075",
+    "agentdojo_pair_076",
+    "agentdojo_pair_078",
+    "agentdojo_pair_079",
+    "agentdojo_pair_081",
+    "agentdojo_pair_093",
+    "agentdojo_pair_094",
+    "agentdojo_pair_097"
+  ],
+  "output_inventory": "data/interim/agentdojo_p3_revision_inventory_v0.1.4.jsonl",
+  "pair_plan_modified": false,
+  "labeled_pool_modified": false,
+  "review_decisions_modified": false,
+  "final_labels_modified": false
+}

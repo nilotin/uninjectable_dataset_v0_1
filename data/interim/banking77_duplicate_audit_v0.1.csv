@@ -1,0 +1,40 @@
+text,category,source_split,source_record_index,normalized_text,duplicate_group_size,unique_category_count,unique_split_count,has_category_conflict,is_cross_split_duplicate
+At which ATMs can I use this card?,atm_support,test,1474,at which atms can i use this card?,2,1,2,False,True
+"
+At which ATMs can I use this card?",atm_support,train,4576,at which atms can i use this card?,2,1,2,False,True
+How do I unblock my PIN?,pin_blocked,test,554,how do i unblock my pin?,2,1,2,False,True
+"
+How do I unblock my PIN?",pin_blocked,train,1722,how do i unblock my pin?,2,1,2,False,True
+I don't live in the UK.  Can I still get a card?,country_support,test,3070,i don't live in the uk. can i still get a card?,2,1,2,False,True
+I don't live in the UK. Can I still get a card?,country_support,train,9921,i don't live in the uk. can i still get a card?,2,1,2,False,True
+"There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.",compromised_card,test,1432,"there are a few transaction that i don't recognize, i think someone managed to get my card details and use it.",2,1,2,False,True
+"There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.
+",compromised_card,train,4476,"there are a few transaction that i don't recognize, i think someone managed to get my card details and use it.",2,1,2,False,True
+"
+
+What businesses accept this card?",card_acceptance,test,976,what businesses accept this card?,2,1,2,False,True
+What businesses accept this card?,card_acceptance,train,3103,what businesses accept this card?,2,1,2,False,True
+Where can I use my card?,card_acceptance,test,977,where can i use my card?,2,1,2,False,True
+"
+Where can I use my card?",card_acceptance,train,3116,where can i use my card?,2,1,2,False,True
+Which cash machines will allow me to change my PIN?,change_pin,test,2149,which cash machines will allow me to change my pin?,2,1,2,False,True
+"
+Which cash machines will allow me to change my PIN?",change_pin,train,6984,which cash machines will allow me to change my pin?,2,1,2,False,True
+Do I need to go to a physical bank to change my PIN?,change_pin,train,6910,do i need to go to a physical bank to change my pin?,2,1,1,False,False
+"
+Do I need to go to a physical bank to change my PIN?",change_pin,train,6965,do i need to go to a physical bank to change my pin?,2,1,1,False,False
+I can't seem to be able to use my card,card_not_working,train,1246,i can't seem to be able to use my card,2,1,1,False,False
+"
+I can't seem to be able to use my card
+
+
+",card_not_working,train,1290,i can't seem to be able to use my card,2,1,1,False,False
+"
+I put the wrong pin too many times and now it is blocked. Can you help me unblock it?",pin_blocked,train,1710,i put the wrong pin too many times and now it is blocked. can you help me unblock it?,2,1,1,False,False
+I put the wrong pin too many times and now it is blocked. Can you help me unblock it?,pin_blocked,train,1724,i put the wrong pin too many times and now it is blocked. can you help me unblock it?,2,1,1,False,False
+Where can I withdraw money from?,atm_support,train,4594,where can i withdraw money from?,2,1,1,False,False
+"
+Where can I withdraw money from?",atm_support,train,4595,where can i withdraw money from?,2,1,1,False,False
+Which ATMs accept this card?,atm_support,test,1441,which atms accept this card?,2,1,1,False,False
+"
+Which ATMs accept this card?",atm_support,test,1461,which atms accept this card?,2,1,1,False,False

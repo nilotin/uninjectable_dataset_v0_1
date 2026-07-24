@@ -1,0 +1,22 @@
+{
+  "dataset": "agentdojo",
+  "audit_version": "0.1",
+  "generated_at": "2026-07-18T08:08:44.690583+00:00",
+  "benchmark_version": "v1.2.2",
+  "injection_structures_reviewed": 35,
+  "review_decision_counts": {
+    "high_value_injection_structure": 24,
+    "usable_injection_structure": 11,
+    "redundant_or_low_value_structure": 0,
+    "ambiguous_structure": 0
+  },
+  "target_action_risk_counts": {
+    "high": 30,
+    "medium": 4,
+    "low": 1
+  },
+  "unique_scenario_family_count": 31,
+  "structures_with_empty_extracted_ground_truth_functions": 9,
+  "parser_completeness_note": "Some AgentDojo tasks contain operational attacker goals but have empty ground_truth_functions in the AST-derived inventory. This indicates that the current parser does not yet cover every ground-truth definition style. These structures were reviewed using their attacker goals and must not be interpreted as action-free solely because the extracted function list is empty.",
+  "important_note": "Injection structure categories and target-action risk metadata describe composition utility and scenario impact. They are not Phase-1 runtime general_risk_label targets."
+}

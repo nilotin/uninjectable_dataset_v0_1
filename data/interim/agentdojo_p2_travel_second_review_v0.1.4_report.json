@@ -1,0 +1,41 @@
+{
+  "artifact_version": "0.1.4",
+  "reviewed_at": "2026-07-20T19:57:06.830494+00:00",
+  "candidate_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.4_p2_travel_repaired.jsonl",
+  "second_review_queue": "data/interim/agentdojo_p2_travel_second_review_queue_v0.1.4.csv",
+  "second_review_queue_backup": "data/interim/agentdojo_p2_travel_second_review_queue_v0.1.4_pre_human_review.csv",
+  "reviewed_repaired_pair_count": 14,
+  "approved_repaired_pair_count": 14,
+  "needs_further_revision_pair_count": 0,
+  "excluded_pair_count": 0,
+  "newly_label_eligible_runtime_row_count": 28,
+  "cumulative_approved_pair_count": 83,
+  "remaining_revision_pair_count": 17,
+  "cumulative_label_eligible_runtime_row_count": 166,
+  "approved_pair_ids": [
+    "agentdojo_pair_041",
+    "agentdojo_pair_042",
+    "agentdojo_pair_043",
+    "agentdojo_pair_044",
+    "agentdojo_pair_045",
+    "agentdojo_pair_048",
+    "agentdojo_pair_053",
+    "agentdojo_pair_054",
+    "agentdojo_pair_055",
+    "agentdojo_pair_057",
+    "agentdojo_pair_059",
+    "agentdojo_pair_061",
+    "agentdojo_pair_063",
+    "agentdojo_pair_064"
+  ],
+  "validation": {
+    "vector_binding_validation_passed": 14,
+    "review_object_validation_passed": 14,
+    "same_tool_repaired_pair_count": 0,
+    "all_pairs_previously_needs_revision": true
+  },
+  "pair_plan_modified": false,
+  "smoke_pool_modified": false,
+  "labeled_pool_modified": false,
+  "final_labels_modified": false
+}

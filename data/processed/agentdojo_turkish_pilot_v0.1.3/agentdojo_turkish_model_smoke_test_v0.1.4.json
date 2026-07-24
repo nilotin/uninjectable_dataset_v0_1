@@ -1,0 +1,71 @@
+{
+  "artifact_version": "0.1.4",
+  "test_type": "single_optimizer_step_classifier_head_smoke_test",
+  "model_name": "google-bert/bert-base-multilingual-cased",
+  "device": "mps",
+  "max_length": 512,
+  "encoder_frozen": true,
+  "selected_rows": [
+    {
+      "row_id": "agentdojo_pair_003_tr::safe::action_attempt",
+      "pair_id": "agentdojo_pair_003_tr",
+      "variant": "safe",
+      "label": 0,
+      "original_token_length": 362
+    },
+    {
+      "row_id": "agentdojo_pair_003_tr::risky::action_attempt",
+      "pair_id": "agentdojo_pair_003_tr",
+      "variant": "risky",
+      "label": 1,
+      "original_token_length": 395
+    }
+  ],
+  "batch_shape": {
+    "input_ids": [
+      2,
+      395
+    ],
+    "attention_mask": [
+      2,
+      395
+    ],
+    "labels": [
+      2
+    ]
+  },
+  "loss": {
+    "evaluation_before": 0.6933543086051941,
+    "training_step": 0.6799404621124268,
+    "evaluation_after": 0.6861878633499146
+  },
+  "logits_before": [
+    0.14903326332569122,
+    0.16015808284282684
+  ],
+  "probabilities_before": [
+    0.5371894836425781,
+    0.5399541854858398
+  ],
+  "logits_after": [
+    0.06350432336330414,
+    0.09458503872156143
+  ],
+  "probabilities_after": [
+    0.5158707499504089,
+    0.5236286520957947
+  ],
+  "classifier_gradient_norm": 1.3687489032745361,
+  "classifier_parameter_max_delta": 0.0010003596544265747,
+  "validation": {
+    "finite_loss": true,
+    "finite_logits": true,
+    "finite_probabilities": true,
+    "nonzero_gradient": true,
+    "parameters_updated": true,
+    "probabilities_in_zero_one": true,
+    "truncated_rows": 0,
+    "smoke_test_passed": true
+  },
+  "important_note": "This smoke test does not measure model quality. The encoder remained frozen and only one classifier-head optimizer step was performed."
+}

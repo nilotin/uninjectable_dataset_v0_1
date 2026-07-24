@@ -1,0 +1,37 @@
+{
+  "artifact_version": "0.2.2",
+  "translation_batch_id": "agentdojo_tr_batch_001",
+  "reviewed_pair_count": 10,
+  "approved_translation_count": 7,
+  "needs_revision_count": 3,
+  "excluded_translation_count": 0,
+  "currently_label_eligible_pairs": 7,
+  "currently_label_eligible_runtime_rows": 14,
+  "revision_pair_ids": [
+    "agentdojo_pair_045",
+    "agentdojo_pair_049",
+    "agentdojo_pair_092"
+  ],
+  "revision_issue_counts": {
+    "code_like_string_quote_collision": 1,
+    "untranslated_natural_language_subject": 2
+  },
+  "validation": {
+    "automatic_validation_confirmed": true,
+    "safe_risky_semantics_reviewed": true,
+    "natural_turkish_reviewed": true,
+    "technical_identifiers_reviewed": true,
+    "test_pair_count": 0,
+    "source_translated_file_modified": false,
+    "source_validation_report_modified": false
+  },
+  "source_hashes": {
+    "translated_batch": "7c2e5dd2865717a3e1093b036d24e67a095471fdee2582ed848054e16bd9e7e1",
+    "automatic_validation_report": "987024d19fc5c66635287a8cc0420673e93b0388c80b35f9904805bfcfae1745"
+  },
+  "outputs": {
+    "human_reviewed_batch": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_001_v0.2.2_human_reviewed.jsonl",
+    "revision_queue": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_001_v0.2.2_revision_queue.jsonl"
+  },
+  "important_note": "Batch 001 henüz tamamen onaylanmış değildir. Üç needs_revision pair onarılıp yeniden incelenmeden batch final eğitim havuzuna materialize edilmemelidir."
+}

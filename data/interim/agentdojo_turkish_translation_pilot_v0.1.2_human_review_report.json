@@ -1,0 +1,41 @@
+{
+  "artifact_version": "0.1.2",
+  "review_type": "turkish_translation_human_review",
+  "reviewed_pair_count": 12,
+  "approved_translation_count": 12,
+  "needs_revision_count": 0,
+  "excluded_translation_count": 0,
+  "approved_policy_template_count": 1,
+  "newly_label_eligible_runtime_rows": 24,
+  "suite_counts": {
+    "banking": 3,
+    "slack": 3,
+    "travel": 3,
+    "workspace": 3
+  },
+  "split_counts": {
+    "train": 8,
+    "validation": 4
+  },
+  "test_pair_count": 0,
+  "same_tool_pair_count": 9,
+  "validation": {
+    "all_translated_fields_nonempty": true,
+    "technical_action_fields_preserved": true,
+    "safe_risky_semantics_reviewed": true,
+    "policy_semantics_reviewed": true,
+    "source_translation_queue_modified": false,
+    "source_policy_queue_modified": false,
+    "source_validation_report_modified": false
+  },
+  "source_hashes": {
+    "translation_queue": "ce27f6225998c671de41c705a38b3614538ce6fd5f8978bbcadcec6bd56b9721",
+    "policy_queue": "fb067933bd4e24d0d1d7890f3488b829913219ad9120a47a3d2526b62fca1eb5",
+    "automatic_validation_report": "7d134b107b19d2de881ba1102911e892c8e05962a9fb2b079638bb5558a1a72c"
+  },
+  "outputs": {
+    "human_reviewed_translation_queue": "data/interim/agentdojo_turkish_translation_pilot_queue_v0.1.2_human_reviewed.jsonl",
+    "human_reviewed_policy_queue": "data/interim/agentdojo_turkish_policy_template_queue_v0.1.2_human_reviewed.jsonl"
+  },
+  "important_note": "Bu aşama yalnızca Türkçe çeviri incelemesini tamamlar. Henüz Türkçe structured pool veya BERT training view materialize edilmemiştir."
+}

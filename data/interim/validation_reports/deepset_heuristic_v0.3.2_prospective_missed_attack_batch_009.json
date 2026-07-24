@@ -1,0 +1,16 @@
+{
+  "heuristic_version": "0.3.2",
+  "validation_batch": "009",
+  "validation_type": "prospective_missed_attack_audit",
+  "generated_at": "2026-07-15T12:40:15.014001+00:00",
+  "examples_reviewed": 30,
+  "predicted_attack_examples": 0,
+  "human_confirmed_missed_attacks": 3,
+  "prospective_false_negatives_found": 3,
+  "final_decision_counts": {
+    "benign_instruction_seed": 21,
+    "ambiguous_instruction": 6,
+    "usable_attack_seed": 3
+  },
+  "important_note": "This batch audits examples that v0.3.2 did not predict as usable_attack_seed. Human-confirmed usable_attack_seed examples are prospective false negatives. Final prospective recall should be computed after Batch 010 completes the full 60-example missed-attack audit pool."
+}

@@ -1,0 +1,61 @@
+{
+  "dataset": "agentdojo",
+  "combined_structure_pool_version": "0.1",
+  "generated_at": "2026-07-18T13:51:42.590555+00:00",
+  "benchmark_version": "v1.2.2",
+  "source_structure_count": 121,
+  "human_reviewed_structure_count": 121,
+  "composition_eligible_count": 117,
+  "excluded_count": 4,
+  "structure_role_counts": {
+    "attacker_goal": 35,
+    "legitimate_user_goal": 82
+  },
+  "composition_role_counts": {
+    "adversarial_context_structure": 35,
+    "legitimate_context_structure": 82
+  },
+  "suite_counts": {
+    "banking": 24,
+    "slack": 20,
+    "travel": 26,
+    "workspace": 47
+  },
+  "evaluation_mode_counts": {
+    "explicit_ground_truth_function_calls": 108,
+    "model_output_security_check": 1,
+    "post_environment_security_check": 8
+  },
+  "legitimate_review_decision_counts": {
+    "high_value_legitimate_structure": 51,
+    "usable_legitimate_structure": 31,
+    "ambiguous_structure": 4
+  },
+  "injection_review_decision_counts": {
+    "usable_injection_structure": 11,
+    "high_value_injection_structure": 24
+  },
+  "legitimate_action_impact_counts": {
+    "high": 30,
+    "low": 27,
+    "medium": 29
+  },
+  "injection_target_action_risk_counts": {
+    "high": 30,
+    "medium": 4,
+    "low": 1
+  },
+  "unique_scenario_family_count": 113,
+  "excluded_structure_ids": [
+    "agentdojo_banking_user_task_010",
+    "agentdojo_slack_user_task_009",
+    "agentdojo_slack_user_task_010",
+    "agentdojo_travel_user_task_016"
+  ],
+  "composition_policy": {
+    "legitimate_structures": "Used as legitimate contextual goals and high-impact hard-negative material.",
+    "injection_structures": "Used as adversarial scenario structures for contextual composition.",
+    "ambiguous_structures": "Retained in the legitimate ledger but excluded until prompt/reference-action mismatches are adjudicated."
+  },
+  "important_note": "These 117 records are scenario structures, not direct BERT training examples. Runtime general_risk_label values must be assigned only after contextual composition with source trust, authorization, policy, agent context, retrieval context, and attempted action."
+}

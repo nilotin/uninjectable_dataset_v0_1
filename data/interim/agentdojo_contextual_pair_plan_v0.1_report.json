@@ -1,0 +1,95 @@
+{
+  "dataset": "agentdojo",
+  "pair_plan_version": "0.1",
+  "generated_at": "2026-07-18T16:50:35.769521+00:00",
+  "pair_count": 100,
+  "planned_runtime_row_count": 200,
+  "planned_variant_counts": {
+    "contextually_safe": 100,
+    "contextually_risky": 100
+  },
+  "suite_pair_counts": {
+    "banking": 20,
+    "slack": 20,
+    "travel": 25,
+    "workspace": 35
+  },
+  "available_user_structure_counts": {
+    "banking": 15,
+    "slack": 15,
+    "travel": 19,
+    "workspace": 33
+  },
+  "available_attacker_structure_counts": {
+    "banking": 9,
+    "slack": 5,
+    "travel": 7,
+    "workspace": 14
+  },
+  "explicit_attacker_structure_counts": {
+    "banking": 9,
+    "slack": 5,
+    "travel": 6,
+    "workspace": 6
+  },
+  "surface_match_count": 100,
+  "surface_mismatch_count": 0,
+  "same_tool_pair_count": 17,
+  "different_tool_pair_count": 83,
+  "attacker_marker_present_count": 29,
+  "selected_authorized_action_impacts": {
+    "high": 33,
+    "medium": 53,
+    "low": 14
+  },
+  "selected_attacker_action_impacts": {
+    "high": 53,
+    "medium": 43,
+    "low": 4
+  },
+  "unique_user_structure_count": 69,
+  "unique_attacker_structure_count": 26,
+  "unique_vector_count": 39,
+  "maximum_user_structure_reuse": 5,
+  "maximum_attacker_structure_reuse": 7,
+  "maximum_vector_reuse": 5,
+  "runtime_label_count": 0,
+  "important_notes": [
+    "Each plan is intended to generate one safe and one risky action.attempt row.",
+    "Both variants preserve the same user goal, injection surface, attacker payload, and policy context.",
+    "The attempted action and authorization alignment differ between the variants.",
+    "The two variants share session_group_id and must remain in the same train, validation, or test split.",
+    "No numeric runtime label is stored in this pair-planning artifact."
+  ],
+  "semantic_repair_version": "0.1",
+  "semantic_repair_timestamp": "2026-07-18T16:56:59.178652+00:00",
+  "semantic_repair_pair_count": 3,
+  "semantic_repaired_pair_ids": [
+    "agentdojo_pair_017",
+    "agentdojo_pair_018",
+    "agentdojo_pair_020"
+  ],
+  "same_tool_human_review_version": "0.1",
+  "same_tool_human_review_timestamp": "2026-07-18T17:30:26.095157+00:00",
+  "same_tool_approved_conversion_count": 13,
+  "same_tool_rejected_conversion_count": 3,
+  "same_tool_usage_counts": {
+    "send_money": 5,
+    "update_scheduled_transaction": 2,
+    "update_password": 1,
+    "send_direct_message": 2,
+    "get_webpage": 1,
+    "reserve_hotel": 1,
+    "create_calendar_event": 2,
+    "send_email": 3
+  },
+  "duplicate_semantic_repair_version": "0.1",
+  "duplicate_semantic_repair_timestamp": "2026-07-18T17:42:32.961753+00:00",
+  "duplicate_semantic_repaired_pair_count": 4,
+  "duplicate_semantic_repaired_pair_ids": [
+    "agentdojo_pair_008",
+    "agentdojo_pair_012",
+    "agentdojo_pair_028",
+    "agentdojo_pair_039"
+  ]
+}

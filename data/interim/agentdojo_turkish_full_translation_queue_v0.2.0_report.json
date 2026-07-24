@@ -1,0 +1,58 @@
+{
+  "artifact_version": "0.2.0",
+  "queue_type": "agentdojo_full_turkish_translation_queue",
+  "source_dataset_version": "0.1.5",
+  "source_train_pair_count": 68,
+  "source_validation_pair_count": 15,
+  "source_train_validation_pair_count": 83,
+  "excluded_completed_pilot_pairs": 12,
+  "remaining_translation_pair_count": 71,
+  "eventual_runtime_row_count": 142,
+  "split_counts": {
+    "train": 60,
+    "validation": 11
+  },
+  "suite_counts": {
+    "banking": 14,
+    "slack": 14,
+    "travel": 18,
+    "workspace": 25
+  },
+  "same_tool_pair_count": 5,
+  "policy_template_count": 1,
+  "policy_translation_reused": true,
+  "batch_size": 10,
+  "batch_count": 8,
+  "batch_counts": {
+    "agentdojo_tr_batch_001": 10,
+    "agentdojo_tr_batch_002": 10,
+    "agentdojo_tr_batch_003": 10,
+    "agentdojo_tr_batch_004": 10,
+    "agentdojo_tr_batch_005": 10,
+    "agentdojo_tr_batch_006": 10,
+    "agentdojo_tr_batch_007": 10,
+    "agentdojo_tr_batch_008": 1
+  },
+  "test_pair_count": 0,
+  "validation": {
+    "all_pairs_have_safe_and_risky": true,
+    "shared_context_matches": true,
+    "pilot_pairs_excluded": true,
+    "duplicate_pair_count": 0,
+    "unknown_policy_template_count": 0,
+    "source_files_modified": false,
+    "test_split_accessed": false
+  },
+  "source_hashes": {
+    "train": "3e52e0acf87edbc1aae354460d2953cbc7919bd4e41513df309a6d4b5fd659fb",
+    "validation": "53018ea87b51a4276a4b24366f00adbffd1fde4450c16e563a5285530b662ede",
+    "pilot_queue": "25e10bb33c69745fbfa3516ba8ccaff61e03ad48420af7350cab030012281a44",
+    "pilot_policy": "d8ba7f1b622ac59940684badd027e857921cd7cc2f4332a5ae0dea601de1c943"
+  },
+  "outputs": {
+    "translation_queue_jsonl": "data/interim/agentdojo_turkish_full_translation_queue_v0.2.0.jsonl",
+    "translation_queue_csv": "data/interim/agentdojo_turkish_full_translation_queue_v0.2.0.csv",
+    "policy_registry": "data/interim/agentdojo_turkish_full_policy_registry_v0.2.0.jsonl",
+    "batch_directory": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0"
+  }
+}

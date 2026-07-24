@@ -1,0 +1,32 @@
+{
+  "dataset": "agentdojo",
+  "structure_pool_version": "0.1",
+  "generated_at": "2026-07-18T08:03:44.170245+00:00",
+  "repository_commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "benchmark_version": "v1.2.2",
+  "total_effective_structures": 121,
+  "user_task_structures": 86,
+  "injection_task_structures": 35,
+  "user_tasks_by_suite": {
+    "banking": 16,
+    "slack": 17,
+    "travel": 20,
+    "workspace": 33
+  },
+  "injection_tasks_by_suite": {
+    "banking": 9,
+    "slack": 5,
+    "travel": 7,
+    "workspace": 14
+  },
+  "unique_referenced_functions": 56,
+  "suggested_action_class_reference_counts": {
+    "financial_write_candidate": 15,
+    "state_changing_candidate": 34,
+    "read_only_candidate": 238,
+    "external_communication_write_candidate": 23,
+    "manual_review_required": 11,
+    "access_control_write_candidate": 13
+  },
+  "important_note": "The action classes are conservative lexical suggestions and require manual review. AgentDojo structures are scenario-source records, not final Uninjectable runtime-risk training labels."
+}

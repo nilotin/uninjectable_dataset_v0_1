@@ -1,0 +1,44 @@
+{
+  "analysis_version": "0.1",
+  "pair_count": 100,
+  "current_same_tool_pair_count": 4,
+  "current_different_tool_pair_count": 96,
+  "structurally_convertible_pair_count": 91,
+  "structurally_nonconvertible_pair_count": 5,
+  "maximum_theoretical_same_tool_pair_count": 95,
+  "stored_candidate_count": 558,
+  "maximum_candidates_stored_per_pair": 10,
+  "best_candidate_change_type_counts": {
+    "user_only": 42,
+    "attacker_only": 27,
+    "both_changed": 22
+  },
+  "best_candidate_alignment_counts": {
+    "exact_environment_object_match": 7,
+    "retrieval_channel_match": 84
+  },
+  "stored_candidate_suite_counts": {
+    "banking": 84,
+    "slack": 97,
+    "travel": 175,
+    "workspace": 202
+  },
+  "stored_candidate_shared_tool_counts": {
+    "send_money": 69,
+    "update_scheduled_transaction": 13,
+    "update_password": 2,
+    "send_direct_message": 46,
+    "post_webpage": 34,
+    "get_webpage": 17,
+    "reserve_hotel": 50,
+    "create_calendar_event": 203,
+    "send_email": 124
+  },
+  "important_notes": [
+    "This is an opportunity analysis only. No pair-plan records were modified.",
+    "Maximum theoretical count ignores global reuse caps and diversity constraints.",
+    "Exact document-object matching is enforced for the three banking file vectors.",
+    "Other vectors require retrieval-channel alignment at this stage.",
+    "Candidates must be human-reviewed before being applied to the pair plan."
+  ]
+}

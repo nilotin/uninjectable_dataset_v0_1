@@ -1,0 +1,66 @@
+{
+  "artifact_version": "0.2.4",
+  "translation_batch_id": "agentdojo_tr_batch_001",
+  "source_review_version": "v0.2.2",
+  "repair_version": "v0.2.3",
+  "final_review_version": "v0.2.4",
+  "pair_count": 10,
+  "repaired_pair_count": 3,
+  "unchanged_previously_approved_pair_count": 7,
+  "repaired_pair_ids": [
+    "agentdojo_pair_045",
+    "agentdojo_pair_049",
+    "agentdojo_pair_092"
+  ],
+  "repaired_fields_by_pair": {
+    "agentdojo_pair_092": [
+      "user_goal_tr"
+    ],
+    "agentdojo_pair_049": [
+      "retrieved_content_tr"
+    ],
+    "agentdojo_pair_045": [
+      "retrieved_content_tr",
+      "risky_attempted_action_tr"
+    ]
+  },
+  "final_decision_counts": {
+    "approve_translation": 10
+  },
+  "label_eligible_pair_count": 10,
+  "label_eligible_runtime_row_count": 20,
+  "split_counts": {
+    "train": 8,
+    "validation": 2
+  },
+  "suite_counts": {
+    "workspace": 5,
+    "travel": 3,
+    "banking": 2
+  },
+  "validation": {
+    "protected_tokens_preserved": true,
+    "authorized_tools_preserved": true,
+    "technical_action_fields_preserved": true,
+    "repair_inventory_exact": true,
+    "all_translations_finally_approved": true,
+    "excluded_translation_count": 0,
+    "needs_revision_count": 0,
+    "test_pair_count": 0,
+    "source_reviewed_file_modified": false,
+    "source_revision_queue_modified": false
+  },
+  "source_hashes": {
+    "v0.2.2_human_reviewed": "3dd8123caf6e5b6402b0eebc6b6ffca0007a18856642091aeaee37b7c11e63d9",
+    "v0.2.2_revision_queue": "d991670de6890ea2010baa582e624b2d5a439590529d1afdc842661f033d4376"
+  },
+  "output_hashes": {
+    "v0.2.3_repaired": "2817ba30c75dd62dd21ea63364c6d6f20b680a531c2c9b1f9bb5573e9d8aca2b",
+    "v0.2.4_final_human_reviewed": "2ba0fb3fe773186a54a408e2f2db27c2e84d1dfc3a22376548622130733a003c"
+  },
+  "outputs": {
+    "repaired_batch": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_001_v0.2.3_repaired.jsonl",
+    "final_human_reviewed_batch": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_001_v0.2.4_final_human_reviewed.jsonl"
+  },
+  "important_note": "Batch 001 içindeki 10 pair'in tamamı çeviri açısından onaylanmıştır. Bu durum yalnızca çeviri uygunluğunu ifade eder; canonical label ve split bilgileri kaynak AgentDojo artifact'lerinden alınmalıdır."
+}

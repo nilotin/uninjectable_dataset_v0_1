@@ -1,0 +1,40 @@
+{
+  "dataset": "deepset_prompt_injections",
+  "curated_seed_pool_version": "0.1",
+  "generated_at": "2026-07-15T13:16:43.746692+00:00",
+  "source_seed_count": 662,
+  "composition_eligible_count": 621,
+  "excluded_count": 41,
+  "category_counts": {
+    "usable_attack_seed": 132,
+    "ambiguous_instruction": 37,
+    "benign_instruction_seed": 89,
+    "irrelevant": 4,
+    "benign_language_seed": 400
+  },
+  "curation_status_counts": {
+    "human_reviewed": 323,
+    "provisional_not_human_reviewed": 339
+  },
+  "quality_tier_counts": {
+    "A": 282,
+    "excluded": 41,
+    "B": 339
+  },
+  "human_reviewed_count": 323,
+  "provisional_count": 339,
+  "composition_policy": {
+    "included_categories": [
+      "benign_instruction_seed",
+      "benign_language_seed",
+      "usable_attack_seed"
+    ],
+    "excluded_categories": [
+      "ambiguous_instruction",
+      "irrelevant"
+    ],
+    "tier_A": "Human-reviewed and composition-eligible.",
+    "tier_B": "Provisional benign-language candidate; not human-reviewed."
+  },
+  "important_note": "Seed categories are curation labels, not Phase-1 runtime general_risk_label targets. Final runtime labels are assigned only after contextual scenario composition."
+}

@@ -1,0 +1,84 @@
+{
+  "selection_version": "0.1",
+  "generated_at": "2026-07-18T17:23:06.577812+00:00",
+  "current_same_tool_pair_count": 4,
+  "selected_review_candidate_count": 16,
+  "projected_final_same_tool_pair_count": 20,
+  "tool_quotas": {
+    "update_password": 1,
+    "update_scheduled_transaction": 1,
+    "get_webpage": 1,
+    "post_webpage": 1,
+    "reserve_hotel": 2,
+    "send_direct_message": 2,
+    "send_money": 3,
+    "send_email": 3,
+    "create_calendar_event": 2
+  },
+  "selected_tool_counts": {
+    "update_password": 1,
+    "update_scheduled_transaction": 1,
+    "get_webpage": 1,
+    "post_webpage": 1,
+    "reserve_hotel": 2,
+    "send_direct_message": 2,
+    "send_money": 3,
+    "send_email": 3,
+    "create_calendar_event": 2
+  },
+  "selected_suite_counts": {
+    "banking": 5,
+    "slack": 4,
+    "travel": 4,
+    "workspace": 3
+  },
+  "alignment_type_counts": {
+    "retrieval_channel_match": 13,
+    "exact_environment_object_match": 3
+  },
+  "change_type_counts": {
+    "attacker_only": 15,
+    "user_only": 1
+  },
+  "baseline_max_user_reuse": 4,
+  "projected_max_user_reuse": 5,
+  "user_reuse_cap": 5,
+  "baseline_max_attacker_reuse": 6,
+  "projected_max_attacker_reuse": 7,
+  "attacker_reuse_cap": 7,
+  "pair_plan_modified": true,
+  "runtime_label_count": 0,
+  "important_notes": [
+    "The shortlist contains sixteen proposed same-tool conversions.",
+    "Each proposal affects exactly one existing pair and preserves its injection vector.",
+    "Attacker-only changes are preferred over user-only changes; both-changed proposals have the lowest priority.",
+    "Tool quotas prevent calendar and email candidates from dominating the shortlist.",
+    "No proposal is applied before human review."
+  ],
+  "human_review_status": "completed",
+  "human_review_version": "0.1",
+  "human_review_timestamp": "2026-07-18T17:30:26.095157+00:00",
+  "approved_conversion_count": 13,
+  "rejected_conversion_count": 3,
+  "approved_shortlist_ids": [
+    "same_tool_review_01",
+    "same_tool_review_02",
+    "same_tool_review_03",
+    "same_tool_review_04",
+    "same_tool_review_05",
+    "same_tool_review_06",
+    "same_tool_review_08",
+    "same_tool_review_09",
+    "same_tool_review_10",
+    "same_tool_review_12",
+    "same_tool_review_14",
+    "same_tool_review_15",
+    "same_tool_review_16"
+  ],
+  "rejected_shortlist_ids": [
+    "same_tool_review_07",
+    "same_tool_review_11",
+    "same_tool_review_13"
+  ],
+  "actual_final_same_tool_pair_count": 17
+}

@@ -1,0 +1,121 @@
+{
+  "artifact_version": "0.1.2",
+  "generated_at": "2026-07-20T18:21:55.932683+00:00",
+  "source_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.jsonl",
+  "candidate_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.2_p1_repaired.jsonl",
+  "second_review_queue": "data/interim/agentdojo_p1_second_review_queue_v0.1.2.csv",
+  "target_pair_count": 5,
+  "target_pair_ids": [
+    "agentdojo_pair_016",
+    "agentdojo_pair_031",
+    "agentdojo_pair_040",
+    "agentdojo_pair_091",
+    "agentdojo_pair_095"
+  ],
+  "change_records": [
+    {
+      "pair_id": "agentdojo_pair_016",
+      "repair_type": "replace_vector_and_attacker_structure",
+      "old_legitimate_structure_id": "agentdojo_banking_user_task_000",
+      "new_legitimate_structure_id": "agentdojo_banking_user_task_000",
+      "old_attacker_structure_id": "agentdojo_banking_injection_task_000",
+      "new_attacker_structure_id": "agentdojo_banking_injection_task_003",
+      "old_vector_id": "injection_landloard_notice",
+      "new_vector_id": "injection_bill_text",
+      "source_locator": "bill-december-2023.txt",
+      "binding_type": "exact_cloud_document_filename_binding",
+      "binding_status": "confirmed",
+      "same_tool_minimal_pair": true,
+      "action_args_distinct": true
+    },
+    {
+      "pair_id": "agentdojo_pair_031",
+      "repair_type": "binding_only",
+      "old_legitimate_structure_id": "agentdojo_slack_user_task_000",
+      "new_legitimate_structure_id": "agentdojo_slack_user_task_000",
+      "old_attacker_structure_id": "agentdojo_slack_injection_task_003",
+      "new_attacker_structure_id": "agentdojo_slack_injection_task_003",
+      "old_vector_id": "prompt_injection_eve_blog",
+      "new_vector_id": "prompt_injection_eve_blog",
+      "source_locator": "www.eve-blog.com",
+      "binding_type": "parameterized_web_url_binding",
+      "binding_status": "confirmed",
+      "same_tool_minimal_pair": true,
+      "action_args_distinct": true
+    },
+    {
+      "pair_id": "agentdojo_pair_040",
+      "repair_type": "binding_only",
+      "old_legitimate_structure_id": "agentdojo_slack_user_task_001",
+      "new_legitimate_structure_id": "agentdojo_slack_user_task_001",
+      "old_attacker_structure_id": "agentdojo_slack_injection_task_001",
+      "new_attacker_structure_id": "agentdojo_slack_injection_task_001",
+      "old_vector_id": "injection_phishing_1",
+      "new_vector_id": "injection_phishing_1",
+      "source_locator": "www.true-informations.com",
+      "binding_type": "slack_message_article_url_binding",
+      "binding_status": "confirmed",
+      "same_tool_minimal_pair": true,
+      "action_args_distinct": true
+    },
+    {
+      "pair_id": "agentdojo_pair_091",
+      "repair_type": "replace_legitimate_structure_and_vector",
+      "old_legitimate_structure_id": "agentdojo_workspace_user_task_033",
+      "new_legitimate_structure_id": "agentdojo_workspace_user_task_025",
+      "old_attacker_structure_id": "agentdojo_workspace_injection_task_004",
+      "new_attacker_structure_id": "agentdojo_workspace_injection_task_004",
+      "old_vector_id": "drive_recipe_injection",
+      "new_vector_id": "drive_keywords_stuffing_injection",
+      "source_locator": null,
+      "binding_type": "adversarial_keyword_search_binding",
+      "binding_status": "confirmed_by_vector_semantics",
+      "same_tool_minimal_pair": true,
+      "action_args_distinct": true
+    },
+    {
+      "pair_id": "agentdojo_pair_095",
+      "repair_type": "replace_vector_only",
+      "old_legitimate_structure_id": "agentdojo_workspace_user_task_013",
+      "new_legitimate_structure_id": "agentdojo_workspace_user_task_013",
+      "old_attacker_structure_id": "agentdojo_workspace_injection_task_003",
+      "new_attacker_structure_id": "agentdojo_workspace_injection_task_003",
+      "old_vector_id": "email_facebook_injection",
+      "new_vector_id": "drive_feedback_injection",
+      "source_locator": "feedback.xlsx",
+      "binding_type": "exact_cloud_document_filename_binding",
+      "binding_status": "confirmed",
+      "same_tool_minimal_pair": true,
+      "action_args_distinct": true
+    }
+  ],
+  "validation": {
+    "pair_count": 100,
+    "duplicate_pair_ids": 0,
+    "duplicate_composition_triples": 0,
+    "original_same_tool_pair_count": 17,
+    "repaired_same_tool_pair_count": 17,
+    "p1_same_tool_repairs_preserved": true,
+    "p1_distinct_action_args": true
+  },
+  "important_notes": [
+    "The original v0.1 pair plan was not modified.",
+    "No smoke-pool rows were modified.",
+    "No human-review decisions or final labels were modified.",
+    "All five repaired pairs require a second human-review decision before final labeling."
+  ],
+  "second_review_completed_at": "2026-07-20T18:24:56.599495+00:00",
+  "second_review_status": "completed",
+  "second_review_decision_counts": {
+    "approve_pair": 5
+  },
+  "approved_repaired_pair_ids": [
+    "agentdojo_pair_016",
+    "agentdojo_pair_031",
+    "agentdojo_pair_040",
+    "agentdojo_pair_091",
+    "agentdojo_pair_095"
+  ],
+  "newly_label_eligible_runtime_row_count": 10,
+  "second_review_report": "data/interim/agentdojo_p1_second_review_v0.1.2_report.json"
+}

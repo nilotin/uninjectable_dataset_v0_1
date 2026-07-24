@@ -1,0 +1,34 @@
+{
+  "dataset": "agentdojo",
+  "curated_injection_structure_pool_version": "0.1",
+  "generated_at": "2026-07-18T08:16:25.041624+00:00",
+  "structure_count": 35,
+  "human_reviewed_count": 35,
+  "composition_eligible_count": 35,
+  "review_decision_counts": {
+    "usable_injection_structure": 11,
+    "high_value_injection_structure": 24
+  },
+  "target_action_risk_counts": {
+    "high": 30,
+    "medium": 4,
+    "low": 1
+  },
+  "evaluation_mode_counts": {
+    "explicit_ground_truth_function_calls": 26,
+    "model_output_security_check": 1,
+    "post_environment_security_check": 8
+  },
+  "reference_action_sequence_status_counts": {
+    "available": 26,
+    "intentionally_empty_output_only": 1,
+    "intentionally_empty_multiple_valid_sequences": 8
+  },
+  "execution_semantics_policy": {
+    "explicit_ground_truth_function_calls": "The upstream task provides a canonical FunctionCall reference sequence.",
+    "post_environment_security_check": "No canonical action sequence is provided. Success is evaluated from final environment state.",
+    "model_output_security_check": "No tool action is required. Success is evaluated from generated model output.",
+    "manual_operational_effects": "Human summaries of GOAL and security evaluator semantics. They are not upstream FunctionCall labels."
+  },
+  "important_note": "An empty AgentDojo ground_truth list does not necessarily mean that the scenario has no operational effects. Eight tasks are evaluated from post-environment state and one task is genuinely output-only."
+}

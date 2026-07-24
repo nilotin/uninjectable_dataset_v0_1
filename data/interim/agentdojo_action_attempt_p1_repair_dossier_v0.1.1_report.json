@@ -1,0 +1,45 @@
+{
+  "artifact_version": "0.1.1",
+  "generated_at": "2026-07-20T18:02:01.395064+00:00",
+  "p1_pair_count": 5,
+  "p1_pair_ids": [
+    "agentdojo_pair_016",
+    "agentdojo_pair_031",
+    "agentdojo_pair_040",
+    "agentdojo_pair_091",
+    "agentdojo_pair_095"
+  ],
+  "issue_category_counts": {
+    "source_object_mismatch": 1,
+    "missing_concrete_source_binding": 4
+  },
+  "user_replacement_candidate_counts": {
+    "agentdojo_pair_016": 5,
+    "agentdojo_pair_031": 0,
+    "agentdojo_pair_040": 3,
+    "agentdojo_pair_091": 2,
+    "agentdojo_pair_095": 2
+  },
+  "attacker_replacement_candidate_counts": {
+    "agentdojo_pair_016": 6,
+    "agentdojo_pair_031": 0,
+    "agentdojo_pair_040": 0,
+    "agentdojo_pair_091": 2,
+    "agentdojo_pair_095": 2
+  },
+  "compatible_vector_candidate_counts": {
+    "agentdojo_pair_016": 2,
+    "agentdojo_pair_031": 4,
+    "agentdojo_pair_040": 4,
+    "agentdojo_pair_091": 3,
+    "agentdojo_pair_095": 4
+  },
+  "dossier_path": "data/interim/agentdojo_action_attempt_p1_repair_dossier_v0.1.1.jsonl",
+  "important_notes": [
+    "This script performs diagnostics only and does not modify the pair plan, smoke pool, review ledger, or final labels.",
+    "User replacement candidates preserve the current attacker target tool.",
+    "Attacker replacement candidates preserve the current authorized user-action tool.",
+    "Compatible vector candidates match the same suite, surface type, source type, and retrieval channel.",
+    "Lexical hint scores are triage aids only and must not be treated as repair decisions."
+  ]
+}

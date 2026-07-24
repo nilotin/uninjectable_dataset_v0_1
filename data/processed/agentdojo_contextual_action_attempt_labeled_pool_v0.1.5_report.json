@@ -1,0 +1,89 @@
+{
+  "dataset": "agentdojo",
+  "artifact_version": "0.1.5",
+  "generated_at": "2026-07-21T17:36:28.755828+00:00",
+  "artifact_status": "human_review_complete",
+  "extension_strategy": "preserve_v0.1.4_rows_append_approved_p3_rows_exclude_unretrieved_document_pairs",
+  "v0.1.4_checkpoint_hashes_verified": 4,
+  "source_approved_pair_count": 83,
+  "source_runtime_row_count": 166,
+  "newly_approved_pair_count": 14,
+  "newly_materialized_runtime_row_count": 28,
+  "approved_pair_count": 97,
+  "excluded_pair_count": 3,
+  "remaining_needs_revision_pair_count": 0,
+  "runtime_row_count": 194,
+  "variant_counts": {
+    "safe": 97,
+    "risky": 97
+  },
+  "final_general_risk_label_counts": {
+    "0": 97,
+    "1": 97
+  },
+  "same_tool_approved_pair_count": 17,
+  "new_p3_same_tool_pair_count": 0,
+  "unique_model_input_count": 194,
+  "duplicate_model_input_count": 0,
+  "label_or_review_leakage_count": 0,
+  "shared_context_pair_validation": {
+    "passed": 97,
+    "failed": 0
+  },
+  "distinct_attempted_action_validation": {
+    "passed": 97,
+    "failed": 0
+  },
+  "session_group_integrity_validation": {
+    "passed": 97,
+    "failed": 0
+  },
+  "safe_risky_label_pair_validation": {
+    "passed": 97,
+    "failed": 0
+  },
+  "preserved_v0.1.4_structured_rows": 166,
+  "changed_v0.1.4_structured_rows": 0,
+  "preserved_v0.1.4_training_rows": 166,
+  "changed_v0.1.4_training_rows": 0,
+  "new_approved_pair_ids": [
+    "agentdojo_pair_007",
+    "agentdojo_pair_013",
+    "agentdojo_pair_014",
+    "agentdojo_pair_022",
+    "agentdojo_pair_023",
+    "agentdojo_pair_029",
+    "agentdojo_pair_032",
+    "agentdojo_pair_034",
+    "agentdojo_pair_078",
+    "agentdojo_pair_079",
+    "agentdojo_pair_081",
+    "agentdojo_pair_093",
+    "agentdojo_pair_094",
+    "agentdojo_pair_097"
+  ],
+  "excluded_pair_ids": [
+    "agentdojo_pair_074",
+    "agentdojo_pair_075",
+    "agentdojo_pair_076"
+  ],
+  "model_input_character_length": {
+    "minimum": 1599,
+    "median": 2084.5,
+    "maximum": 3421,
+    "mean": 2242.2886597938145
+  },
+  "outputs": {
+    "structured_labeled_pool": "data/processed/agentdojo_contextual_action_attempt_labeled_pool_v0.1.5.jsonl",
+    "bert_training_view": "data/processed/agentdojo_bert_training_view_v0.1.5.jsonl",
+    "cumulative_review_ledger": "data/interim/agentdojo_action_attempt_human_review_master_v0.1.5.csv"
+  },
+  "important_notes": [
+    "All 166 v0.1.4 structured and training rows were preserved without modification.",
+    "Only the 28 runtime rows belonging to the 14 newly approved P3 pairs were materialized.",
+    "Pairs 074, 075, and 076 were human-reviewed and excluded because their injected document content is not retrieved by the legitimate workflow.",
+    "No pairs remain in needs_revision status.",
+    "Final labels, review decisions, and exclusion metadata remain outside model_input.text.",
+    "The v0.1.4 checkpoint artifacts were verified against their SHA-256 manifest before extension."
+  ]
+}

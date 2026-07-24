@@ -1,0 +1,14 @@
+{
+  "heuristic_version": "0.3.2",
+  "validation_batch": "008",
+  "validation_type": "prospective_unseen_predicted_attack_validation",
+  "generated_at": "2026-07-15T12:34:33.494706+00:00",
+  "examples_reviewed": 10,
+  "predicted_usable_attack_seed": 10,
+  "human_confirmed_usable_attack_seed": 10,
+  "true_positives": 10,
+  "false_positives": 0,
+  "prospective_precision": 1.0,
+  "recall_measured": false,
+  "important_note": "This batch measures prospective precision only because every reviewed example was selected from the heuristic's predicted attack pool. Recall requires auditing examples predicted as ambiguous or non-attack."
+}

@@ -1,0 +1,131 @@
+{
+  "artifact_version": "0.1.1",
+  "generated_at": "2026-07-20T17:57:04.450023+00:00",
+  "review_status": "first_human_review_round_completed",
+  "reviewed_pair_count": 100,
+  "decision_counts": {
+    "approve_pair": 55,
+    "needs_revision": 45
+  },
+  "approved_pair_count": 55,
+  "needs_revision_pair_count": 45,
+  "excluded_pair_count": 0,
+  "finalized_runtime_row_count": 110,
+  "pending_revision_runtime_row_count": 90,
+  "suite_revision_counts": {
+    "banking": 7,
+    "slack": 10,
+    "travel": 14,
+    "workspace": 14
+  },
+  "issue_category_counts": {
+    "source_object_mismatch": 4,
+    "retrieval_path_not_guaranteed": 2,
+    "contextual_alignment_issue": 6,
+    "missing_concrete_source_binding": 10,
+    "review_object_category_mismatch": 14,
+    "document_content_not_retrieved": 3,
+    "retrieval_query_mismatch": 6
+  },
+  "repair_priority_counts": {
+    "P2": 23,
+    "P3": 17,
+    "P1": 5
+  },
+  "same_tool_revision_pair_count": 5,
+  "vector_revision_counts": {
+    "drive_feedback_injection": 2,
+    "drive_keywords_stuffing_injection": 1,
+    "drive_recipe_injection": 2,
+    "drive_team_building_injection": 2,
+    "email_events_follow_up_injection": 1,
+    "email_events_injection": 2,
+    "email_facebook_injection": 2,
+    "email_password_reset_injection": 2,
+    "injection_address_change": 3,
+    "injection_bill_text": 2,
+    "injection_cars_0": 2,
+    "injection_cars_1": 2,
+    "injection_cars_2": 1,
+    "injection_dora_0": 1,
+    "injection_hotels_0": 2,
+    "injection_hotels_1": 1,
+    "injection_hotels_2": 1,
+    "injection_hotels_4": 2,
+    "injection_incoming_transaction": 1,
+    "injection_landloard_notice": 1,
+    "injection_phishing_1": 3,
+    "injection_restaurants_0": 1,
+    "injection_restaurants_1": 1,
+    "injection_restaurants_3": 1,
+    "injection_web_0": 3,
+    "prompt_injection_eve_blog": 1,
+    "prompt_injection_restaurant": 2
+  },
+  "batch_summaries": [
+    {
+      "batch_number": 26,
+      "row_count": 20,
+      "decision_counts": {
+        "approve_pair": 13,
+        "needs_revision": 7
+      },
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_026_v0.1.1.csv"
+    },
+    {
+      "batch_number": 27,
+      "row_count": 20,
+      "decision_counts": {
+        "approve_pair": 10,
+        "needs_revision": 10
+      },
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_027_v0.1.1.csv"
+    },
+    {
+      "batch_number": 28,
+      "row_count": 13,
+      "decision_counts": {
+        "needs_revision": 7,
+        "approve_pair": 6
+      },
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_028_v0.1.1.csv"
+    },
+    {
+      "batch_number": 29,
+      "row_count": 12,
+      "decision_counts": {
+        "needs_revision": 7,
+        "approve_pair": 5
+      },
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_029_v0.1.1.csv"
+    },
+    {
+      "batch_number": 30,
+      "row_count": 18,
+      "decision_counts": {
+        "approve_pair": 11,
+        "needs_revision": 7
+      },
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_030_v0.1.1.csv"
+    },
+    {
+      "batch_number": 31,
+      "row_count": 17,
+      "decision_counts": {
+        "approve_pair": 10,
+        "needs_revision": 7
+      },
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_031_v0.1.1.csv"
+    }
+  ],
+  "master_review_ledger": "data/interim/agentdojo_action_attempt_human_review_master_v0.1.1.csv",
+  "revision_queue": "data/interim/agentdojo_action_attempt_revision_queue_v0.1.1.csv",
+  "important_notes": [
+    "All 100 pair-level records completed the first human-review round.",
+    "Final labels exist only for the 55 approved pairs.",
+    "The 45 needs-revision pairs retain no final labels.",
+    "No pair was excluded during the first review round.",
+    "Repair priority P1 preserves valuable same-tool minimal pairs whenever possible.",
+    "The smoke pool itself has not been modified by this consolidation step."
+  ]
+}

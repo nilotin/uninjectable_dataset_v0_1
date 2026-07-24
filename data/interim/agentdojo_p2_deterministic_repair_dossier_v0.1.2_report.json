@@ -1,0 +1,25 @@
+{
+  "artifact_version": "0.1.2",
+  "agentdojo_source_root": "/Users/nilsudemirag/Downloads/uninjectable_dataset_v0_1/data/raw/agentdojo_source/src/agentdojo",
+  "pair_count": 9,
+  "issue_counts": {
+    "source_object_mismatch": 3,
+    "missing_concrete_source_binding": 6
+  },
+  "pair_ids": [
+    "agentdojo_pair_002",
+    "agentdojo_pair_005",
+    "agentdojo_pair_009",
+    "agentdojo_pair_026",
+    "agentdojo_pair_027",
+    "agentdojo_pair_035",
+    "agentdojo_pair_073",
+    "agentdojo_pair_089",
+    "agentdojo_pair_092"
+  ],
+  "jsonl_dossier": "data/interim/agentdojo_p2_deterministic_repair_dossier_v0.1.2.jsonl",
+  "text_dossier": "data/interim/agentdojo_p2_deterministic_repair_dossier_v0.1.2.txt",
+  "pair_plan_modified": false,
+  "labeled_pool_modified": false,
+  "review_decisions_modified": false
+}

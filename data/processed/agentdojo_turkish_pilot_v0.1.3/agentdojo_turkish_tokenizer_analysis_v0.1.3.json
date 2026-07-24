@@ -1,0 +1,705 @@
+{
+  "artifact_version": "0.1.3",
+  "dataset": "agentdojo_turkish_pilot",
+  "source_row_count": 24,
+  "models": {
+    "dbmdz/bert-base-turkish-cased": {
+      "tokenizer_class": "BertTokenizer",
+      "vocab_size": 32000,
+      "model_max_length": 512,
+      "overall": {
+        "count": 24,
+        "minimum": 582,
+        "mean": 791.25,
+        "median": 805.5,
+        "p90": 952.4,
+        "p95": 1021.0499999999998,
+        "p99": 1054.33,
+        "maximum": 1061,
+        "thresholds": {
+          "128": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          },
+          "256": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          },
+          "384": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          },
+          "512": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          }
+        }
+      },
+      "by_split": {
+        "train": {
+          "count": 16,
+          "minimum": 582,
+          "mean": 811.3125,
+          "median": 822.5,
+          "p90": 995.5,
+          "p95": 1039.25,
+          "p99": 1056.65,
+          "maximum": 1061,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "validation": {
+          "count": 8,
+          "minimum": 603,
+          "mean": 751.125,
+          "median": 736.0,
+          "p90": 923.7,
+          "p95": 930.35,
+          "p99": 935.67,
+          "maximum": 937,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        }
+      },
+      "by_suite": {
+        "banking": {
+          "count": 6,
+          "minimum": 603,
+          "mean": 681.6666666666666,
+          "median": 675.5,
+          "p90": 766.0,
+          "p95": 768.5,
+          "p99": 770.5,
+          "maximum": 771,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "slack": {
+          "count": 6,
+          "minimum": 582,
+          "mean": 631.5,
+          "median": 630.0,
+          "p90": 678.0,
+          "p95": 680.5,
+          "p99": 682.5,
+          "maximum": 683,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "travel": {
+          "count": 6,
+          "minimum": 918,
+          "mean": 964.6666666666666,
+          "median": 929.0,
+          "p90": 1046.5,
+          "p95": 1053.75,
+          "p99": 1059.55,
+          "maximum": 1061,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "workspace": {
+          "count": 6,
+          "minimum": 840,
+          "mean": 887.1666666666666,
+          "median": 879.5,
+          "p90": 938.5,
+          "p95": 948.75,
+          "p99": 956.95,
+          "maximum": 959,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        }
+      },
+      "by_variant": {
+        "risky": {
+          "count": 12,
+          "minimum": 591,
+          "mean": 791.4166666666666,
+          "median": 800.5,
+          "p90": 920.7,
+          "p95": 983.9999999999999,
+          "p99": 1045.6000000000001,
+          "maximum": 1061,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "safe": {
+          "count": 12,
+          "minimum": 582,
+          "mean": 791.0833333333334,
+          "median": 809.0,
+          "p90": 956.8,
+          "p95": 991.8499999999999,
+          "p99": 1023.97,
+          "maximum": 1032,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        }
+      },
+      "longest_rows": [
+        {
+          "row_id": "agentdojo_pair_059_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "split": "train",
+          "suite": "travel",
+          "variant": "risky",
+          "general_risk_label": 1,
+          "token_length": 1061
+        },
+        {
+          "row_id": "agentdojo_pair_059_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "split": "train",
+          "suite": "travel",
+          "variant": "safe",
+          "general_risk_label": 0,
+          "token_length": 1032
+        },
+        {
+          "row_id": "agentdojo_pair_082_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_082_tr",
+          "split": "train",
+          "suite": "workspace",
+          "variant": "safe",
+          "general_risk_label": 0,
+          "token_length": 959
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "split": "validation",
+          "suite": "travel",
+          "variant": "safe",
+          "general_risk_label": 0,
+          "token_length": 937
+        },
+        {
+          "row_id": "agentdojo_pair_060_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_060_tr",
+          "split": "train",
+          "suite": "travel",
+          "variant": "risky",
+          "general_risk_label": 1,
+          "token_length": 921
+        }
+      ]
+    },
+    "google-bert/bert-base-multilingual-cased": {
+      "tokenizer_class": "BertTokenizer",
+      "vocab_size": 119547,
+      "model_max_length": 512,
+      "overall": {
+        "count": 24,
+        "minimum": 578,
+        "mean": 771.7083333333334,
+        "median": 785.5,
+        "p90": 942.6,
+        "p95": 984.55,
+        "p99": 1011.02,
+        "maximum": 1017,
+        "thresholds": {
+          "128": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          },
+          "256": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          },
+          "384": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          },
+          "512": {
+            "rows_over_limit": 24,
+            "rows_at_or_under_limit": 0,
+            "truncation_rate": 1.0
+          }
+        }
+      },
+      "by_split": {
+        "train": {
+          "count": 16,
+          "minimum": 578,
+          "mean": 785.625,
+          "median": 812.5,
+          "p90": 940.5,
+          "p95": 997.5,
+          "p99": 1013.1,
+          "maximum": 1017,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 16,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "validation": {
+          "count": 8,
+          "minimum": 600,
+          "mean": 743.875,
+          "median": 717.5,
+          "p90": 935.4,
+          "p95": 941.7,
+          "p99": 946.74,
+          "maximum": 948,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 8,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        }
+      },
+      "by_suite": {
+        "banking": {
+          "count": 6,
+          "minimum": 600,
+          "mean": 688.1666666666666,
+          "median": 684.5,
+          "p90": 779.5,
+          "p95": 782.75,
+          "p99": 785.35,
+          "maximum": 786,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "slack": {
+          "count": 6,
+          "minimum": 578,
+          "mean": 621.3333333333334,
+          "median": 635.5,
+          "p90": 646.5,
+          "p95": 648.25,
+          "p99": 649.65,
+          "maximum": 650,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "travel": {
+          "count": 6,
+          "minimum": 881,
+          "mean": 942.3333333333334,
+          "median": 939.0,
+          "p90": 1004.0,
+          "p95": 1010.5,
+          "p99": 1015.7,
+          "maximum": 1017,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "workspace": {
+          "count": 6,
+          "minimum": 785,
+          "mean": 835,
+          "median": 842.5,
+          "p90": 873.0,
+          "p95": 881.5,
+          "p99": 888.3,
+          "maximum": 890,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 6,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        }
+      },
+      "by_variant": {
+        "risky": {
+          "count": 12,
+          "minimum": 586,
+          "mean": 772,
+          "median": 779.0,
+          "p90": 925.7,
+          "p95": 969.15,
+          "p99": 1007.4300000000001,
+          "maximum": 1017,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        },
+        "safe": {
+          "count": 12,
+          "minimum": 578,
+          "mean": 771.4166666666666,
+          "median": 790.0,
+          "p90": 942.2,
+          "p95": 967.35,
+          "p99": 986.27,
+          "maximum": 991,
+          "thresholds": {
+            "128": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "256": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "384": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            },
+            "512": {
+              "rows_over_limit": 12,
+              "rows_at_or_under_limit": 0,
+              "truncation_rate": 1.0
+            }
+          }
+        }
+      },
+      "longest_rows": [
+        {
+          "row_id": "agentdojo_pair_059_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "split": "train",
+          "suite": "travel",
+          "variant": "risky",
+          "general_risk_label": 1,
+          "token_length": 1017
+        },
+        {
+          "row_id": "agentdojo_pair_059_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "split": "train",
+          "suite": "travel",
+          "variant": "safe",
+          "general_risk_label": 0,
+          "token_length": 991
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "split": "validation",
+          "suite": "travel",
+          "variant": "safe",
+          "general_risk_label": 0,
+          "token_length": 948
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "split": "validation",
+          "suite": "travel",
+          "variant": "risky",
+          "general_risk_label": 1,
+          "token_length": 930
+        },
+        {
+          "row_id": "agentdojo_pair_082_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_082_tr",
+          "split": "train",
+          "suite": "workspace",
+          "variant": "safe",
+          "general_risk_label": 0,
+          "token_length": 890
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "berturk_mean_tokens": 791.25,
+    "mbert_mean_tokens": 771.7083333333334,
+    "berturk_token_reduction_vs_mbert": -0.025322606770692677
+  },
+  "important_note": "This is a tokenizer and sequence-length pilot based on 24 Turkish runtime rows. It is not sufficient for final model selection."
+}

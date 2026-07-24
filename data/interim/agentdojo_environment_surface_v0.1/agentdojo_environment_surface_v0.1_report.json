@@ -1,0 +1,197 @@
+{
+  "dataset": "agentdojo",
+  "environment_surface_version": "0.1",
+  "generated_at": "2026-07-18T14:16:08.365207+00:00",
+  "source_commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "benchmark_version": "v1.2.2",
+  "combined_structure_count": 117,
+  "tool_instance_count": 74,
+  "globally_unique_tool_name_count": 69,
+  "tool_counts_by_suite": {
+    "banking": 11,
+    "slack": 11,
+    "travel": 28,
+    "workspace": 24
+  },
+  "suite_environment_fields": {
+    "banking": {
+      "bank_account": "BankAccount",
+      "filesystem": "Filesystem",
+      "user_account": "UserAccount"
+    },
+    "slack": {
+      "slack": "Slack",
+      "web": "Web"
+    },
+    "travel": {
+      "hotels": "Hotels",
+      "restaurants": "Restaurants",
+      "car_rental": "CarRental",
+      "flights": "Flights",
+      "user": "User",
+      "calendar": "Calendar",
+      "reservation": "Reservation",
+      "inbox": "Inbox"
+    },
+    "workspace": {
+      "inbox": "Inbox",
+      "calendar": "Calendar",
+      "cloud_drive": "CloudDrive"
+    }
+  },
+  "suggested_capability_class_counts": {
+    "read_only": 47,
+    "financial_write": 3,
+    "credential_or_account_write": 2,
+    "access_control_write": 4,
+    "external_communication_write": 5,
+    "destructive_or_revocation_write": 5,
+    "state_changing_write": 5,
+    "booking_or_reservation_write": 3
+  },
+  "suggested_action_impact_counts": {
+    "low": 47,
+    "high": 17,
+    "medium": 10
+  },
+  "injection_vector_count": 39,
+  "injection_vector_counts_by_suite": {
+    "banking": 4,
+    "slack": 6,
+    "travel": 13,
+    "workspace": 16
+  },
+  "injection_vector_location_status": {
+    "located": 39
+  },
+  "injection_surface_type_counts": {
+    "file_or_cloud_document": 7,
+    "bank_transaction_or_payment_metadata": 1,
+    "slack_channel_or_message": 6,
+    "external_web_content_or_review": 13,
+    "calendar_event_or_description": 7,
+    "email_message_or_metadata": 5
+  },
+  "explicit_tool_coverage": {
+    "combined_record_count": 117,
+    "records_with_explicit_reference_sequence": 108,
+    "suite_coverage": {
+      "banking": {
+        "available_tool_count": 11,
+        "referenced_tool_count": 8,
+        "referenced_but_not_available": [],
+        "available_but_not_referenced": [
+          "get_balance",
+          "get_iban",
+          "get_user_info"
+        ],
+        "reference_frequency": {
+          "send_money": 15,
+          "get_most_recent_transactions": 11,
+          "update_scheduled_transaction": 5,
+          "get_scheduled_transactions": 4,
+          "read_file": 4,
+          "update_password": 2,
+          "update_user_info": 2,
+          "schedule_transaction": 1
+        }
+      },
+      "slack": {
+        "available_tool_count": 11,
+        "referenced_tool_count": 11,
+        "referenced_but_not_available": [],
+        "available_but_not_referenced": [],
+        "reference_frequency": {
+          "read_channel_messages": 17,
+          "get_webpage": 12,
+          "send_direct_message": 10,
+          "get_channels": 7,
+          "send_channel_message": 5,
+          "invite_user_to_slack": 4,
+          "add_user_to_channel": 4,
+          "post_webpage": 3,
+          "get_users_in_channel": 3,
+          "read_inbox": 2,
+          "remove_user_from_slack": 1
+        }
+      },
+      "travel": {
+        "available_tool_count": 28,
+        "referenced_tool_count": 20,
+        "referenced_but_not_available": [],
+        "available_but_not_referenced": [
+          "cancel_calendar_event",
+          "get_car_rental_address",
+          "get_contact_information_for_restaurants",
+          "get_day_calendar_events",
+          "get_flight_information",
+          "reserve_car_rental",
+          "reserve_restaurant",
+          "search_calendar_events"
+        ],
+        "reference_frequency": {
+          "get_hotels_prices": 13,
+          "get_all_hotels_in_city": 12,
+          "get_rating_reviews_for_hotels": 12,
+          "get_rating_reviews_for_restaurants": 12,
+          "get_all_restaurants_in_city": 11,
+          "get_price_for_restaurants": 9,
+          "get_rating_reviews_for_car_rental": 8,
+          "get_cuisine_type_for_restaurants": 7,
+          "get_all_car_rental_companies_in_city": 7,
+          "get_car_price_per_day": 7,
+          "get_restaurants_address": 6,
+          "create_calendar_event": 5,
+          "get_hotels_address": 5,
+          "send_email": 4,
+          "check_restaurant_opening_hours": 4,
+          "reserve_hotel": 3,
+          "get_user_information": 2,
+          "get_car_types_available": 2,
+          "get_car_fuel_options": 2,
+          "get_dietary_restrictions_for_all_restaurants": 1
+        }
+      },
+      "workspace": {
+        "available_tool_count": 24,
+        "referenced_tool_count": 18,
+        "referenced_but_not_available": [],
+        "available_but_not_referenced": [
+          "cancel_calendar_event",
+          "get_draft_emails",
+          "get_file_by_id",
+          "get_received_emails",
+          "get_sent_emails",
+          "search_contacts_by_email"
+        ],
+        "reference_frequency": {
+          "search_emails": 10,
+          "send_email": 9,
+          "create_calendar_event": 8,
+          "get_day_calendar_events": 8,
+          "search_calendar_events": 7,
+          "search_files_by_filename": 6,
+          "search_files": 5,
+          "append_to_file": 3,
+          "list_files": 3,
+          "delete_file": 2,
+          "get_current_day": 2,
+          "create_file": 2,
+          "delete_email": 1,
+          "reschedule_calendar_event": 1,
+          "add_calendar_event_participants": 1,
+          "search_contacts_by_name": 1,
+          "get_unread_emails": 1,
+          "share_file": 1
+        }
+      }
+    },
+    "referenced_tools_missing_from_suite": {}
+  },
+  "important_notes": [
+    "Suite tool availability is different from ground-truth tool usage. The agent receives the full suite tool catalog.",
+    "Suggested tool capability and impact values are heuristic metadata and require human review.",
+    "Injection-vector locations describe attacker-controllable environment surfaces. They are not runtime general_risk_label values.",
+    "Operational-effect-only injection tasks may have no explicit reference sequence and are therefore excluded from explicit tool-coverage calculations."
+  ]
+}

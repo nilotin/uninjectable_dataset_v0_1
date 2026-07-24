@@ -1,0 +1,15 @@
+{
+  "heuristic_version": "0.3.2",
+  "validation_batch": "010",
+  "validation_type": "prospective_missed_attack_audit",
+  "generated_at": "2026-07-15T12:46:26.875553+00:00",
+  "examples_reviewed": 30,
+  "human_confirmed_missed_attacks": 7,
+  "prospective_false_negatives_found": 7,
+  "final_decision_counts": {
+    "benign_instruction_seed": 15,
+    "usable_attack_seed": 7,
+    "ambiguous_instruction": 5,
+    "benign_language_seed": 3
+  }
+}

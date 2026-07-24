@@ -1,0 +1,13 @@
+{
+  "heuristic_version": "0.2.1",
+  "validation_batch": "005",
+  "validation_type": "prospective_unseen_priority_batch",
+  "generated_at": "2026-07-15T10:05:54.197637+00:00",
+  "examples_reviewed": 23,
+  "predicted_usable_attack_seed": 23,
+  "human_confirmed_usable_attack_seed": 23,
+  "true_positives": 23,
+  "false_positives": 0,
+  "precision": 1.0,
+  "important_note": "This result measures precision only on a priority-selected batch of previously unreviewed examples predicted as usable_attack_seed. It is not an unbiased estimate of overall heuristic accuracy or recall."
+}

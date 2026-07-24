@@ -1,0 +1,1288 @@
+{
+  "artifact_version": "0.1.1",
+  "source_policy_sha256": "ae25d5bcf09e54bc635a5e16d222dea35cfe2619391a950ca0e610b85b106dc0",
+  "source_queue_sha256": "b18d18526f58140964dadff368353fc5b50089d20eee68ab63bb879f19ca57e4",
+  "translated_policy_sha256": "fb067933bd4e24d0d1d7890f3488b829913219ad9120a47a3d2526b62fca1eb5",
+  "translated_queue_sha256": "ce27f6225998c671de41c705a38b3614538ce6fd5f8978bbcadcec6bd56b9721",
+  "policy_template_count": 1,
+  "translated_pair_count": 12,
+  "eventual_runtime_row_count": 24,
+  "translation_status": "translated_pending_human_review",
+  "automatic_validation": {
+    "pair_count_checked": 12,
+    "protected_token_checks_passed": true,
+    "tool_name_checks_passed": true,
+    "capability_class_checks_passed": true,
+    "action_impact_checks_passed": true,
+    "test_split_pair_count": 0
+  },
+  "validation_results": [
+    {
+      "pair_id": "agentdojo_pair_003",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ],
+          "translated_tokens": [
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-04-01"
+          ],
+          "translated_tokens": [
+            "2022-04-01"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-04-01"
+          ],
+          "translated_tokens": [
+            "2022-04-01"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN",
+            "self.find_dinner_companion"
+          ],
+          "translated_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN",
+            "self.find_dinner_companion"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_money",
+            "translated": "send_money"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_money",
+            "translated": "send_money"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_018",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "bill-december-2023.txt"
+          ],
+          "translated_tokens": [
+            "bill-december-2023.txt"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "UK12345678901234567890",
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ],
+          "translated_tokens": [
+            "UK12345678901234567890",
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-01-01",
+            "_BILL_RECIPIENT",
+            "self._BILL_RECIPIENT"
+          ],
+          "translated_tokens": [
+            "2022-01-01",
+            "_BILL_RECIPIENT",
+            "self._BILL_RECIPIENT"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-01-01",
+            "_BILL_RECIPIENT",
+            "self._BILL_RECIPIENT"
+          ],
+          "translated_tokens": [
+            "2022-01-01",
+            "_BILL_RECIPIENT",
+            "self._BILL_RECIPIENT"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN"
+          ],
+          "translated_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_money",
+            "translated": "send_money"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_money",
+            "translated": "send_money"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_015",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "{NEW_PASSWORD}"
+          ],
+          "translated_tokens": [
+            "{NEW_PASSWORD}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_NEW_PASSWORD",
+            "{_NEW_PASSWORD}"
+          ],
+          "translated_tokens": [
+            "_NEW_PASSWORD",
+            "{_NEW_PASSWORD}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "self.NEW_PASSWORD"
+          ],
+          "translated_tokens": [
+            "self.NEW_PASSWORD"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "self.NEW_PASSWORD"
+          ],
+          "translated_tokens": [
+            "self.NEW_PASSWORD"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_NEW_PASSWORD",
+            "self._NEW_PASSWORD"
+          ],
+          "translated_tokens": [
+            "_NEW_PASSWORD",
+            "self._NEW_PASSWORD"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "update_password",
+            "translated": "update_password"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "credential_or_account_write",
+            "translated": "credential_or_account_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "update_password",
+            "translated": "update_password"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "credential_or_account_write",
+            "translated": "credential_or_account_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_040",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "{USER_POSTED}",
+            "{USER_SEND}"
+          ],
+          "translated_tokens": [
+            "{USER_POSTED}",
+            "{USER_SEND}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_PHISHING_LINK",
+            "{_PHISHING_LINK}"
+          ],
+          "translated_tokens": [
+            "_PHISHING_LINK",
+            "{_PHISHING_LINK}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "self.USER_SEND"
+          ],
+          "translated_tokens": [
+            "self.USER_SEND"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "self.USER_SEND"
+          ],
+          "translated_tokens": [
+            "self.USER_SEND"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_direct_message",
+            "translated": "send_direct_message"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_direct_message",
+            "translated": "send_direct_message"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_031",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "{URL}"
+          ],
+          "translated_tokens": [
+            "{URL}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_PHISHING_LINK",
+            "{_PHISHING_LINK}"
+          ],
+          "translated_tokens": [
+            "_PHISHING_LINK",
+            "{_PHISHING_LINK}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "self.URL"
+          ],
+          "translated_tokens": [
+            "self.URL"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "self.URL"
+          ],
+          "translated_tokens": [
+            "self.URL"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_PHISHING_LINK",
+            "self._PHISHING_LINK"
+          ],
+          "translated_tokens": [
+            "_PHISHING_LINK",
+            "self._PHISHING_LINK"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_webpage",
+            "translated": "get_webpage"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "ordinary_read",
+            "translated": "ordinary_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "low",
+            "translated": "low"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_webpage",
+            "translated": "get_webpage"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "ordinary_read",
+            "translated": "ordinary_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "low",
+            "translated": "low"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_021",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_ATTACKER_EMAIL",
+            "_ATTACKER_USER",
+            "{_ATTACKER_EMAIL}",
+            "{_ATTACKER_USER}"
+          ],
+          "translated_tokens": [
+            "_ATTACKER_EMAIL",
+            "_ATTACKER_USER",
+            "{_ATTACKER_EMAIL}",
+            "{_ATTACKER_USER}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_ATTACKER_USER",
+            "self._ATTACKER_USER"
+          ],
+          "translated_tokens": [
+            "_ATTACKER_USER",
+            "self._ATTACKER_USER"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "add_user_to_channel",
+            "translated": "add_user_to_channel"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "access_control_write",
+            "translated": "access_control_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "remove_user_from_slack",
+            "translated": "remove_user_from_slack"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "destructive_or_revocation_write",
+            "translated": "destructive_or_revocation_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_059",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "company.name"
+          ],
+          "translated_tokens": [
+            "company.name"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "company.name"
+          ],
+          "translated_tokens": [
+            "company.name"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "most_expensive_hotel.name",
+            "self._END_DAY",
+            "self._START_DAY",
+            "{most_expensive_hotel.name}"
+          ],
+          "translated_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "most_expensive_hotel.name",
+            "self._END_DAY",
+            "self._START_DAY",
+            "{most_expensive_hotel.name}"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_rating_reviews_for_car_rental",
+            "translated": "get_rating_reviews_for_car_rental"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "ordinary_read",
+            "translated": "ordinary_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "low",
+            "translated": "low"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "reserve_hotel",
+            "translated": "reserve_hotel"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "booking_or_reservation_write",
+            "translated": "booking_or_reservation_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_060",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_HOTEL_NAME",
+            "{_HOTEL_NAME}"
+          ],
+          "translated_tokens": [
+            "_HOTEL_NAME",
+            "{_HOTEL_NAME}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_TARGET",
+            "{_TARGET}"
+          ],
+          "translated_tokens": [
+            "_TARGET",
+            "{_TARGET}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "self._END_DAY",
+            "self._START_DAY"
+          ],
+          "translated_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "self._END_DAY",
+            "self._START_DAY"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "self._END_DAY",
+            "self._START_DAY"
+          ],
+          "translated_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "self._END_DAY",
+            "self._START_DAY"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "_TARGET",
+            "self._END_DAY",
+            "self._START_DAY",
+            "self._TARGET",
+            "{self._TARGET}"
+          ],
+          "translated_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "_TARGET",
+            "self._END_DAY",
+            "self._START_DAY",
+            "self._TARGET",
+            "{self._TARGET}"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "reserve_hotel",
+            "translated": "reserve_hotel"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "booking_or_reservation_write",
+            "translated": "booking_or_reservation_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "reserve_hotel",
+            "translated": "reserve_hotel"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "booking_or_reservation_write",
+            "translated": "booking_or_reservation_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_050",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "jay@google.com"
+          ],
+          "translated_tokens": [
+            "jay@google.com"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "top_rated_restaurant[0].name"
+          ],
+          "translated_tokens": [
+            "top_rated_restaurant[0].name"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "top_rated_restaurant[0].name"
+          ],
+          "translated_tokens": [
+            "top_rated_restaurant[0].name"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_price_for_restaurants",
+            "translated": "get_price_for_restaurants"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "ordinary_read",
+            "translated": "ordinary_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "low",
+            "translated": "low"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_user_information",
+            "translated": "get_user_information"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "sensitive_data_read",
+            "translated": "sensitive_data_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_091",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "YYYY-MM-DD",
+            "_TOPIC",
+            "{_TOPIC}"
+          ],
+          "translated_tokens": [
+            "YYYY-MM-DD",
+            "_TOPIC",
+            "{_TOPIC}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_BODY",
+            "_RECIPIENT",
+            "_SENDER",
+            "_SUBJECT",
+            "{_BODY}",
+            "{_RECIPIENT}",
+            "{_SENDER}",
+            "{_SUBJECT}"
+          ],
+          "translated_tokens": [
+            "_BODY",
+            "_RECIPIENT",
+            "_SENDER",
+            "_SUBJECT",
+            "{_BODY}",
+            "{_RECIPIENT}",
+            "{_SENDER}",
+            "{_SUBJECT}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2024-05-19",
+            "mark.roberts@luesparrowtech.com"
+          ],
+          "translated_tokens": [
+            "2024-05-19",
+            "mark.roberts@luesparrowtech.com"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2024-05-19",
+            "mark.roberts@luesparrowtech.com"
+          ],
+          "translated_tokens": [
+            "2024-05-19",
+            "mark.roberts@luesparrowtech.com"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_BODY",
+            "_CODE",
+            "_RECIPIENT",
+            "_SUBJECT",
+            "self._BODY",
+            "self._CODE",
+            "self._RECIPIENT",
+            "self._SUBJECT",
+            "{self._BODY}",
+            "{self._CODE}"
+          ],
+          "translated_tokens": [
+            "_BODY",
+            "_CODE",
+            "_RECIPIENT",
+            "_SUBJECT",
+            "self._BODY",
+            "self._CODE",
+            "self._RECIPIENT",
+            "self._SUBJECT",
+            "{self._BODY}",
+            "{self._CODE}"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_082",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "_DESCRIPTION",
+            "_EMAIL",
+            "_START_TIME",
+            "_START_TIME",
+            "_TITLE",
+            "{_DATE}",
+            "{_DESCRIPTION}",
+            "{_EMAIL}",
+            "{_START_TIME}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "_DESCRIPTION",
+            "_EMAIL",
+            "_START_TIME",
+            "_START_TIME",
+            "_TITLE",
+            "{_DATE}",
+            "{_DESCRIPTION}",
+            "{_EMAIL}",
+            "{_START_TIME}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "{_PARTICIPANT}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ],
+          "translated_tokens": [
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "{_PARTICIPANT}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "_DATE",
+            "_DESCRIPTION",
+            "_EMAIL",
+            "_END_TIME",
+            "_START_TIME",
+            "_TITLE",
+            "self._DATE",
+            "self._DATE",
+            "self._DESCRIPTION",
+            "self._EMAIL",
+            "self._END_TIME",
+            "self._START_TIME",
+            "self._TITLE",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "_DATE",
+            "_DESCRIPTION",
+            "_EMAIL",
+            "_END_TIME",
+            "_START_TIME",
+            "_TITLE",
+            "self._DATE",
+            "self._DATE",
+            "self._DESCRIPTION",
+            "self._EMAIL",
+            "self._END_TIME",
+            "self._START_TIME",
+            "self._TITLE",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "_DATE",
+            "_DESCRIPTION",
+            "_EMAIL",
+            "_END_TIME",
+            "_START_TIME",
+            "_TITLE",
+            "self._DATE",
+            "self._DATE",
+            "self._DESCRIPTION",
+            "self._EMAIL",
+            "self._END_TIME",
+            "self._START_TIME",
+            "self._TITLE",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "_DATE",
+            "_DESCRIPTION",
+            "_EMAIL",
+            "_END_TIME",
+            "_START_TIME",
+            "_TITLE",
+            "self._DATE",
+            "self._DATE",
+            "self._DESCRIPTION",
+            "self._EMAIL",
+            "self._END_TIME",
+            "self._START_TIME",
+            "self._TITLE",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_TIME",
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "self._END_TIME",
+            "self._PARTICIPANT",
+            "self._START_TIME",
+            "self._TITLE"
+          ],
+          "translated_tokens": [
+            "_END_TIME",
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "self._END_TIME",
+            "self._PARTICIPANT",
+            "self._START_TIME",
+            "self._TITLE"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "create_calendar_event",
+            "translated": "create_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "create_calendar_event",
+            "translated": "create_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_095",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_SENDER",
+            "_SUBJECT",
+            "{_SENDER}",
+            "{_SUBJECT}"
+          ],
+          "translated_tokens": [
+            "_SENDER",
+            "_SUBJECT",
+            "{_SENDER}",
+            "{_SUBJECT}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_RECIPIENT",
+            "_SENDER",
+            "{_RECIPIENT}",
+            "{_SENDER}"
+          ],
+          "translated_tokens": [
+            "_RECIPIENT",
+            "_SENDER",
+            "{_RECIPIENT}",
+            "{_SENDER}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_EMAIL_2_SUBJECT",
+            "_SENDER",
+            "self._EMAIL_2_SUBJECT",
+            "self._SENDER"
+          ],
+          "translated_tokens": [
+            "_EMAIL_2_SUBJECT",
+            "_SENDER",
+            "self._EMAIL_2_SUBJECT",
+            "self._SENDER"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_EMAIL_2_SUBJECT",
+            "_SENDER",
+            "self._EMAIL_2_SUBJECT",
+            "self._SENDER"
+          ],
+          "translated_tokens": [
+            "_EMAIL_2_SUBJECT",
+            "_SENDER",
+            "self._EMAIL_2_SUBJECT",
+            "self._SENDER"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_RECIPIENT",
+            "email.body",
+            "email.subject",
+            "self._RECIPIENT"
+          ],
+          "translated_tokens": [
+            "_RECIPIENT",
+            "email.body",
+            "email.subject",
+            "self._RECIPIENT"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "translated_policy_queue": "/mnt/data/agentdojo_turkish_policy_template_queue_v0.1.1_translated.jsonl",
+    "translated_translation_queue": "/mnt/data/agentdojo_turkish_translation_pilot_queue_v0.1.1_translated.jsonl"
+  },
+  "important_note": "Bu dosyalar otomatik olarak onaylanmış değildir. Çeviri ve safe-risky semantik eşleşmesi için insan incelemesi gereklidir."
+}

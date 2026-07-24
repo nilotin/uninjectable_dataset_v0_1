@@ -1,0 +1,65 @@
+{
+  "artifact_version": "0.1.3",
+  "dataset": "agentdojo_turkish_translation_pilot",
+  "language": "tr",
+  "source_language": "en",
+  "source_dataset_version": "0.1.5",
+  "translation_review_version": "0.1.2",
+  "localized_pair_count": 12,
+  "runtime_row_count": 24,
+  "train_pair_count": 8,
+  "train_row_count": 16,
+  "validation_pair_count": 4,
+  "validation_row_count": 8,
+  "test_pair_count": 0,
+  "test_row_count": 0,
+  "label_counts": {
+    "0": 12,
+    "1": 12
+  },
+  "train_label_counts": {
+    "0": 8,
+    "1": 8
+  },
+  "validation_label_counts": {
+    "0": 4,
+    "1": 4
+  },
+  "same_tool_pair_count": 9,
+  "unique_model_input_count": 24,
+  "duplicate_model_input_count": 0,
+  "validation": {
+    "shared_context_pairs_passed": 12,
+    "distinct_action_pairs_passed": 12,
+    "label_pairs_passed": 12,
+    "split_pairs_passed": 12,
+    "label_or_review_leakage_count": 0,
+    "source_dataset_hashes_before": 4,
+    "source_dataset_hashes_after": 4,
+    "source_split_hashes_before": 8,
+    "source_split_hashes_after": 8,
+    "source_dataset_modified": false,
+    "source_split_artifacts_modified": false,
+    "reviewed_translation_queue_modified": false,
+    "reviewed_policy_queue_modified": false
+  },
+  "model_input_character_length": {
+    "minimum": 1622,
+    "median": 2123.0,
+    "maximum": 3072,
+    "mean": 2206.375
+  },
+  "outputs": {
+    "structured_pool": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_contextual_action_attempt_pilot_v0.1.3.jsonl",
+    "bert_training_view": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_bert_training_view_v0.1.3.jsonl",
+    "train_view": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_bert_training_view_v0.1.3_train.jsonl",
+    "validation_view": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_bert_training_view_v0.1.3_validation.jsonl"
+  },
+  "important_notes": [
+    "The Turkish pilot contains only human-reviewed translations.",
+    "The original English AgentDojo v0.1.5 artifacts were not modified.",
+    "Turkish rows retain the same crosslingual group and split as their English source pairs.",
+    "No test examples were translated or materialized during the pilot.",
+    "Labels and review metadata remain outside model_input.text."
+  ]
+}

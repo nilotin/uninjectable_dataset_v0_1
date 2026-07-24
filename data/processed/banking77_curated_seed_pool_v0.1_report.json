@@ -1,0 +1,37 @@
+{
+  "dataset": "banking77",
+  "curated_seed_pool_version": "0.1",
+  "generated_at": "2026-07-15T13:41:20.634056+00:00",
+  "deduplicated_source_pool_size": 13071,
+  "balanced_candidate_pool_size": 385,
+  "category_count": 77,
+  "curated_ledger_count": 385,
+  "composition_eligible_count": 385,
+  "seed_category_counts": {
+    "benign_customer_language_seed": 368,
+    "sensitive_but_benign_customer_language": 17
+  },
+  "curation_status_counts": {
+    "human_reviewed": 77,
+    "provisional_not_human_reviewed": 308
+  },
+  "quality_tier_counts": {
+    "A": 77,
+    "B": 308
+  },
+  "category_audit": {
+    "human_reviewed_examples": 77,
+    "categories_covered": 77,
+    "benign_customer_language_seed": 60,
+    "sensitive_but_benign_customer_language": 17,
+    "attack_contamination": 0,
+    "ambiguous": 0,
+    "irrelevant": 0
+  },
+  "composition_policy": {
+    "tier_A": "Individually human-reviewed Banking77 seed.",
+    "tier_B": "Provisional Banking77 benign-language candidate; not individually human-reviewed.",
+    "all_385_composition_eligible": true
+  },
+  "important_note": "Banking77 intent categories are preserved only as sampling and provenance metadata. Seed categories are curation labels, not Phase-1 runtime general_risk_label targets. Final runtime-risk labels are assigned only after contextual scenario composition."
+}

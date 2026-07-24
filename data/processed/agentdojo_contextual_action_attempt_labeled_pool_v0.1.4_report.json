@@ -1,0 +1,82 @@
+{
+  "dataset": "agentdojo",
+  "artifact_version": "0.1.4",
+  "generated_at": "2026-07-20T20:01:25.436063+00:00",
+  "artifact_status": "human_reviewed_approved_subset",
+  "extension_strategy": "preserve_v0.1.3_rows_and_append_p2_travel_approved_rows",
+  "v0.1.3_checkpoint_hashes_verified": 4,
+  "source_approved_pair_count": 69,
+  "source_runtime_row_count": 138,
+  "newly_approved_pair_count": 14,
+  "newly_materialized_runtime_row_count": 28,
+  "approved_pair_count": 83,
+  "remaining_needs_revision_pair_count": 17,
+  "runtime_row_count": 166,
+  "variant_counts": {
+    "safe": 83,
+    "risky": 83
+  },
+  "final_general_risk_label_counts": {
+    "0": 83,
+    "1": 83
+  },
+  "same_tool_approved_pair_count": 17,
+  "new_travel_same_tool_pair_count": 0,
+  "unique_model_input_count": 166,
+  "duplicate_model_input_count": 0,
+  "label_or_review_leakage_count": 0,
+  "shared_context_pair_validation": {
+    "passed": 83,
+    "failed": 0
+  },
+  "distinct_attempted_action_validation": {
+    "passed": 83,
+    "failed": 0
+  },
+  "session_group_integrity_validation": {
+    "passed": 83,
+    "failed": 0
+  },
+  "safe_risky_label_pair_validation": {
+    "passed": 83,
+    "failed": 0
+  },
+  "preserved_v0.1.3_structured_rows": 138,
+  "changed_v0.1.3_structured_rows": 0,
+  "preserved_v0.1.3_training_rows": 138,
+  "changed_v0.1.3_training_rows": 0,
+  "new_travel_pair_ids": [
+    "agentdojo_pair_041",
+    "agentdojo_pair_042",
+    "agentdojo_pair_043",
+    "agentdojo_pair_044",
+    "agentdojo_pair_045",
+    "agentdojo_pair_048",
+    "agentdojo_pair_053",
+    "agentdojo_pair_054",
+    "agentdojo_pair_055",
+    "agentdojo_pair_057",
+    "agentdojo_pair_059",
+    "agentdojo_pair_061",
+    "agentdojo_pair_063",
+    "agentdojo_pair_064"
+  ],
+  "model_input_character_length": {
+    "minimum": 1599,
+    "median": 2093.5,
+    "maximum": 3421,
+    "mean": 2262.9578313253014
+  },
+  "outputs": {
+    "structured_labeled_pool": "data/processed/agentdojo_contextual_action_attempt_labeled_pool_v0.1.4.jsonl",
+    "bert_training_view": "data/processed/agentdojo_bert_training_view_v0.1.4.jsonl",
+    "cumulative_review_ledger": "data/interim/agentdojo_action_attempt_human_review_master_v0.1.4.csv"
+  },
+  "important_notes": [
+    "All 138 v0.1.3 structured and training rows were preserved without modification.",
+    "Only the 28 runtime rows belonging to the 14 newly approved travel pairs were materialized.",
+    "The 17 pairs still awaiting repair remain excluded from labeled artifacts.",
+    "Final labels and human-review metadata remain outside model_input.text.",
+    "The v0.1.3 checkpoint artifacts were verified against their SHA-256 manifest before extension."
+  ]
+}

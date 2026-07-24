@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Uninjectable Phase-1 Training Example",
+  "type": "object",
+  "required": [
+    "example_id",
+    "scenario_family",
+    "input",
+    "target",
+    "annotation",
+    "metadata"
+  ],
+  "properties": {
+    "example_id": {
+      "type": "string"
+    },
+    "scenario_family": {
+      "type": "string"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "source_type",
+        "source_trust_level",
+        "source_content_redacted",
+        "agent_role",
+        "action_type",
+        "tool_name",
+        "action_args_redacted"
+      ],
+      "properties": {
+        "source_type": {
+          "type": "string"
+        },
+        "source_trust_level": {
+          "type": "string"
+        },
+        "source_content_redacted": {
+          "type": "string"
+        },
+        "agent_role": {
+          "type": "string"
+        },
+        "allowed_tools": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "short_context_redacted": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_policy_redacted": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_doc_trust_level": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "action_type": {
+          "type": "string"
+        },
+        "tool_name": {
+          "type": "string"
+        },
+        "action_args_redacted": {
+          "type": "object"
+        },
+        "authorization_context": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "general_risk_label"
+      ],
+      "properties": {
+        "general_risk_label": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "annotation": {
+      "type": "object",
+      "required": [
+        "status",
+        "rationale",
+        "label_source"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "clear_safe",
+            "clear_risky",
+            "ambiguous"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "label_source": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "language",
+        "schema_version",
+        "redaction_version",
+        "session_group_id",
+        "split"
+      ],
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "redaction_version": {
+          "type": "string"
+        },
+        "session_group_id": {
+          "type": "string"
+        },
+        "split": {
+          "type": "string",
+          "enum": [
+            "unassigned",
+            "train",
+            "validation",
+            "test"
+          ]
+        },
+        "source_datasets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_record_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transformation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "future_labels": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "enum": [
+              0,
+              1,
+              null
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,8 @@
+{
+  "package": "uninjectable_dataset_v0_1",
+  "version": "0.1",
+  "starter_examples": 16,
+  "safe_examples": 8,
+  "risky_examples": 8,
+  "scenario_families": 8
+}

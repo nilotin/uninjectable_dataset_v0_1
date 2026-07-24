@@ -1,0 +1,74 @@
+{
+  "dataset": "agentdojo",
+  "artifact_version": "0.1.3",
+  "generated_at": "2026-07-20T19:18:33.353962+00:00",
+  "artifact_status": "human_reviewed_approved_subset",
+  "extension_strategy": "preserve_v0.1.2_rows_and_append_p2_deterministic_approved_rows",
+  "v0.1.2_checkpoint_hashes_verified": 4,
+  "source_approved_pair_count": 60,
+  "source_runtime_row_count": 120,
+  "newly_approved_pair_count": 9,
+  "newly_materialized_runtime_row_count": 18,
+  "approved_pair_count": 69,
+  "remaining_needs_revision_pair_count": 31,
+  "runtime_row_count": 138,
+  "variant_counts": {
+    "safe": 69,
+    "risky": 69
+  },
+  "final_general_risk_label_counts": {
+    "0": 69,
+    "1": 69
+  },
+  "same_tool_approved_pair_count": 17,
+  "unique_model_input_count": 138,
+  "duplicate_model_input_count": 0,
+  "label_or_review_leakage_count": 0,
+  "shared_context_pair_validation": {
+    "passed": 69,
+    "failed": 0
+  },
+  "distinct_attempted_action_validation": {
+    "passed": 69,
+    "failed": 0
+  },
+  "session_group_integrity_validation": {
+    "passed": 69,
+    "failed": 0
+  },
+  "safe_risky_label_pair_validation": {
+    "passed": 69,
+    "failed": 0
+  },
+  "preserved_v0.1.2_structured_rows": 120,
+  "changed_v0.1.2_structured_rows": 0,
+  "new_p2_pair_ids": [
+    "agentdojo_pair_002",
+    "agentdojo_pair_005",
+    "agentdojo_pair_009",
+    "agentdojo_pair_026",
+    "agentdojo_pair_027",
+    "agentdojo_pair_035",
+    "agentdojo_pair_073",
+    "agentdojo_pair_089",
+    "agentdojo_pair_092"
+  ],
+  "model_input_character_length": {
+    "minimum": 1599,
+    "median": 2030.5,
+    "maximum": 3156,
+    "mean": 2106.514492753623
+  },
+  "outputs": {
+    "structured_labeled_pool": "data/processed/agentdojo_contextual_action_attempt_labeled_pool_v0.1.3.jsonl",
+    "bert_training_view": "data/processed/agentdojo_bert_training_view_v0.1.3.jsonl",
+    "cumulative_review_ledger": "data/interim/agentdojo_action_attempt_human_review_master_v0.1.3.csv"
+  },
+  "important_notes": [
+    "All 120 v0.1.2 structured rows were preserved without semantic changes.",
+    "Only the 18 rows belonging to the nine newly approved P2 deterministic repairs were materialized.",
+    "The 31 pairs still awaiting repair remain excluded from labeled artifacts.",
+    "Final labels remain outside model_input.text.",
+    "The v0.1.2 checkpoint artifacts were verified against their SHA-256 manifest before extension."
+  ]
+}

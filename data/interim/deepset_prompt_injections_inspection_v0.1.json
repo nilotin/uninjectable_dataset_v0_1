@@ -1,0 +1,60 @@
+{
+  "source_name": "deepset/prompt-injections",
+  "inspection_version": "0.1",
+  "generated_at": "2026-07-15T09:31:56.587825+00:00",
+  "total_rows": 662,
+  "total_label_counts": {
+    "0": 399,
+    "1": 263
+  },
+  "files": [
+    {
+      "filename": "test-00000-of-00001-701d16158af87368.parquet",
+      "sha256": "39ac797cabc157eeed58435a08593b2952bb6cb16fc394a2d383f447cc7b246e",
+      "rows": 116,
+      "columns": [
+        "text",
+        "label"
+      ],
+      "missing_values": {
+        "text": 0,
+        "label": 0
+      },
+      "label_counts": {
+        "0": 56,
+        "1": 60
+      },
+      "exact_duplicate_rows": 0,
+      "duplicate_normalized_texts": 0,
+      "unique_normalized_texts": 116
+    },
+    {
+      "filename": "train-00000-of-00001-9564e8b05b4757ab.parquet",
+      "sha256": "2e10bc7ab30f542c97e4e83e2a5683000b5057d25ec10908784c631d44124c04",
+      "rows": 546,
+      "columns": [
+        "text",
+        "label"
+      ],
+      "missing_values": {
+        "text": 0,
+        "label": 0
+      },
+      "label_counts": {
+        "0": 343,
+        "1": 203
+      },
+      "exact_duplicate_rows": 0,
+      "duplicate_normalized_texts": 0,
+      "unique_normalized_texts": 546
+    }
+  ],
+  "combined_duplicate_normalized_texts": 0,
+  "cross_split_duplicate_count": 0,
+  "cross_split_duplicate_examples": [],
+  "interpretation_notes": [
+    "Upstream label values are preserved only as source metadata.",
+    "Upstream label=1 must not automatically become Uninjectable general_risk_label=1.",
+    "The source is intended to provide candidate language seeds for later contextual composition."
+  ]
+}

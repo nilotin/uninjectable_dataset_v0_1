@@ -1,0 +1,730 @@
+{
+  "artifact_version": "0.1.3",
+  "dataset": "agentdojo_turkish_pilot",
+  "row_count": 24,
+  "models": {
+    "dbmdz/bert-base-turkish-cased": {
+      "max_length": 512,
+      "special_token_count": 2,
+      "content_token_budget": 510,
+      "section_token_lengths": {
+        "USER_GOAL": {
+          "minimum": 20,
+          "mean": 61.5,
+          "median": 56.5,
+          "maximum": 118
+        },
+        "AGENT_CONTEXT": {
+          "minimum": 124,
+          "mean": 214.5,
+          "median": 189.5,
+          "maximum": 355
+        },
+        "SOURCE": {
+          "minimum": 66,
+          "mean": 77.92,
+          "median": 74.5,
+          "maximum": 103
+        },
+        "CONTEXT_BINDINGS": {
+          "minimum": 43,
+          "mean": 70.17,
+          "median": 43.0,
+          "maximum": 144
+        },
+        "RETRIEVED_CONTENT": {
+          "minimum": 34,
+          "mean": 65.58,
+          "median": 56.5,
+          "maximum": 166
+        },
+        "USER_AUTHORIZATION": {
+          "minimum": 46,
+          "mean": 79.92,
+          "median": 77.5,
+          "maximum": 150
+        },
+        "POLICY_CONTEXT": {
+          "minimum": 123,
+          "mean": 123,
+          "median": 123.0,
+          "maximum": 123
+        },
+        "ATTEMPTED_ACTION": {
+          "minimum": 56,
+          "mean": 96.67,
+          "median": 97.0,
+          "maximum": 167
+        }
+      },
+      "prefix_before_attempted_action": {
+        "minimum": 521,
+        "mean": 692.58,
+        "median": 698.0,
+        "maximum": 945
+      },
+      "attempted_action": {
+        "minimum_tokens": 56,
+        "mean_tokens": 96.67,
+        "maximum_tokens": 167,
+        "mean_visible_tokens_at_512": 0,
+        "started_count": 0,
+        "fully_preserved_count": 0,
+        "partially_preserved_count": 0,
+        "fully_removed_count": 24
+      },
+      "rows": [
+        {
+          "row_id": "agentdojo_pair_003_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_003_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 557,
+          "attempted_action_tokens": 99,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_003_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_003_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 557,
+          "attempted_action_tokens": 134,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_015_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_015_tr",
+          "suite": "banking",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 521,
+          "attempted_action_tokens": 80,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_015_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_015_tr",
+          "suite": "banking",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 521,
+          "attempted_action_tokens": 81,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_018_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_018_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 653,
+          "attempted_action_tokens": 116,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_018_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_018_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 653,
+          "attempted_action_tokens": 106,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_021_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_021_tr",
+          "suite": "slack",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 549,
+          "attempted_action_tokens": 77,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_021_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_021_tr",
+          "suite": "slack",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 549,
+          "attempted_action_tokens": 81,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_031_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_031_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 521,
+          "attempted_action_tokens": 59,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_031_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_031_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 521,
+          "attempted_action_tokens": 68,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_040_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_040_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 593,
+          "attempted_action_tokens": 88,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_040_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_040_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 593,
+          "attempted_action_tokens": 78,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "suite": "travel",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 860,
+          "attempted_action_tokens": 75,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "suite": "travel",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 860,
+          "attempted_action_tokens": 56,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_059_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 945,
+          "attempted_action_tokens": 85,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_059_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 945,
+          "attempted_action_tokens": 114,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_060_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_060_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 811,
+          "attempted_action_tokens": 106,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_060_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_060_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 811,
+          "attempted_action_tokens": 108,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_082_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_082_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 790,
+          "attempted_action_tokens": 167,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_082_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_082_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 790,
+          "attempted_action_tokens": 126,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_091_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_091_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 768,
+          "attempted_action_tokens": 104,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_091_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_091_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 768,
+          "attempted_action_tokens": 115,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_095_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_095_tr",
+          "suite": "workspace",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 743,
+          "attempted_action_tokens": 102,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_095_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_095_tr",
+          "suite": "workspace",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 743,
+          "attempted_action_tokens": 95,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        }
+      ]
+    },
+    "google-bert/bert-base-multilingual-cased": {
+      "max_length": 512,
+      "special_token_count": 2,
+      "content_token_budget": 510,
+      "section_token_lengths": {
+        "USER_GOAL": {
+          "minimum": 23,
+          "mean": 84.67,
+          "median": 73.0,
+          "maximum": 192
+        },
+        "AGENT_CONTEXT": {
+          "minimum": 81,
+          "mean": 149.5,
+          "median": 134.0,
+          "maximum": 249
+        },
+        "SOURCE": {
+          "minimum": 42,
+          "mean": 51.92,
+          "median": 49.0,
+          "maximum": 70
+        },
+        "CONTEXT_BINDINGS": {
+          "minimum": 31,
+          "mean": 52.08,
+          "median": 31.0,
+          "maximum": 109
+        },
+        "RETRIEVED_CONTENT": {
+          "minimum": 39,
+          "mean": 83.17,
+          "median": 75.0,
+          "maximum": 209
+        },
+        "USER_AUTHORIZATION": {
+          "minimum": 33,
+          "mean": 60.17,
+          "median": 56.5,
+          "maximum": 115
+        },
+        "POLICY_CONTEXT": {
+          "minimum": 217,
+          "mean": 217,
+          "median": 217.0,
+          "maximum": 217
+        },
+        "ATTEMPTED_ACTION": {
+          "minimum": 38,
+          "mean": 71.21,
+          "median": 69.0,
+          "maximum": 126
+        }
+      },
+      "prefix_before_attempted_action": {
+        "minimum": 534,
+        "mean": 698.5,
+        "median": 704.5,
+        "maximum": 929
+      },
+      "attempted_action": {
+        "minimum_tokens": 38,
+        "mean_tokens": 71.21,
+        "maximum_tokens": 126,
+        "mean_visible_tokens_at_512": 0,
+        "started_count": 0,
+        "fully_preserved_count": 0,
+        "partially_preserved_count": 0,
+        "fully_removed_count": 24
+      },
+      "rows": [
+        {
+          "row_id": "agentdojo_pair_003_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_003_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 595,
+          "attempted_action_tokens": 71,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_003_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_003_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 595,
+          "attempted_action_tokens": 104,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_015_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_015_tr",
+          "suite": "banking",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 543,
+          "attempted_action_tokens": 55,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_015_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_015_tr",
+          "suite": "banking",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 543,
+          "attempted_action_tokens": 56,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_018_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_018_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 693,
+          "attempted_action_tokens": 91,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_018_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_018_tr",
+          "suite": "banking",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 693,
+          "attempted_action_tokens": 78,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_021_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_021_tr",
+          "suite": "slack",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 586,
+          "attempted_action_tokens": 55,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_021_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_021_tr",
+          "suite": "slack",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 586,
+          "attempted_action_tokens": 62,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_031_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_031_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 534,
+          "attempted_action_tokens": 42,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_031_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_031_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 534,
+          "attempted_action_tokens": 50,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_040_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_040_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 578,
+          "attempted_action_tokens": 59,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_040_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_040_tr",
+          "suite": "slack",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 578,
+          "attempted_action_tokens": 52,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "suite": "travel",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 890,
+          "attempted_action_tokens": 56,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_050_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_050_tr",
+          "suite": "travel",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 890,
+          "attempted_action_tokens": 38,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_059_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 929,
+          "attempted_action_tokens": 60,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_059_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_059_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 929,
+          "attempted_action_tokens": 86,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_060_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_060_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 799,
+          "attempted_action_tokens": 80,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_060_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_060_tr",
+          "suite": "travel",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 799,
+          "attempted_action_tokens": 86,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_082_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_082_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 762,
+          "attempted_action_tokens": 126,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_082_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_082_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 762,
+          "attempted_action_tokens": 92,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_091_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_091_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "safe",
+          "prefix_tokens_before_action": 757,
+          "attempted_action_tokens": 80,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_091_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_091_tr",
+          "suite": "workspace",
+          "split": "train",
+          "variant": "risky",
+          "prefix_tokens_before_action": 757,
+          "attempted_action_tokens": 87,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_095_tr::safe::action_attempt",
+          "pair_id": "agentdojo_pair_095_tr",
+          "suite": "workspace",
+          "split": "validation",
+          "variant": "safe",
+          "prefix_tokens_before_action": 716,
+          "attempted_action_tokens": 76,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        },
+        {
+          "row_id": "agentdojo_pair_095_tr::risky::action_attempt",
+          "pair_id": "agentdojo_pair_095_tr",
+          "suite": "workspace",
+          "split": "validation",
+          "variant": "risky",
+          "prefix_tokens_before_action": 716,
+          "attempted_action_tokens": 67,
+          "visible_action_tokens_at_512": 0,
+          "action_visibility_ratio": 0.0,
+          "action_fully_preserved": false
+        }
+      ]
+    }
+  },
+  "important_note": "Analysis assumes standard right-side truncation with max_length=512."
+}

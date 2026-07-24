@@ -1,0 +1,27 @@
+{
+  "dataset": "agentdojo",
+  "audit_version": "0.1",
+  "generated_at": "2026-07-18T13:42:52.991740+00:00",
+  "benchmark_version": "v1.2.2",
+  "legitimate_structures_reviewed": 86,
+  "review_decision_counts": {
+    "high_value_legitimate_structure": 51,
+    "usable_legitimate_structure": 31,
+    "ambiguous_structure": 4,
+    "redundant_or_low_value_structure": 0
+  },
+  "action_impact_counts": {
+    "high": 30,
+    "medium": 29,
+    "low": 27
+  },
+  "composition_eligible_count": 82,
+  "excluded_from_composition_count": 4,
+  "unique_scenario_family_count": 83,
+  "composition_policy": {
+    "high_value_legitimate_structure": "Included. Provides sensitive, state-changing, destructive, access-control, financial, credential-related, or broad-scope actions under explicit legitimate authorization.",
+    "usable_legitimate_structure": "Included. Provides normal read-only or lower-impact legitimate user goals.",
+    "ambiguous_structure": "Retained in the audit ledger but excluded from contextual composition until prompt/reference-sequence mismatches are resolved."
+  },
+  "important_note": "Legitimate structure value and action impact do not determine the Phase-1 runtime general_risk_label. High-impact legitimate actions are intentionally retained as hard-negative composition material."
+}

@@ -1,0 +1,91 @@
+{
+  "dataset": "agentdojo",
+  "artifact_version": "0.1",
+  "generated_at": "2026-07-18T17:44:28.618099+00:00",
+  "artifact_status": "interim_pending_human_review",
+  "pair_count": 100,
+  "row_count": 200,
+  "event_type_counts": {
+    "action.attempt": 200
+  },
+  "variant_counts": {
+    "safe": 100,
+    "risky": 100
+  },
+  "proposed_binary_label_counts": {
+    "0": 100,
+    "1": 100
+  },
+  "suite_pair_counts": {
+    "banking": 20,
+    "slack": 20,
+    "travel": 25,
+    "workspace": 35
+  },
+  "suite_row_counts": {
+    "banking": 40,
+    "slack": 40,
+    "travel": 50,
+    "workspace": 70
+  },
+  "same_tool_pair_count": 17,
+  "same_tool_runtime_row_count": 34,
+  "different_tool_pair_count": 83,
+  "unique_legitimate_structure_count": 69,
+  "unique_attacker_structure_count": 26,
+  "unique_injection_vector_count": 39,
+  "attempted_tool_counts": {
+    "add_calendar_event_participants": 2,
+    "add_user_to_channel": 3,
+    "append_to_file": 1,
+    "create_calendar_event": 29,
+    "delete_email": 5,
+    "delete_file": 6,
+    "get_car_price_per_day": 2,
+    "get_day_calendar_events": 5,
+    "get_hotels_address": 2,
+    "get_hotels_prices": 1,
+    "get_price_for_restaurants": 3,
+    "get_rating_reviews_for_car_rental": 2,
+    "get_rating_reviews_for_hotels": 1,
+    "get_restaurants_address": 2,
+    "get_unread_emails": 2,
+    "get_user_information": 7,
+    "get_webpage": 6,
+    "invite_user_to_slack": 4,
+    "list_files": 2,
+    "post_webpage": 9,
+    "remove_user_from_slack": 3,
+    "reschedule_calendar_event": 1,
+    "reserve_hotel": 11,
+    "schedule_transaction": 1,
+    "search_calendar_events": 3,
+    "search_emails": 4,
+    "search_files": 1,
+    "send_channel_message": 5,
+    "send_direct_message": 10,
+    "send_email": 27,
+    "send_money": 22,
+    "share_file": 1,
+    "update_password": 4,
+    "update_scheduled_transaction": 11,
+    "update_user_info": 2
+  },
+  "model_input_character_length": {
+    "minimum": 1383,
+    "median": 1943.5,
+    "maximum": 3067,
+    "mean": 2048.895
+  },
+  "duplicate_model_input_count": 0,
+  "final_general_risk_label_count": 0,
+  "review_queue_row_count": 100,
+  "important_notes": [
+    "Each pair produces one safe and one risky action.attempt row.",
+    "Both variants use the same user goal, retrieved content, agent context, policy context, and authorization scope.",
+    "Only the attempted action changes across the two variants.",
+    "Proposed labels are stored exclusively inside review metadata and are excluded from model_input.text.",
+    "No policy-engine output, runtime decision, risk score, or final general_risk_label is present.",
+    "Both rows in a pair share the same session_group_id and must remain in the same dataset split."
+  ]
+}

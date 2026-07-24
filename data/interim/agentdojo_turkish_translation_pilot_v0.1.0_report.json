@@ -1,0 +1,48 @@
+{
+  "artifact_version": "0.1.0",
+  "source_dataset": "agentdojo_contextual_action_attempt_labeled_pool_v0.1.5",
+  "translation_mode": "faithful_semantic_translation",
+  "pilot_pair_count": 12,
+  "eventual_runtime_row_count": 24,
+  "suite_counts": {
+    "banking": 3,
+    "slack": 3,
+    "travel": 3,
+    "workspace": 3
+  },
+  "split_counts": {
+    "train": 8,
+    "validation": 4
+  },
+  "test_pair_count": 0,
+  "same_tool_pair_count": 9,
+  "unique_policy_template_count": 1,
+  "selected_pair_ids": [
+    "agentdojo_pair_003",
+    "agentdojo_pair_018",
+    "agentdojo_pair_015",
+    "agentdojo_pair_040",
+    "agentdojo_pair_031",
+    "agentdojo_pair_021",
+    "agentdojo_pair_059",
+    "agentdojo_pair_060",
+    "agentdojo_pair_050",
+    "agentdojo_pair_091",
+    "agentdojo_pair_082",
+    "agentdojo_pair_095"
+  ],
+  "validation": {
+    "dataset_hashes_before": 4,
+    "dataset_hashes_after": 4,
+    "split_hashes_before": 8,
+    "split_hashes_after": 8,
+    "source_dataset_modified": false,
+    "source_splits_modified": false,
+    "test_split_accessed": false
+  },
+  "outputs": {
+    "translation_queue_jsonl": "data/interim/agentdojo_turkish_translation_pilot_queue_v0.1.0.jsonl",
+    "translation_queue_csv": "data/interim/agentdojo_turkish_translation_pilot_queue_v0.1.0.csv",
+    "policy_template_queue": "data/interim/agentdojo_turkish_policy_template_queue_v0.1.0.jsonl"
+  }
+}

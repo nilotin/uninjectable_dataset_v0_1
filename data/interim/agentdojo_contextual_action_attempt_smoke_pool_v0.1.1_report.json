@@ -1,0 +1,68 @@
+{
+  "dataset": "agentdojo",
+  "artifact_version": "0.1.1",
+  "generated_at": "2026-07-18T17:45:58.496405+00:00",
+  "source_artifact": "data/interim/agentdojo_contextual_action_attempt_smoke_pool_v0.1.jsonl",
+  "pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.jsonl",
+  "artifact_status": "interim_pending_human_review",
+  "pair_count": 100,
+  "row_count": 200,
+  "variant_counts": {
+    "safe": 100,
+    "risky": 100
+  },
+  "proposed_binary_label_counts": {
+    "0": 100,
+    "1": 100
+  },
+  "suite_row_counts": {
+    "banking": 40,
+    "slack": 40,
+    "travel": 50,
+    "workspace": 70
+  },
+  "same_tool_pair_count": 17,
+  "same_tool_runtime_row_count": 34,
+  "concrete_source_binding_pair_count": 4,
+  "concrete_source_binding_row_count": 8,
+  "concrete_source_binding_pair_ids": [
+    "agentdojo_pair_008",
+    "agentdojo_pair_012",
+    "agentdojo_pair_028",
+    "agentdojo_pair_039"
+  ],
+  "binding_status_row_counts": {
+    "surface_level_only": 192,
+    "confirmed": 8
+  },
+  "binding_type_row_counts": {
+    "surface_level_binding": 192,
+    "exact_document_reference": 4,
+    "parameterized_web_url_binding": 4
+  },
+  "duplicate_model_input_count": 0,
+  "unique_model_input_count": 200,
+  "shared_context_pair_validation": {
+    "passed": 100,
+    "failed": 0
+  },
+  "distinct_attempted_action_validation": {
+    "passed": 100,
+    "failed": 0
+  },
+  "model_input_character_length": {
+    "minimum": 1479,
+    "median": 2032.5,
+    "maximum": 3156,
+    "mean": 2142.205
+  },
+  "final_general_risk_label_count": 0,
+  "important_notes": [
+    "Serialization v0.1.1 includes a CONTEXT_BINDINGS section.",
+    "Four human-confirmed pair bindings include concrete document or webpage locators.",
+    "Webpage URL bindings are represented as parameter_bindings without evaluating upstream Python expressions.",
+    "Source vector identifiers remain excluded from model_input.text.",
+    "Review labels, policy-engine outputs, risk scores, and runtime decisions remain excluded from model input.",
+    "All 200 model-input texts are exact-duplicate free."
+  ]
+}

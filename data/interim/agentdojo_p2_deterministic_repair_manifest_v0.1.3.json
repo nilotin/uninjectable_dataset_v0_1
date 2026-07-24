@@ -1,0 +1,140 @@
+{
+  "artifact_version": "0.1.3",
+  "generated_at": "2026-07-20T19:09:38.905178+00:00",
+  "source_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.2_p1_repaired.jsonl",
+  "candidate_pair_plan": "data/interim/agentdojo_contextual_pair_plan_v0.1.3_p2_deterministic_repaired.jsonl",
+  "second_review_queue": "data/interim/agentdojo_p2_deterministic_second_review_queue_v0.1.3.csv",
+  "repair_count": 9,
+  "repair_pair_ids": [
+    "agentdojo_pair_002",
+    "agentdojo_pair_005",
+    "agentdojo_pair_009",
+    "agentdojo_pair_026",
+    "agentdojo_pair_027",
+    "agentdojo_pair_035",
+    "agentdojo_pair_073",
+    "agentdojo_pair_089",
+    "agentdojo_pair_092"
+  ],
+  "change_records": [
+    {
+      "pair_id": "agentdojo_pair_002",
+      "suite": "banking",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "injection_bill_text",
+      "new_vector_id": "injection_landloard_notice",
+      "source_locator": "landlord-notices.txt",
+      "binding_type": "exact_filesystem_document_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_005",
+      "suite": "banking",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "injection_address_change",
+      "new_vector_id": "injection_bill_text",
+      "source_locator": "bill-december-2023.txt",
+      "binding_type": "exact_filesystem_document_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_009",
+      "suite": "banking",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "injection_address_change",
+      "new_vector_id": "injection_landloard_notice",
+      "source_locator": "landlord-notices.txt",
+      "binding_type": "exact_filesystem_document_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_026",
+      "suite": "slack",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "prompt_injection_restaurant",
+      "new_vector_id": "injection_web_0",
+      "source_locator": "www.informations.com",
+      "binding_type": "exact_task_constant_web_url_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_027",
+      "suite": "slack",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "injection_dora_0",
+      "new_vector_id": "injection_web_0",
+      "source_locator": "www.informations.com",
+      "binding_type": "exact_task_constant_web_url_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_035",
+      "suite": "slack",
+      "repair_type": "binding_only",
+      "old_vector_id": "injection_web_0",
+      "new_vector_id": "injection_web_0",
+      "source_locator": "www.informations.com",
+      "binding_type": "exact_task_constant_web_url_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_073",
+      "suite": "workspace",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "drive_feedback_injection",
+      "new_vector_id": "drive_keywords_stuffing_injection",
+      "source_locator": "newest-client-meeting-minutes.docx",
+      "binding_type": "adversarial_keyword_search_binding",
+      "binding_status": "confirmed_by_vector_semantics"
+    },
+    {
+      "pair_id": "agentdojo_pair_089",
+      "suite": "workspace",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "drive_feedback_injection",
+      "new_vector_id": "drive_recipe_injection",
+      "source_locator": "recipe-collection.docx",
+      "binding_type": "exact_cloud_document_filename_binding",
+      "binding_status": "confirmed"
+    },
+    {
+      "pair_id": "agentdojo_pair_092",
+      "suite": "workspace",
+      "repair_type": "replace_vector_and_binding",
+      "old_vector_id": "drive_team_building_injection",
+      "new_vector_id": "drive_keywords_stuffing_injection",
+      "source_locator": "newest-client-meeting-minutes.docx",
+      "binding_type": "adversarial_keyword_search_binding",
+      "binding_status": "confirmed_by_vector_semantics"
+    }
+  ],
+  "validation": {
+    "pair_count": 100,
+    "duplicate_pair_ids": 0,
+    "duplicate_composition_triples": 0,
+    "same_tool_pair_count": 17,
+    "repaired_same_tool_pair_count": 0,
+    "source_locator_present_for_all_repairs": true,
+    "second_review_required": true
+  },
+  "important_notes": [
+    "The v0.1.2 pair plan was not modified.",
+    "The v0.1.2 labeled pool and BERT training view were not modified.",
+    "No final labels or human-review decisions were modified.",
+    "All nine repaired pairs require a second human-review decision."
+  ],
+  "second_human_review": {
+    "reviewed_at": "2026-07-20T19:14:14.188567+00:00",
+    "reviewed_pair_count": 9,
+    "approved_pair_count": 9,
+    "needs_further_revision_pair_count": 0,
+    "excluded_pair_count": 0,
+    "newly_label_eligible_runtime_row_count": 18,
+    "cumulative_approved_pair_count": 69,
+    "remaining_revision_pair_count": 31,
+    "cumulative_label_eligible_runtime_row_count": 138,
+    "decisions_written_to": "data/interim/agentdojo_p2_deterministic_second_review_queue_v0.1.3.csv",
+    "final_labels_modified": false,
+    "labeled_pool_modified": false
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "dataset": "agentdojo",
+  "artifact_version": "0.1.5",
+  "split_version": "0.1.5",
+  "split_strategy": "deterministic_group_aware_stratified_by_suite_and_same_tool",
+  "split_seed": "agentdojo-v0.1.5-group-split-2026-07-21",
+  "source_approved_pair_count": 97,
+  "source_runtime_row_count": 194,
+  "excluded_pair_count": 3,
+  "target_group_counts": {
+    "train": 68,
+    "validation": 15,
+    "test": 14
+  },
+  "split_statistics": {
+    "train": {
+      "group_count": 68,
+      "runtime_row_count": 136,
+      "label_counts": {
+        "0": 68,
+        "1": 68
+      },
+      "suite_group_counts": {
+        "banking": 14,
+        "slack": 14,
+        "travel": 17,
+        "workspace": 23
+      },
+      "same_tool_group_count": 12
+    },
+    "validation": {
+      "group_count": 15,
+      "runtime_row_count": 30,
+      "label_counts": {
+        "0": 15,
+        "1": 15
+      },
+      "suite_group_counts": {
+        "banking": 3,
+        "slack": 3,
+        "travel": 4,
+        "workspace": 5
+      },
+      "same_tool_group_count": 2
+    },
+    "test": {
+      "group_count": 14,
+      "runtime_row_count": 28,
+      "label_counts": {
+        "0": 14,
+        "1": 14
+      },
+      "suite_group_counts": {
+        "banking": 3,
+        "slack": 3,
+        "travel": 4,
+        "workspace": 4
+      },
+      "same_tool_group_count": 3
+    }
+  },
+  "stratum_counts": {
+    "banking|same_tool=false": 12,
+    "banking|same_tool=true": 8,
+    "slack|same_tool=false": 17,
+    "slack|same_tool=true": 3,
+    "travel|same_tool=false": 23,
+    "travel|same_tool=true": 2,
+    "workspace|same_tool=false": 28,
+    "workspace|same_tool=true": 4
+  },
+  "stratum_allocation": {
+    "banking|same_tool=false": {
+      "train": 8,
+      "validation": 2,
+      "test": 2
+    },
+    "banking|same_tool=true": {
+      "train": 6,
+      "validation": 1,
+      "test": 1
+    },
+    "slack|same_tool=false": {
+      "train": 12,
+      "validation": 3,
+      "test": 2
+    },
+    "slack|same_tool=true": {
+      "train": 2,
+      "validation": 0,
+      "test": 1
+    },
+    "travel|same_tool=false": {
+      "train": 16,
+      "validation": 4,
+      "test": 3
+    },
+    "travel|same_tool=true": {
+      "train": 1,
+      "validation": 0,
+      "test": 1
+    },
+    "workspace|same_tool=false": {
+      "train": 20,
+      "validation": 4,
+      "test": 4
+    },
+    "workspace|same_tool=true": {
+      "train": 3,
+      "validation": 1,
+      "test": 0
+    }
+  },
+  "validation": {
+    "checkpoint_hashes_verified_before": 4,
+    "checkpoint_hashes_verified_after": 4,
+    "session_group_overlap_count": 0,
+    "pair_overlap_count": 0,
+    "all_groups_have_safe_and_risky_rows": true,
+    "all_splits_label_balanced": true,
+    "source_checkpoint_modified": false
+  },
+  "assignments": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_group_split_assignments_v0.1.5.jsonl",
+  "outputs": {
+    "train": {
+      "structured_pool": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_contextual_action_attempt_labeled_pool_v0.1.5_train.jsonl",
+      "training_view": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_bert_training_view_v0.1.5_train.jsonl"
+    },
+    "validation": {
+      "structured_pool": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_contextual_action_attempt_labeled_pool_v0.1.5_validation.jsonl",
+      "training_view": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_bert_training_view_v0.1.5_validation.jsonl"
+    },
+    "test": {
+      "structured_pool": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_contextual_action_attempt_labeled_pool_v0.1.5_test.jsonl",
+      "training_view": "data/processed/agentdojo_group_aware_split_v0.1.5/agentdojo_bert_training_view_v0.1.5_test.jsonl"
+    }
+  },
+  "important_notes": [
+    "Safe and risky rows from the same session_group_id are always placed in the same split.",
+    "Each split contains exactly one safe and one risky row per assigned pair.",
+    "The three excluded pairs are absent from every split.",
+    "The immutable v0.1.5 checkpoint artifacts were not modified.",
+    "The test split should remain sealed until final model evaluation."
+  ]
+}

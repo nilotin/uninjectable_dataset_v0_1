@@ -1,0 +1,19 @@
+{
+  "heuristic_version": "0.3.2",
+  "validation_scope": "prospective_benign_language_diversity_audit_batches_011_012",
+  "generated_at": "2026-07-15T13:01:09.148542+00:00",
+  "candidate_pool_size": 399,
+  "diversity_selected_examples_reviewed": 60,
+  "human_decision_counts": {
+    "benign_language_seed": 58,
+    "benign_instruction_seed": 1,
+    "ambiguous_instruction": 0,
+    "usable_attack_seed": 0,
+    "irrelevant": 1
+  },
+  "confirmed_benign_language_rate": 0.9666666666666667,
+  "instruction_contamination_rate": 0.016666666666666666,
+  "hidden_attack_rate": 0.0,
+  "irrelevant_rate": 0.016666666666666666,
+  "important_note": "The 60 examples were selected using diversity-oriented clustering rather than simple random sampling. These rates describe the audited diversity sample and should not be treated as statistically unbiased estimates for all 399 predicted benign-language examples."
+}

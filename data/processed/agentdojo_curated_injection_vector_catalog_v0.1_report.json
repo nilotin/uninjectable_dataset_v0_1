@@ -1,0 +1,93 @@
+{
+  "dataset": "agentdojo",
+  "benchmark_version": "v1.2.2",
+  "catalog_version": "0.1",
+  "generated_at": "2026-07-18T16:31:43.065463+00:00",
+  "total_vectors": 39,
+  "suite_counts": {
+    "banking": 4,
+    "slack": 6,
+    "travel": 13,
+    "workspace": 16
+  },
+  "review_decision_counts": {
+    "confirmed_surface_metadata": 33,
+    "corrected_surface_metadata": 6
+  },
+  "surface_type_counts": {
+    "external_web_content_or_review": 18,
+    "file_or_cloud_document": 7,
+    "calendar_event_or_description": 7,
+    "email_message_or_metadata": 5,
+    "bank_transaction_or_payment_metadata": 1,
+    "slack_channel_metadata": 1
+  },
+  "source_type_counts": {
+    "third_party_review_content": 13,
+    "calendar_event_description": 7,
+    "external_webpage_content": 5,
+    "email_body_content": 5,
+    "cloud_document_content": 4,
+    "document_content": 3,
+    "transaction_metadata": 1,
+    "channel_metadata": 1
+  },
+  "trust_level_counts": {
+    "untrusted": 39
+  },
+  "retrieval_channel_counts": {
+    "filesystem_document_read": 3,
+    "bank_transaction_history_read": 1,
+    "external_web_fetch": 5,
+    "slack_channel_discovery": 1,
+    "third_party_review_retrieval": 13,
+    "calendar_search_or_read": 7,
+    "cloud_drive_search_or_read": 4,
+    "email_search_or_read": 5
+  },
+  "total_environment_locations": 41,
+  "multi_location_vectors": [
+    {
+      "suite": "slack",
+      "vector_id": "prompt_injection_channel",
+      "location_count": 2
+    },
+    {
+      "suite": "travel",
+      "vector_id": "injection_hotels_2",
+      "location_count": 2
+    }
+  ],
+  "corrected_vector_keys": [
+    {
+      "suite": "slack",
+      "vector_id": "injection_dora_0"
+    },
+    {
+      "suite": "slack",
+      "vector_id": "injection_phishing_1"
+    },
+    {
+      "suite": "slack",
+      "vector_id": "injection_web_0"
+    },
+    {
+      "suite": "slack",
+      "vector_id": "prompt_injection_channel"
+    },
+    {
+      "suite": "slack",
+      "vector_id": "prompt_injection_eve_blog"
+    },
+    {
+      "suite": "slack",
+      "vector_id": "prompt_injection_restaurant"
+    }
+  ],
+  "important_notes": [
+    "All vectors are attacker-controllable benchmark insertion slots.",
+    "Trust level expresses provenance, not whether the vector's default text is malicious.",
+    "Runtime general_risk_label must be assigned only after the vector is composed with user intent, agent permissions, retrieved content, policy, and attempted action.",
+    "Six Slack-suite vectors required surface correction because five are web content and one is channel metadata."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "heuristic_version": "0.3.2",
+  "validation_scope": "prospective_batches_008_009_010",
+  "generated_at": "2026-07-15T12:46:26.877040+00:00",
+  "predicted_attack_pool_reviewed": 10,
+  "audited_non_attack_or_uncertain_pool_reviewed": 60,
+  "true_positives": 10,
+  "false_positives": 0,
+  "false_negatives_found": 10,
+  "prospective_precision": 1.0,
+  "attack_recall_within_this_70_example_prospective_subset": 0.5,
+  "missed_attack_rate_within_60_example_audited_non_attack_pool": 0.16666666666666666,
+  "important_note": "This recall value applies only to the 70-example prospective validation subset consisting of all 10 predicted attacks and all 60 examples predicted as ambiguous or benign_instruction. The separate pool of 399 predicted benign_language examples has not yet been human-audited and is therefore outside this recall estimate."
+}

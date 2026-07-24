@@ -1,0 +1,11 @@
+{
+  "heuristic_version": "0.3.2",
+  "status": "frozen_for_prospective_validation",
+  "retrospective_reviewed_examples": 193,
+  "retrospective_attack_true_positives": 112,
+  "retrospective_attack_false_positives": 0,
+  "retrospective_attack_false_negatives": 0,
+  "retrospective_attack_precision": 1.0,
+  "retrospective_attack_recall": 1.0,
+  "important_note": "These metrics are retrospective calibration metrics on examples used during heuristic development. They are not unbiased estimates of unseen performance."
+}

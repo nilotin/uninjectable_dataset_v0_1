@@ -1,0 +1,201 @@
+{
+  "artifact": "agentdojo_contextual_action_attempt_smoke_pool_v0.1",
+  "row_count": 200,
+  "unique_model_input_count": 194,
+  "duplicate_group_count": 6,
+  "duplicate_row_count": 12,
+  "duplicate_excess_count": 6,
+  "duplicate_group_size_counts": {
+    "2": 6
+  },
+  "same_label_duplicate_group_count": 6,
+  "conflicting_label_group_count": 0,
+  "cross_pair_duplicate_group_count": 6,
+  "same_pair_duplicate_group_count": 0,
+  "fingerprint_mismatch_group_count": 6,
+  "duplicate_suite_counts": {
+    "banking": 8,
+    "slack": 4
+  },
+  "duplicate_variant_counts": {
+    "risky": 6,
+    "safe": 6
+  },
+  "duplicate_tool_counts": {
+    "send_money": 4,
+    "send_direct_message": 2,
+    "update_user_info": 4,
+    "post_webpage": 2
+  },
+  "duplicate_vector_counts": {
+    "injection_landloard_notice": 4,
+    "injection_address_change": 4,
+    "injection_phishing_1": 2,
+    "injection_dora_0": 2
+  },
+  "duplicate_groups": [
+    {
+      "duplicate_group_id": "duplicate_group_01",
+      "input_signature": "010ed6ec58b34063",
+      "group_size": 2,
+      "pair_ids": [
+        "agentdojo_pair_008",
+        "agentdojo_pair_017"
+      ],
+      "row_ids": [
+        "agentdojo_pair_008::risky::action_attempt",
+        "agentdojo_pair_017::risky::action_attempt"
+      ],
+      "variants": [
+        "risky"
+      ],
+      "proposed_labels": [
+        1
+      ],
+      "tools": [
+        "send_money"
+      ],
+      "vectors": [
+        "injection_address_change",
+        "injection_landloard_notice"
+      ]
+    },
+    {
+      "duplicate_group_id": "duplicate_group_02",
+      "input_signature": "0ac8847cf08310c5",
+      "group_size": 2,
+      "pair_ids": [
+        "agentdojo_pair_028",
+        "agentdojo_pair_039"
+      ],
+      "row_ids": [
+        "agentdojo_pair_028::risky::action_attempt",
+        "agentdojo_pair_039::risky::action_attempt"
+      ],
+      "variants": [
+        "risky"
+      ],
+      "proposed_labels": [
+        1
+      ],
+      "tools": [
+        "send_direct_message"
+      ],
+      "vectors": [
+        "injection_dora_0",
+        "injection_phishing_1"
+      ]
+    },
+    {
+      "duplicate_group_id": "duplicate_group_03",
+      "input_signature": "7c274616d4245518",
+      "group_size": 2,
+      "pair_ids": [
+        "agentdojo_pair_001",
+        "agentdojo_pair_012"
+      ],
+      "row_ids": [
+        "agentdojo_pair_001::risky::action_attempt",
+        "agentdojo_pair_012::risky::action_attempt"
+      ],
+      "variants": [
+        "risky"
+      ],
+      "proposed_labels": [
+        1
+      ],
+      "tools": [
+        "send_money"
+      ],
+      "vectors": [
+        "injection_address_change",
+        "injection_landloard_notice"
+      ]
+    },
+    {
+      "duplicate_group_id": "duplicate_group_04",
+      "input_signature": "896154eecbe1c751",
+      "group_size": 2,
+      "pair_ids": [
+        "agentdojo_pair_008",
+        "agentdojo_pair_017"
+      ],
+      "row_ids": [
+        "agentdojo_pair_008::safe::action_attempt",
+        "agentdojo_pair_017::safe::action_attempt"
+      ],
+      "variants": [
+        "safe"
+      ],
+      "proposed_labels": [
+        0
+      ],
+      "tools": [
+        "update_user_info"
+      ],
+      "vectors": [
+        "injection_address_change",
+        "injection_landloard_notice"
+      ]
+    },
+    {
+      "duplicate_group_id": "duplicate_group_05",
+      "input_signature": "b7dfe6d3e1fbbc8e",
+      "group_size": 2,
+      "pair_ids": [
+        "agentdojo_pair_028",
+        "agentdojo_pair_039"
+      ],
+      "row_ids": [
+        "agentdojo_pair_028::safe::action_attempt",
+        "agentdojo_pair_039::safe::action_attempt"
+      ],
+      "variants": [
+        "safe"
+      ],
+      "proposed_labels": [
+        0
+      ],
+      "tools": [
+        "post_webpage"
+      ],
+      "vectors": [
+        "injection_dora_0",
+        "injection_phishing_1"
+      ]
+    },
+    {
+      "duplicate_group_id": "duplicate_group_06",
+      "input_signature": "db5b0d2a163f7713",
+      "group_size": 2,
+      "pair_ids": [
+        "agentdojo_pair_001",
+        "agentdojo_pair_012"
+      ],
+      "row_ids": [
+        "agentdojo_pair_001::safe::action_attempt",
+        "agentdojo_pair_012::safe::action_attempt"
+      ],
+      "variants": [
+        "safe"
+      ],
+      "proposed_labels": [
+        0
+      ],
+      "tools": [
+        "update_user_info"
+      ],
+      "vectors": [
+        "injection_address_change",
+        "injection_landloard_notice"
+      ]
+    }
+  ],
+  "important_notes": [
+    "Exact duplicate detection is based on model_input.text.",
+    "Within-pair attempted actions were already validated as distinct during smoke-pool generation.",
+    "A duplicate group containing both labels 0 and 1 is a critical label contradiction.",
+    "Same-label duplicates are not contradictory but reduce effective dataset diversity.",
+    "No smoke-pool rows are modified by this diagnostic script."
+  ]
+}

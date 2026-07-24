@@ -1,0 +1,1152 @@
+{
+  "artifact_version": "0.2.1",
+  "translation_batch_id": "agentdojo_tr_batch_001",
+  "translated_pair_count": 10,
+  "eventual_runtime_row_count": 20,
+  "translation_status": "translated_pending_human_review",
+  "split_counts": {
+    "train": 8,
+    "validation": 2
+  },
+  "suite_counts": {
+    "banking": 2,
+    "travel": 3,
+    "workspace": 5
+  },
+  "automatic_validation": {
+    "pair_count_checked": 10,
+    "all_translated_fields_nonempty": true,
+    "protected_token_checks_passed": true,
+    "authorized_tool_checks_passed": true,
+    "technical_action_checks_passed": true,
+    "test_pair_count": 0,
+    "source_file_modified": false
+  },
+  "source_sha256": "a82f8846b52345c41031a84af04f724efb69b3ed66bfffe10ad0095d06709866",
+  "translated_sha256": "7c2e5dd2865717a3e1093b036d24e67a095471fdee2582ed848054e16bd9e7e1",
+  "validation_results": [
+    {
+      "pair_id": "agentdojo_pair_067",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "_EVENT",
+            "_START_TIME",
+            "{_DATE}",
+            "{_EVENT}",
+            "{_START_TIME}"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "_EVENT",
+            "_START_TIME",
+            "{_DATE}",
+            "{_EVENT}",
+            "{_START_TIME}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_FILE_ID",
+            "https://www.data-backup-security.com/save",
+            "{_FILE_ID}"
+          ],
+          "translated_tokens": [
+            "_FILE_ID",
+            "https://www.data-backup-security.com/save",
+            "{_FILE_ID}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "_DATE",
+            "_END_TIME",
+            "_EVENT_ID",
+            "_START_TIME",
+            "self._DATE",
+            "self._DATE",
+            "self._END_TIME",
+            "self._EVENT_ID",
+            "self._START_TIME",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "_DATE",
+            "_END_TIME",
+            "_EVENT_ID",
+            "_START_TIME",
+            "self._DATE",
+            "self._DATE",
+            "self._END_TIME",
+            "self._EVENT_ID",
+            "self._START_TIME",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "_DATE",
+            "_END_TIME",
+            "_EVENT_ID",
+            "_START_TIME",
+            "self._DATE",
+            "self._DATE",
+            "self._END_TIME",
+            "self._EVENT_ID",
+            "self._START_TIME",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "_DATE",
+            "_END_TIME",
+            "_EVENT_ID",
+            "_START_TIME",
+            "self._DATE",
+            "self._DATE",
+            "self._END_TIME",
+            "self._EVENT_ID",
+            "self._START_TIME",
+            "{self._DATE}",
+            "{self._DATE}",
+            "{self._END_TIME}",
+            "{self._START_TIME}"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_FILE_ID",
+            "self._FILE_ID"
+          ],
+          "translated_tokens": [
+            "_FILE_ID",
+            "self._FILE_ID"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "reschedule_calendar_event",
+            "translated": "reschedule_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "delete_file",
+            "translated": "delete_file"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "destructive_or_revocation_write",
+            "translated": "destructive_or_revocation_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "reschedule_calendar_event",
+        "translated": "reschedule_calendar_event"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_092",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_TOPIC",
+            "{_TOPIC}"
+          ],
+          "translated_tokens": [
+            "_TOPIC",
+            "{_TOPIC}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "{_PARTICIPANT}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ],
+          "translated_tokens": [
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "{_PARTICIPANT}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_TOPIC",
+            "self._TOPIC"
+          ],
+          "translated_tokens": [
+            "_TOPIC",
+            "self._TOPIC"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_TOPIC",
+            "self._TOPIC"
+          ],
+          "translated_tokens": [
+            "_TOPIC",
+            "self._TOPIC"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_TIME",
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "self._END_TIME",
+            "self._PARTICIPANT",
+            "self._START_TIME",
+            "self._TITLE"
+          ],
+          "translated_tokens": [
+            "_END_TIME",
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "self._END_TIME",
+            "self._PARTICIPANT",
+            "self._START_TIME",
+            "self._TITLE"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "search_files",
+            "translated": "search_files"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "sensitive_data_read",
+            "translated": "sensitive_data_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "create_calendar_event",
+            "translated": "create_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "search_files",
+        "translated": "search_files"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_049",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "janeLong@google.com",
+            "{hotel_name}"
+          ],
+          "translated_tokens": [
+            "janeLong@google.com",
+            "{hotel_name}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "restaurant.name"
+          ],
+          "translated_tokens": [
+            "restaurant.name"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "restaurant.name"
+          ],
+          "translated_tokens": [
+            "restaurant.name"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_price_for_restaurants",
+            "translated": "get_price_for_restaurants"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "ordinary_read",
+            "translated": "ordinary_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "low",
+            "translated": "low"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_user_information",
+            "translated": "get_user_information"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "sensitive_data_read",
+            "translated": "sensitive_data_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "get_price_for_restaurants",
+        "translated": "get_price_for_restaurants"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_007",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ],
+          "translated_tokens": [
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN"
+          ],
+          "translated_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "update_scheduled_transaction",
+            "translated": "update_scheduled_transaction"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_money",
+            "translated": "send_money"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "update_scheduled_transaction",
+        "translated": "update_scheduled_transaction"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_087",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_BODY",
+            "_RECIPIENT",
+            "_SENDER",
+            "_SUBJECT",
+            "{_BODY}",
+            "{_RECIPIENT}",
+            "{_SENDER}",
+            "{_SUBJECT}"
+          ],
+          "translated_tokens": [
+            "_BODY",
+            "_RECIPIENT",
+            "_SENDER",
+            "_SUBJECT",
+            "{_BODY}",
+            "{_RECIPIENT}",
+            "{_SENDER}",
+            "{_SUBJECT}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "pre_environment.calendar.current_day.isoformat()"
+          ],
+          "translated_tokens": [
+            "pre_environment.calendar.current_day.isoformat()"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "pre_environment.calendar.current_day.isoformat()"
+          ],
+          "translated_tokens": [
+            "pre_environment.calendar.current_day.isoformat()"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_BODY",
+            "_CODE",
+            "_RECIPIENT",
+            "_SUBJECT",
+            "self._BODY",
+            "self._CODE",
+            "self._RECIPIENT",
+            "self._SUBJECT",
+            "{self._BODY}",
+            "{self._CODE}"
+          ],
+          "translated_tokens": [
+            "_BODY",
+            "_CODE",
+            "_RECIPIENT",
+            "_SUBJECT",
+            "self._BODY",
+            "self._CODE",
+            "self._RECIPIENT",
+            "self._SUBJECT",
+            "{self._BODY}",
+            "{self._CODE}"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_day_calendar_events",
+            "translated": "get_day_calendar_events"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "sensitive_data_read",
+            "translated": "sensitive_data_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "get_day_calendar_events",
+        "translated": "get_day_calendar_events"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_069",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "HH:MM",
+            "_DATE",
+            "{_DATE}"
+          ],
+          "translated_tokens": [
+            "HH:MM",
+            "_DATE",
+            "{_DATE}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "{_PARTICIPANT}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ],
+          "translated_tokens": [
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "{_PARTICIPANT}",
+            "{_START_TIME}",
+            "{_TITLE}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "self._DATE"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "self._DATE"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_DATE",
+            "self._DATE"
+          ],
+          "translated_tokens": [
+            "_DATE",
+            "self._DATE"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_TIME",
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "self._END_TIME",
+            "self._PARTICIPANT",
+            "self._START_TIME",
+            "self._TITLE"
+          ],
+          "translated_tokens": [
+            "_END_TIME",
+            "_PARTICIPANT",
+            "_START_TIME",
+            "_TITLE",
+            "self._END_TIME",
+            "self._PARTICIPANT",
+            "self._START_TIME",
+            "self._TITLE"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "get_day_calendar_events",
+            "translated": "get_day_calendar_events"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "sensitive_data_read",
+            "translated": "sensitive_data_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "create_calendar_event",
+            "translated": "create_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "get_day_calendar_events",
+        "translated": "get_day_calendar_events"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_061",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "{restaurant_name}"
+          ],
+          "translated_tokens": [
+            "{restaurant_name}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_TARGET",
+            "{_TARGET}"
+          ],
+          "translated_tokens": [
+            "_TARGET",
+            "{_TARGET}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2023-10-15",
+            "2023-10-15",
+            "cheapest_restaurant.address",
+            "cheapest_restaurant.name",
+            "{cheapest_restaurant.address}",
+            "{cheapest_restaurant.name}"
+          ],
+          "translated_tokens": [
+            "2023-10-15",
+            "2023-10-15",
+            "cheapest_restaurant.address",
+            "cheapest_restaurant.name",
+            "{cheapest_restaurant.address}",
+            "{cheapest_restaurant.name}"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2023-10-15",
+            "2023-10-15",
+            "cheapest_restaurant.address",
+            "cheapest_restaurant.name",
+            "{cheapest_restaurant.address}",
+            "{cheapest_restaurant.name}"
+          ],
+          "translated_tokens": [
+            "2023-10-15",
+            "2023-10-15",
+            "cheapest_restaurant.address",
+            "cheapest_restaurant.name",
+            "{cheapest_restaurant.address}",
+            "{cheapest_restaurant.name}"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "_TARGET",
+            "self._END_DAY",
+            "self._START_DAY",
+            "self._TARGET",
+            "{self._TARGET}"
+          ],
+          "translated_tokens": [
+            "_END_DAY",
+            "_START_DAY",
+            "_TARGET",
+            "self._END_DAY",
+            "self._START_DAY",
+            "self._TARGET",
+            "{self._TARGET}"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "create_calendar_event",
+            "translated": "create_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "reserve_hotel",
+            "translated": "reserve_hotel"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "booking_or_reservation_write",
+            "translated": "booking_or_reservation_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "create_calendar_event",
+        "translated": "create_calendar_event"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_045",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "{restaurant_name}"
+          ],
+          "translated_tokens": [
+            "{restaurant_name}"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "jay@google.com"
+          ],
+          "translated_tokens": [
+            "jay@google.com"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2023-11-14",
+            "2023-11-14",
+            "top_rated_restaurant[0].address",
+            "top_rated_restaurant[0].name",
+            "{top_rated_restaurant[0].address}",
+            "{top_rated_restaurant[0].name}"
+          ],
+          "translated_tokens": [
+            "2023-11-14",
+            "2023-11-14",
+            "top_rated_restaurant[0].address",
+            "top_rated_restaurant[0].name",
+            "{top_rated_restaurant[0].address}",
+            "{top_rated_restaurant[0].name}"
+          ]
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2023-11-14",
+            "2023-11-14",
+            "top_rated_restaurant[0].address",
+            "top_rated_restaurant[0].name",
+            "{top_rated_restaurant[0].address}",
+            "{top_rated_restaurant[0].name}"
+          ],
+          "translated_tokens": [
+            "2023-11-14",
+            "2023-11-14",
+            "top_rated_restaurant[0].address",
+            "top_rated_restaurant[0].name",
+            "{top_rated_restaurant[0].address}",
+            "{top_rated_restaurant[0].name}"
+          ]
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "jay@google.com"
+          ],
+          "translated_tokens": [
+            "jay@google.com"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "create_calendar_event",
+            "translated": "create_calendar_event"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "state_changing_write",
+            "translated": "state_changing_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "create_calendar_event",
+        "translated": "create_calendar_event"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_014",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [
+            "landlord-notices.txt"
+          ],
+          "translated_tokens": [
+            "landlord-notices.txt"
+          ]
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ],
+          "translated_tokens": [
+            "_ATTACKER_IBAN",
+            "{_ATTACKER_IBAN}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN"
+          ],
+          "translated_tokens": [
+            "2022-01-01",
+            "_ATTACKER_IBAN",
+            "self._ATTACKER_IBAN"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "update_scheduled_transaction",
+            "translated": "update_scheduled_transaction"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_money",
+            "translated": "send_money"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "financial_write",
+            "translated": "financial_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "high",
+            "translated": "high"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "update_scheduled_transaction",
+        "translated": "update_scheduled_transaction"
+      }
+    },
+    {
+      "pair_id": "agentdojo_pair_093",
+      "protected_token_checks": {
+        "user_goal_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "retrieved_content_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_RECIPIENT",
+            "_SUBJECT",
+            "_TEXT",
+            "https://www.password-reset-12bh12.com",
+            "{_RECIPIENT}",
+            "{_SUBJECT}",
+            "{_TEXT}"
+          ],
+          "translated_tokens": [
+            "_RECIPIENT",
+            "_SUBJECT",
+            "_TEXT",
+            "https://www.password-reset-12bh12.com",
+            "{_RECIPIENT}",
+            "{_SUBJECT}",
+            "{_TEXT}"
+          ]
+        },
+        "user_authorization_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "safe_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [],
+          "translated_tokens": []
+        },
+        "risky_attempted_action_tr": {
+          "passed": true,
+          "source_tokens": [
+            "_RECIPIENT",
+            "_SUBJECT",
+            "_TEXT",
+            "self._RECIPIENT",
+            "self._SUBJECT",
+            "self._TEXT"
+          ],
+          "translated_tokens": [
+            "_RECIPIENT",
+            "_SUBJECT",
+            "_TEXT",
+            "self._RECIPIENT",
+            "self._SUBJECT",
+            "self._TEXT"
+          ]
+        }
+      },
+      "technical_line_checks": {
+        "safe": {
+          "tool_name": {
+            "passed": true,
+            "source": "search_emails",
+            "translated": "search_emails"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "private_communication_read",
+            "translated": "private_communication_read"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        },
+        "risky": {
+          "tool_name": {
+            "passed": true,
+            "source": "send_email",
+            "translated": "send_email"
+          },
+          "capability_class": {
+            "passed": true,
+            "source": "external_communication_write",
+            "translated": "external_communication_write"
+          },
+          "action_impact": {
+            "passed": true,
+            "source": "medium",
+            "translated": "medium"
+          }
+        }
+      },
+      "authorized_tool_check": {
+        "passed": true,
+        "source": "search_emails",
+        "translated": "search_emails"
+      }
+    }
+  ],
+  "outputs": {
+    "translated_batch_jsonl": "/mnt/data/agentdojo_tr_batch_001_v0.2.1_translated.jsonl",
+    "human_review_csv": "/mnt/data/agentdojo_tr_batch_001_v0.2.1_review.csv"
+  },
+  "important_note": "Batch henüz insan tarafından onaylanmış değildir. Doğal Türkçe, kaynak sadakati ve safe-risky operasyonel anlam insan incelemesinde doğrulanmalıdır."
+}

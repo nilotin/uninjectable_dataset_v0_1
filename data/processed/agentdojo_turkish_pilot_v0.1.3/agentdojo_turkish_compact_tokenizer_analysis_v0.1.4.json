@@ -1,0 +1,113 @@
+{
+  "artifact_version": "0.1.4",
+  "row_count": 24,
+  "train_row_count": 16,
+  "validation_row_count": 8,
+  "test_row_count": 0,
+  "label_counts": {
+    "0": 12,
+    "1": 12
+  },
+  "duplicate_model_inputs": 0,
+  "label_or_review_leakage": 0,
+  "tokenizer_analysis": {
+    "dbmdz/bert-base-turkish-cased": {
+      "full_text": {
+        "minimum": 269,
+        "mean": 413.1666666666667,
+        "median": 425.0,
+        "p90": 513.0,
+        "p95": 537.25,
+        "maximum": 582
+      },
+      "priority_prefix": {
+        "minimum": 127,
+        "mean": 240.08333333333334,
+        "median": 238.5,
+        "p90": 280.9,
+        "p95": 361.6499999999998,
+        "maximum": 416
+      },
+      "core_prefix": {
+        "minimum": 163,
+        "mean": 305.6666666666667,
+        "median": 314.0,
+        "p90": 412.0,
+        "p95": 428.59999999999997,
+        "maximum": 472
+      },
+      "thresholds": {
+        "256": {
+          "full_text_fits": 0,
+          "full_text_truncated": 24,
+          "priority_prefix_preserved": 15,
+          "core_prefix_preserved": 6
+        },
+        "384": {
+          "full_text_fits": 8,
+          "full_text_truncated": 16,
+          "priority_prefix_preserved": 23,
+          "core_prefix_preserved": 20
+        },
+        "512": {
+          "full_text_fits": 21,
+          "full_text_truncated": 3,
+          "priority_prefix_preserved": 24,
+          "core_prefix_preserved": 24
+        }
+      }
+    },
+    "google-bert/bert-base-multilingual-cased": {
+      "full_text": {
+        "minimum": 210,
+        "mean": 371.875,
+        "median": 394.0,
+        "p90": 471.9,
+        "p95": 479.09999999999997,
+        "maximum": 491
+      },
+      "priority_prefix": {
+        "minimum": 100,
+        "mean": 218.04166666666666,
+        "median": 202.0,
+        "p90": 300.5,
+        "p95": 317.29999999999995,
+        "maximum": 354
+      },
+      "core_prefix": {
+        "minimum": 140,
+        "mean": 301.2083333333333,
+        "median": 323.5,
+        "p90": 401.4,
+        "p95": 413.04999999999995,
+        "maximum": 422
+      },
+      "thresholds": {
+        "256": {
+          "full_text_fits": 2,
+          "full_text_truncated": 22,
+          "priority_prefix_preserved": 18,
+          "core_prefix_preserved": 8
+        },
+        "384": {
+          "full_text_fits": 11,
+          "full_text_truncated": 13,
+          "priority_prefix_preserved": 24,
+          "core_prefix_preserved": 19
+        },
+        "512": {
+          "full_text_fits": 24,
+          "full_text_truncated": 0,
+          "priority_prefix_preserved": 24,
+          "core_prefix_preserved": 24
+        }
+      }
+    }
+  },
+  "outputs": {
+    "all": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_bert_compact_view_v0.1.4.jsonl",
+    "train": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_bert_compact_view_v0.1.4_train.jsonl",
+    "validation": "data/processed/agentdojo_turkish_pilot_v0.1.3/agentdojo_turkish_bert_compact_view_v0.1.4_validation.jsonl"
+  },
+  "important_note": "The canonical Turkish structured pool was not modified."
+}

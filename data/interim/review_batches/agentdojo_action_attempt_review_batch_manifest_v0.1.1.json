@@ -1,0 +1,96 @@
+{
+  "artifact_version": "0.1.1",
+  "source_review_queue": "data/interim/agentdojo_contextual_action_attempt_pair_review_queue_v0.1.1.csv",
+  "batch_count": 6,
+  "total_pair_count": 100,
+  "review_decision_values": [
+    "approve_pair",
+    "needs_revision",
+    "exclude_pair"
+  ],
+  "suite_counts": {
+    "banking": 20,
+    "slack": 20,
+    "travel": 25,
+    "workspace": 35
+  },
+  "batches": [
+    {
+      "batch_id": "agentdojo_action_attempt_review_batch_026",
+      "batch_number": 26,
+      "suite": "banking",
+      "row_count": 20,
+      "first_pair_id": "agentdojo_pair_001",
+      "last_pair_id": "agentdojo_pair_020",
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_026_v0.1.1.csv",
+      "review_status": "pending_human_review"
+    },
+    {
+      "batch_id": "agentdojo_action_attempt_review_batch_027",
+      "batch_number": 27,
+      "suite": "slack",
+      "row_count": 20,
+      "first_pair_id": "agentdojo_pair_021",
+      "last_pair_id": "agentdojo_pair_040",
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_027_v0.1.1.csv",
+      "review_status": "pending_human_review"
+    },
+    {
+      "batch_id": "agentdojo_action_attempt_review_batch_028",
+      "batch_number": 28,
+      "suite": "travel",
+      "row_count": 13,
+      "first_pair_id": "agentdojo_pair_041",
+      "last_pair_id": "agentdojo_pair_053",
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_028_v0.1.1.csv",
+      "review_status": "pending_human_review"
+    },
+    {
+      "batch_id": "agentdojo_action_attempt_review_batch_029",
+      "batch_number": 29,
+      "suite": "travel",
+      "row_count": 12,
+      "first_pair_id": "agentdojo_pair_054",
+      "last_pair_id": "agentdojo_pair_065",
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_029_v0.1.1.csv",
+      "review_status": "pending_human_review"
+    },
+    {
+      "batch_id": "agentdojo_action_attempt_review_batch_030",
+      "batch_number": 30,
+      "suite": "workspace",
+      "row_count": 18,
+      "first_pair_id": "agentdojo_pair_066",
+      "last_pair_id": "agentdojo_pair_083",
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_030_v0.1.1.csv",
+      "review_status": "pending_human_review"
+    },
+    {
+      "batch_id": "agentdojo_action_attempt_review_batch_031",
+      "batch_number": 31,
+      "suite": "workspace",
+      "row_count": 17,
+      "first_pair_id": "agentdojo_pair_084",
+      "last_pair_id": "agentdojo_pair_100",
+      "path": "data/interim/review_batches/agentdojo_contextual_action_attempt_review_batch_031_v0.1.1.csv",
+      "review_status": "pending_human_review"
+    }
+  ],
+  "important_notes": [
+    "Review is performed at pair level. Each CSV row represents one safe/risky minimal-pair context.",
+    "approve_pair confirms safe_label_final=0 and risky_label_final=1.",
+    "needs_revision retains the pair but requires contextual, action, or binding repair.",
+    "exclude_pair removes both variants from the curated smoke-test pool.",
+    "Both variants must always stay in the same dataset split."
+  ],
+  "first_human_review_completed_at": "2026-07-20T17:57:04.450023+00:00",
+  "first_human_review_status": "completed",
+  "consolidated_decision_counts": {
+    "approve_pair": 55,
+    "needs_revision": 45
+  },
+  "finalized_runtime_row_count": 110,
+  "pending_revision_runtime_row_count": 90,
+  "master_review_ledger": "data/interim/agentdojo_action_attempt_human_review_master_v0.1.1.csv",
+  "revision_queue": "data/interim/agentdojo_action_attempt_revision_queue_v0.1.1.csv"
+}

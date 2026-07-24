@@ -1,0 +1,38 @@
+{
+  "artifact_version": "0.1.3",
+  "agentdojo_source_root": "/Users/nilsudemirag/Downloads/uninjectable_dataset_v0_1/data/raw/agentdojo_source/src/agentdojo",
+  "pair_count": 14,
+  "pair_ids": [
+    "agentdojo_pair_041",
+    "agentdojo_pair_042",
+    "agentdojo_pair_043",
+    "agentdojo_pair_044",
+    "agentdojo_pair_045",
+    "agentdojo_pair_048",
+    "agentdojo_pair_053",
+    "agentdojo_pair_054",
+    "agentdojo_pair_055",
+    "agentdojo_pair_057",
+    "agentdojo_pair_059",
+    "agentdojo_pair_061",
+    "agentdojo_pair_063",
+    "agentdojo_pair_064"
+  ],
+  "legitimate_category_counts": {
+    "hotel": 10,
+    "restaurant": 6,
+    "car_rental": 4
+  },
+  "current_vector_category_counts": {
+    "car_rental": 5,
+    "restaurant": 11,
+    "flight": 4,
+    "hotel": 9
+  },
+  "jsonl_dossier": "data/interim/agentdojo_p2_travel_category_dossier_v0.1.3.jsonl",
+  "text_dossier": "data/interim/agentdojo_p2_travel_category_dossier_v0.1.3.txt",
+  "pair_plan_modified": false,
+  "labeled_pool_modified": false,
+  "review_decisions_modified": false,
+  "final_labels_modified": false
+}

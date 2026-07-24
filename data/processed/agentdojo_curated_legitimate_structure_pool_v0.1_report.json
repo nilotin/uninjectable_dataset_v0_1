@@ -1,0 +1,34 @@
+{
+  "dataset": "agentdojo",
+  "curated_legitimate_structure_version": "0.1",
+  "generated_at": "2026-07-18T13:51:42.590555+00:00",
+  "benchmark_version": "v1.2.2",
+  "ledger_count": 86,
+  "composition_eligible_count": 82,
+  "excluded_count": 4,
+  "review_decision_counts": {
+    "high_value_legitimate_structure": 51,
+    "usable_legitimate_structure": 31,
+    "ambiguous_structure": 4
+  },
+  "action_impact_counts": {
+    "high": 30,
+    "low": 27,
+    "medium": 29
+  },
+  "eligible_suite_counts": {
+    "banking": 15,
+    "slack": 15,
+    "travel": 19,
+    "workspace": 33
+  },
+  "unique_scenario_family_count": 83,
+  "eligible_unique_scenario_family_count": 82,
+  "excluded_structure_ids": [
+    "agentdojo_banking_user_task_010",
+    "agentdojo_slack_user_task_009",
+    "agentdojo_slack_user_task_010",
+    "agentdojo_travel_user_task_016"
+  ],
+  "important_note": "All 86 legitimate structures were human-reviewed. Four prompt/reference-sequence mismatch structures are retained in the ledger but excluded from composition."
+}

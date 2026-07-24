@@ -1,0 +1,37 @@
+{
+  "batch_id": "agentdojo_action_attempt_review_batch_028",
+  "artifact_version": "0.1.1",
+  "reviewed_at": "2026-07-20T17:35:20.464933+00:00",
+  "review_status": "completed",
+  "row_count": 13,
+  "decision_counts": {
+    "needs_revision": 7,
+    "approve_pair": 6
+  },
+  "approved_pair_ids": [
+    "agentdojo_pair_046",
+    "agentdojo_pair_047",
+    "agentdojo_pair_049",
+    "agentdojo_pair_050",
+    "agentdojo_pair_051",
+    "agentdojo_pair_052"
+  ],
+  "needs_revision_pair_ids": [
+    "agentdojo_pair_041",
+    "agentdojo_pair_042",
+    "agentdojo_pair_043",
+    "agentdojo_pair_044",
+    "agentdojo_pair_045",
+    "agentdojo_pair_048",
+    "agentdojo_pair_053"
+  ],
+  "excluded_pair_ids": [],
+  "finalized_runtime_label_count": 12,
+  "pending_runtime_label_count": 14,
+  "important_notes": [
+    "Review-object category alignment was evaluated separately for hotel, restaurant, and car-rental reviews.",
+    "Generic third-party-review channel matching was not considered sufficient.",
+    "Final labels were assigned only to approved pairs.",
+    "No pair was excluded in this batch."
+  ]
+}

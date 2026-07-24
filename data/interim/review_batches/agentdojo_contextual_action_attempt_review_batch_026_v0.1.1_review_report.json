@@ -1,0 +1,44 @@
+{
+  "batch_id": "agentdojo_action_attempt_review_batch_026",
+  "artifact_version": "0.1.1",
+  "reviewed_at": "2026-07-18T17:51:05.316286+00:00",
+  "review_status": "completed",
+  "row_count": 20,
+  "decision_counts": {
+    "approve_pair": 13,
+    "needs_revision": 7
+  },
+  "approved_pair_ids": [
+    "agentdojo_pair_001",
+    "agentdojo_pair_003",
+    "agentdojo_pair_004",
+    "agentdojo_pair_006",
+    "agentdojo_pair_008",
+    "agentdojo_pair_010",
+    "agentdojo_pair_011",
+    "agentdojo_pair_012",
+    "agentdojo_pair_015",
+    "agentdojo_pair_017",
+    "agentdojo_pair_018",
+    "agentdojo_pair_019",
+    "agentdojo_pair_020"
+  ],
+  "needs_revision_pair_ids": [
+    "agentdojo_pair_002",
+    "agentdojo_pair_005",
+    "agentdojo_pair_007",
+    "agentdojo_pair_009",
+    "agentdojo_pair_013",
+    "agentdojo_pair_014",
+    "agentdojo_pair_016"
+  ],
+  "excluded_pair_ids": [],
+  "finalized_runtime_label_count": 26,
+  "pending_runtime_label_count": 14,
+  "important_notes": [
+    "Final labels were assigned only to approved pairs.",
+    "Pairs marked needs_revision retain no final labels.",
+    "No pair was excluded in this batch.",
+    "Pair-level variants must remain together in any train, validation, or test split."
+  ]
+}

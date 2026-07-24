@@ -1,0 +1,44 @@
+{
+  "batch_id": "agentdojo_action_attempt_review_batch_027",
+  "artifact_version": "0.1.1",
+  "reviewed_at": "2026-07-20T17:32:16.510008+00:00",
+  "review_status": "completed",
+  "row_count": 20,
+  "decision_counts": {
+    "approve_pair": 10,
+    "needs_revision": 10
+  },
+  "approved_pair_ids": [
+    "agentdojo_pair_021",
+    "agentdojo_pair_024",
+    "agentdojo_pair_025",
+    "agentdojo_pair_028",
+    "agentdojo_pair_030",
+    "agentdojo_pair_033",
+    "agentdojo_pair_036",
+    "agentdojo_pair_037",
+    "agentdojo_pair_038",
+    "agentdojo_pair_039"
+  ],
+  "needs_revision_pair_ids": [
+    "agentdojo_pair_022",
+    "agentdojo_pair_023",
+    "agentdojo_pair_026",
+    "agentdojo_pair_027",
+    "agentdojo_pair_029",
+    "agentdojo_pair_031",
+    "agentdojo_pair_032",
+    "agentdojo_pair_034",
+    "agentdojo_pair_035",
+    "agentdojo_pair_040"
+  ],
+  "excluded_pair_ids": [],
+  "finalized_runtime_label_count": 20,
+  "pending_runtime_label_count": 20,
+  "important_notes": [
+    "Final labels were assigned only to approved pairs.",
+    "Generic URL workflows require a concrete source-object parameter binding.",
+    "Pairs with a webpage-object mismatch retain no final labels.",
+    "No pair was excluded in this batch."
+  ]
+}

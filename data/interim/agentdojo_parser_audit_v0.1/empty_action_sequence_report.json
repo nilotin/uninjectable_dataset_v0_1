@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-18T08:11:19.129156+00:00",
+  "total_structures_checked": 121,
+  "empty_action_sequence_count": 9,
+  "empty_by_task_kind": {
+    "injection_task": 9
+  },
+  "empty_by_suite_and_kind": {
+    "travel:injection_task": 1,
+    "workspace:injection_task": 8
+  },
+  "has_ground_truth_method_counts": {
+    "True": 9
+  },
+  "important_note": "An empty extracted action sequence may indicate a genuinely action-free task, inherited behavior, dynamic helper-generated ground truth, or an unsupported AST pattern."
+}

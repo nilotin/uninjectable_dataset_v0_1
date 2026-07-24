@@ -1,0 +1,65 @@
+{
+  "dataset": "agentdojo",
+  "curated_tool_catalog_version": "0.1",
+  "generated_at": "2026-07-18T14:44:00.782005+00:00",
+  "benchmark_version": "v1.2.2",
+  "suite_tool_instance_count": 74,
+  "unique_tool_count": 69,
+  "suite_instance_counts": {
+    "banking": 11,
+    "slack": 11,
+    "travel": 28,
+    "workspace": 24
+  },
+  "unique_review_decision_counts": {
+    "confirmed_capability_metadata": 68,
+    "corrected_capability_metadata": 1
+  },
+  "unique_capability_class_counts": {
+    "ordinary_read": 21,
+    "sensitive_data_read": 13,
+    "private_communication_read": 6,
+    "access_control_write": 4,
+    "destructive_or_revocation_write": 4,
+    "external_communication_write": 4,
+    "state_changing_write": 4,
+    "financial_data_read": 4,
+    "booking_or_reservation_write": 3,
+    "financial_write": 3,
+    "credential_or_account_write": 2,
+    "private_communication_read_with_state_change": 1
+  },
+  "unique_action_impact_counts": {
+    "medium": 31,
+    "low": 21,
+    "high": 17
+  },
+  "suite_instance_capability_class_counts": {
+    "financial_data_read": 4,
+    "financial_write": 3,
+    "sensitive_data_read": 15,
+    "credential_or_account_write": 2,
+    "access_control_write": 4,
+    "private_communication_read": 6,
+    "external_communication_write": 5,
+    "destructive_or_revocation_write": 5,
+    "ordinary_read": 21,
+    "state_changing_write": 5,
+    "booking_or_reservation_write": 3,
+    "private_communication_read_with_state_change": 1
+  },
+  "suite_instance_action_impact_counts": {
+    "medium": 35,
+    "high": 18,
+    "low": 21
+  },
+  "corrected_tool_names": [
+    "get_unread_emails"
+  ],
+  "important_notes": [
+    "The suite-level catalog contains 74 tool instances because five tool names appear in multiple suites.",
+    "The unique catalog contains 69 human-reviewed tool names.",
+    "get_unread_emails was corrected because it marks returned emails as read and is therefore not strictly read-only.",
+    "Capability class and action impact are stable tool metadata, not runtime general_risk_label values."
+  ]
+}

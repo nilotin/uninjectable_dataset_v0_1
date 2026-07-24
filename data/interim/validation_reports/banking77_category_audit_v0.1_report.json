@@ -1,0 +1,20 @@
+{
+  "dataset": "banking77",
+  "audit_version": "0.1",
+  "generated_at": "2026-07-15T13:39:15.078237+00:00",
+  "balanced_candidate_pool_size": 385,
+  "category_count": 77,
+  "human_reviewed_category_representatives": 77,
+  "human_decision_counts": {
+    "benign_customer_language_seed": 60,
+    "sensitive_but_benign_customer_language": 17,
+    "ambiguous_customer_language": 0,
+    "usable_attack_seed": 0,
+    "irrelevant": 0
+  },
+  "usable_benign_rate": 1.0,
+  "sensitive_but_benign_rate": 0.22077922077922077,
+  "attack_contamination_rate": 0.0,
+  "ambiguous_rate": 0.0,
+  "important_note": "One diversity-selected representative from each of the 77 Banking77 categories was human-reviewed. All 77 were judged usable benign customer language; 17 were marked security-sensitive but benign and retained as valuable hard-negative candidates. This category audit does not mean that every remaining unreviewed candidate has been human-reviewed."
+}
