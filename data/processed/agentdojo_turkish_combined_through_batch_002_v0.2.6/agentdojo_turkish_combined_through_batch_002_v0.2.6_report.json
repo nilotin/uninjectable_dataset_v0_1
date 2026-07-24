@@ -1,0 +1,61 @@
+{
+  "artifact_version": "v0.2.6-through-batch-002",
+  "artifact_type": "combined_turkish_compact_bert_pool",
+  "schema_version": "agentdojo_turkish_bert_compact_view_v0.2.6",
+  "serialization_version": "v0.2.6",
+  "tokenizer": "google-bert/bert-base-multilingual-cased",
+  "max_length": 512,
+  "sources": {
+    "combined_v1": {
+      "path": "data/processed/agentdojo_turkish_combined_v0.2.6/agentdojo_turkish_combined_bert_compact_v0.2.6.jsonl",
+      "row_count": 44,
+      "sha256_before": "9a0d979a72064d7898075847eaea189f49b6242d8d49a2caa6c16b0428629cf4",
+      "sha256_after": "9a0d979a72064d7898075847eaea189f49b6242d8d49a2caa6c16b0428629cf4",
+      "modified": false
+    },
+    "batch_002": {
+      "path": "data/processed/agentdojo_turkish_batch_002_v0.2.6/agentdojo_turkish_batch_002_bert_compact_v0.2.6.jsonl",
+      "row_count": 20,
+      "sha256_before": "aee9aef46705b86c9dffca283138b5c1184588fcfb75e67d7b43674eb19edb27",
+      "sha256_after": "aee9aef46705b86c9dffca283138b5c1184588fcfb75e67d7b43674eb19edb27",
+      "modified": false
+    }
+  },
+  "validation": {
+    "row_count": 64,
+    "pair_count": 32,
+    "source_counts": {
+      "combined_v1": 44,
+      "batch_002": 20
+    },
+    "split_counts": {
+      "train": 52,
+      "validation": 12
+    },
+    "label_counts": {
+      "0": 32,
+      "1": 32
+    },
+    "duplicate_row_ids": 0,
+    "duplicate_model_inputs": 0,
+    "session_group_split_leakage": 0,
+    "crosslingual_group_split_leakage": 0,
+    "input_leakage": 0,
+    "test_rows": 0,
+    "token_lengths": {
+      "minimum": 187,
+      "mean": 308.0625,
+      "median": 296.5,
+      "maximum": 506,
+      "rows_requiring_truncation": 0
+    }
+  },
+  "outputs": {
+    "all": "data/processed/agentdojo_turkish_combined_through_batch_002_v0.2.6/agentdojo_turkish_combined_through_batch_002_bert_compact_v0.2.6.jsonl",
+    "train": "data/processed/agentdojo_turkish_combined_through_batch_002_v0.2.6/agentdojo_turkish_combined_through_batch_002_bert_compact_v0.2.6_train.jsonl",
+    "validation": "data/processed/agentdojo_turkish_combined_through_batch_002_v0.2.6/agentdojo_turkish_combined_through_batch_002_bert_compact_v0.2.6_validation.jsonl",
+    "report": "data/processed/agentdojo_turkish_combined_through_batch_002_v0.2.6/agentdojo_turkish_combined_through_batch_002_v0.2.6_report.json",
+    "sha256_manifest": "data/processed/agentdojo_turkish_combined_through_batch_002_v0.2.6/agentdojo_turkish_combined_through_batch_002_v0.2.6_sha256.txt"
+  },
+  "important_note": "The previous combined pool and Batch 002 compact artifact were validated and left unchanged. No sealed test rows were accessed."
+}
