@@ -1,0 +1,39 @@
+{
+  "artifact_version": "v0.2.2",
+  "batch_id": "agentdojo_tr_batch_002",
+  "translated_input": {
+    "path": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_002_v0.2.1_translated.jsonl",
+    "sha256_before": "15171757d87514e9b806c3817877a1f9c3f19e421979e556f04037f0444ded54",
+    "sha256_after": "15171757d87514e9b806c3817877a1f9c3f19e421979e556f04037f0444ded54",
+    "modified": false
+  },
+  "review_input": {
+    "path": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_002_v0.2.1_review.csv",
+    "sha256_before": "bfb9ea197d1dccf03ba058a67a4e4f106d07493b2b1f7752c2cddb69370c5281",
+    "sha256_after": "bfb9ea197d1dccf03ba058a67a4e4f106d07493b2b1f7752c2cddb69370c5281",
+    "modified": false
+  },
+  "row_count": 10,
+  "pair_count": 10,
+  "decision_counts": {
+    "approve": 10
+  },
+  "translation_status_counts": {
+    "human_review_approved": 10
+  },
+  "pair_id_alignment": {
+    "matched": true,
+    "missing_from_review": [],
+    "extra_in_review": []
+  },
+  "duplicate_pair_ids": {
+    "translated_jsonl": 0,
+    "review_csv": 0
+  },
+  "output": {
+    "reviewed_jsonl": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_002_v0.2.2_reviewed.jsonl",
+    "report": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_002_v0.2.2_review_apply_report.json"
+  },
+  "application_result": "passed",
+  "important_note": "Review decisions were joined by pair_id. The translated JSONL and review CSV were validated and left unchanged."
+}
