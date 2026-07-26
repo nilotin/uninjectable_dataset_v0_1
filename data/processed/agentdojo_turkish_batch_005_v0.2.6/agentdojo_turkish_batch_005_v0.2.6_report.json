@@ -1,0 +1,64 @@
+{
+  "artifact_version": "0.2.5",
+  "translation_batch_id": "agentdojo_tr_batch_001",
+  "model_name": "google-bert/bert-base-multilingual-cased",
+  "max_length": 512,
+  "pair_count": 10,
+  "structured_row_count": 20,
+  "compact_row_count": 20,
+  "label_counts": {
+    "0": 10,
+    "1": 10
+  },
+  "pair_split_counts": {
+    "train": 8,
+    "validation": 2
+  },
+  "runtime_split_counts": {
+    "train": 16,
+    "validation": 4,
+    "test": 0
+  },
+  "suite_pair_counts": {
+    "travel": 4,
+    "workspace": 3,
+    "banking": 2,
+    "slack": 1
+  },
+  "tokenization": {
+    "minimum": 186,
+    "maximum": 445,
+    "mean": 303.55,
+    "rows_over_512": 0,
+    "truncated_rows": 0
+  },
+  "validation": {
+    "all_translations_approved": true,
+    "policy_translation_approved": true,
+    "safe_risky_pair_integrity": true,
+    "shared_context_integrity": true,
+    "label_balance": true,
+    "duplicate_row_ids": 0,
+    "duplicate_compact_inputs": 0,
+    "input_leakage": 0,
+    "crosslingual_links_present": true,
+    "test_split_accessed": false,
+    "source_artifacts_modified": false
+  },
+  "source_hashes": {
+    "translations": "dc7e0f7424efc59f94de5753c515267886376537ef2148f085105f590de38297",
+    "translation_report": "a97483817599fa9badd9f3a466bc5213aee1c596bd32429c4bbb64d1bada9588",
+    "train_source": "3e52e0acf87edbc1aae354460d2953cbc7919bd4e41513df309a6d4b5fd659fb",
+    "validation_source": "53018ea87b51a4276a4b24366f00adbffd1fde4450c16e563a5285530b662ede",
+    "policy_registry": "e59d66dc024c09252cf58443a8d2ec3cba3738cffa5bea401f9cd756a7a15fb9"
+  },
+  "outputs": {
+    "structured_all": "data/processed/agentdojo_turkish_batch_005_v0.2.6/agentdojo_turkish_batch_005_structured_v0.2.6.jsonl",
+    "structured_train": "data/processed/agentdojo_turkish_batch_005_v0.2.6/agentdojo_turkish_batch_005_structured_v0.2.6_train.jsonl",
+    "structured_validation": "data/processed/agentdojo_turkish_batch_005_v0.2.6/agentdojo_turkish_batch_005_structured_v0.2.6_validation.jsonl",
+    "compact_all": "data/processed/agentdojo_turkish_batch_005_v0.2.6/agentdojo_turkish_batch_005_bert_compact_v0.2.6.jsonl",
+    "compact_train": "data/processed/agentdojo_turkish_batch_005_v0.2.6/agentdojo_turkish_batch_005_bert_compact_v0.2.6_train.jsonl",
+    "compact_validation": "data/processed/agentdojo_turkish_batch_005_v0.2.6/agentdojo_turkish_batch_005_bert_compact_v0.2.6_validation.jsonl"
+  },
+  "important_note": "This artifact contains only Batch 001 Turkish train and validation rows. The AgentDojo test split was not opened."
+}

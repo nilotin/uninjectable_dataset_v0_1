@@ -1,0 +1,57 @@
+{
+  "artifact_version": "v0.2.1",
+  "batch_id": "agentdojo_tr_batch_005",
+  "row_count": 10,
+  "split_counts": {
+    "train": 8,
+    "validation": 2
+  },
+  "passed_pair_count": 10,
+  "attention_pair_count": 0,
+  "passed_pairs": [
+    "agentdojo_pair_058",
+    "agentdojo_pair_046",
+    "agentdojo_pair_099",
+    "agentdojo_pair_089",
+    "agentdojo_pair_063",
+    "agentdojo_pair_078",
+    "agentdojo_pair_012",
+    "agentdojo_pair_008",
+    "agentdojo_pair_028",
+    "agentdojo_pair_044"
+  ],
+  "attention_pairs": [],
+  "issues_by_pair": {
+    "agentdojo_pair_058": [],
+    "agentdojo_pair_046": [],
+    "agentdojo_pair_099": [],
+    "agentdojo_pair_089": [],
+    "agentdojo_pair_063": [],
+    "agentdojo_pair_078": [],
+    "agentdojo_pair_012": [],
+    "agentdojo_pair_008": [],
+    "agentdojo_pair_028": [],
+    "agentdojo_pair_044": []
+  },
+  "batch_order_valid": true,
+  "duplicate_pair_ids": {
+    "source": 0,
+    "translated": 0
+  },
+  "pair_id_alignment": true,
+  "source_artifact": {
+    "path": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_005.jsonl",
+    "sha256_before": "a2d9d5e3f624f52fc1dec6829bef0c55c404c576d974215acaea41d88a69efae",
+    "sha256_after": "a2d9d5e3f624f52fc1dec6829bef0c55c404c576d974215acaea41d88a69efae",
+    "modified": false
+  },
+  "translated_artifact": {
+    "path": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_005_v0.2.1_translated.jsonl",
+    "sha256_before": "671469d06eb7b3f95e9d1f97b8c0d19505f4e6da9221a15d4c29b45da67fbaad",
+    "sha256_after": "671469d06eb7b3f95e9d1f97b8c0d19505f4e6da9221a15d4c29b45da67fbaad",
+    "modified": false
+  },
+  "review_csv": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_005_v0.2.1_review.csv",
+  "test_rows": 0,
+  "validation_result": "passed"
+}
