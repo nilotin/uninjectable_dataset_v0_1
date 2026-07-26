@@ -1,0 +1,41 @@
+{
+  "run": "mbert_agentdojo_turkish_multiseed_training_v0.1.0",
+  "completed_at": "2026-07-26T18:37:17.501971+00:00",
+  "status": "passed",
+  "expected_seeds": [
+    13,
+    21,
+    77,
+    101
+  ],
+  "results": [
+    {
+      "seed": 101,
+      "config": "configs/training/mbert_turkish_multiseed_v0.1.0/mbert_agentdojo_turkish_seed_101_v0.1.0.json",
+      "run_dir": "artifacts/training_runs/mbert_agentdojo_turkish_seed_101_v0.1.0",
+      "status": "passed",
+      "return_code": 0
+    },
+    {
+      "seed": 13,
+      "config": "configs/training/mbert_turkish_multiseed_v0.1.0/mbert_agentdojo_turkish_seed_13_v0.1.0.json",
+      "run_dir": "artifacts/training_runs/mbert_agentdojo_turkish_seed_13_v0.1.0",
+      "status": "passed",
+      "return_code": 0
+    },
+    {
+      "seed": 21,
+      "config": "configs/training/mbert_turkish_multiseed_v0.1.0/mbert_agentdojo_turkish_seed_21_v0.1.0.json",
+      "run_dir": "artifacts/training_runs/mbert_agentdojo_turkish_seed_21_v0.1.0",
+      "status": "passed",
+      "return_code": 0
+    },
+    {
+      "seed": 77,
+      "config": "configs/training/mbert_turkish_multiseed_v0.1.0/mbert_agentdojo_turkish_seed_77_v0.1.0.json",
+      "run_dir": "artifacts/training_runs/mbert_agentdojo_turkish_seed_77_v0.1.0",
+      "status": "passed",
+      "return_code": 0
+    }
+  ]
+}

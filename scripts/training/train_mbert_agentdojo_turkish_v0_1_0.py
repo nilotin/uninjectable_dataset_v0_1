@@ -32,8 +32,13 @@ from transformers import (
 
 
 CONFIG_PATH = Path(
-    "configs/training/"
-    "mbert_turkish_baseline_v0.1.0.json"
+    os.environ.get(
+        "MBERT_CONFIG_PATH",
+        (
+            "configs/training/"
+            "mbert_turkish_baseline_v0.1.0.json"
+        ),
+    )
 )
 
 PACKAGE_DIR = Path(

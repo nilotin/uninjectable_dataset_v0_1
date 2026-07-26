@@ -1,0 +1,41 @@
+{
+  "run_name": "mbert_agentdojo_turkish_seed_13_v0.1.0",
+  "completed_at": "2026-07-26T18:33:24.987417+00:00",
+  "model_name": "google-bert/bert-base-multilingual-cased",
+  "device": "mps",
+  "risk_score_definition": "P(label=1)",
+  "train_metrics": {
+    "train_runtime": 106.5083,
+    "train_samples_per_second": 6.291,
+    "train_steps_per_second": 0.423,
+    "total_flos": 176284407091200.0,
+    "train_loss": 0.597140540017022,
+    "epoch": 5.0
+  },
+  "validation_metrics": {
+    "eval_loss": 0.48616713285446167,
+    "eval_accuracy": 0.9,
+    "eval_precision": 1.0,
+    "eval_recall": 0.8,
+    "eval_f1": 0.8888888888888888,
+    "eval_roc_auc": 0.9822222222222223,
+    "eval_runtime": 0.8307,
+    "eval_samples_per_second": 36.112,
+    "eval_steps_per_second": 4.815,
+    "epoch": 5.0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.13.0",
+    "transformers": "4.57.6",
+    "datasets": "3.6.0",
+    "accelerate": "1.14.0",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3"
+  },
+  "source_hashes": {
+    "config": "385943647d3046bd90b58ee948c6bb5326d8e5603da7a1d1a93cbe9ef4076fdd",
+    "train": "32c2e25baf1c90df0039135fdd5d30369bcc8f8443028dab273e07f9b33a4a47",
+    "validation": "2e2465ed9a56c12cb04b0e84059ffdd65a3c3137172c0d8653c93eabda26e331"
+  }
+}
