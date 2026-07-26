@@ -1,0 +1,52 @@
+{
+  "release": "agentdojo_turkish_corpus_v0.3.0",
+  "created_at": "2026-07-26T17:02:11.925457+00:00",
+  "source_release": "agentdojo_turkish_combined_through_batch_008_v0.2.6",
+  "tokenizer": "google-bert/bert-base-multilingual-cased",
+  "max_length": 512,
+  "counts": {
+    "rows": 164,
+    "pairs": 82,
+    "splits": {
+      "train": 134,
+      "validation": 30
+    },
+    "labels": {
+      "0": 82,
+      "1": 82
+    }
+  },
+  "coverage": {
+    "english_canonical_pairs": 97,
+    "sealed_test_pairs": 14,
+    "excluded_duplicate_pairs": [
+      "agentdojo_pair_020"
+    ],
+    "usable_turkish_pairs": 82
+  },
+  "excluded_pairs": {
+    "agentdojo_pair_020": {
+      "split": "train",
+      "reason": "Compact Turkish BERT inputs duplicate agentdojo_pair_004."
+    }
+  },
+  "validation": {
+    "pair_integrity": true,
+    "label_balance": true,
+    "split_integrity": true,
+    "duplicate_row_ids": 0,
+    "duplicate_compact_inputs": 0,
+    "source_artifacts_modified": false,
+    "test_split_accessed": false
+  },
+  "source_hashes": {
+    "all": "0c75c0bbe7d91b1cb3123171913d77864ebd7139dfbd17d42dac33275c7f45a0",
+    "train": "3f52267d90769abaa3d40ac00179966026cce456b5b08893348c785932814674",
+    "validation": "c94ec1742d3eccca2543cd0648c0b5950d49ead2cc45d975d05d3606c68d2737"
+  },
+  "output_hashes": {
+    "all": "0c75c0bbe7d91b1cb3123171913d77864ebd7139dfbd17d42dac33275c7f45a0",
+    "train": "3f52267d90769abaa3d40ac00179966026cce456b5b08893348c785932814674",
+    "validation": "c94ec1742d3eccca2543cd0648c0b5950d49ead2cc45d975d05d3606c68d2737"
+  }
+}
