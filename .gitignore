@@ -31,3 +31,6 @@ data/interim/banking77_deduplicated_candidate_pool_v0.1.jsonl
 *.pre_path_resolver_fix
 *.bak
 *.tmp
+
+# Local model training outputs
+artifacts/training_runs/
