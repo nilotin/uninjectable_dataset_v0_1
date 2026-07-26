@@ -1,0 +1,59 @@
+{
+  "artifact_version": "agentdojo_turkish_combined_through_batch_007_v0.2.6",
+  "schema_version": "agentdojo_turkish_bert_compact_view_v0.2.6",
+  "serialization_version": "v0.2.6",
+  "tokenizer": "google-bert/bert-base-multilingual-cased",
+  "max_length": 512,
+  "sources": {
+    "through_batch_006": {
+      "path": "data/processed/agentdojo_turkish_combined_through_batch_006_v0.2.6/agentdojo_turkish_combined_through_batch_006_bert_compact_v0.2.6.jsonl",
+      "row_count": 142,
+      "sha256_before": "abe8fb2e6bbbfea4127bcf49040f04b540f704c64a550707cf228659ac3aabc3",
+      "sha256_after": "abe8fb2e6bbbfea4127bcf49040f04b540f704c64a550707cf228659ac3aabc3",
+      "modified": false
+    },
+    "batch_007": {
+      "path": "data/processed/agentdojo_turkish_batch_007_v0.2.6/agentdojo_turkish_batch_007_bert_compact_v0.2.6.jsonl",
+      "row_count": 20,
+      "sha256_before": "d18b642dfc16feb7d57c7722771e7eb76ac9ae1b1ea7d4506fab161164ba3153",
+      "sha256_after": "d18b642dfc16feb7d57c7722771e7eb76ac9ae1b1ea7d4506fab161164ba3153",
+      "modified": false
+    }
+  },
+  "validation": {
+    "row_count": 162,
+    "pair_count": 81,
+    "source_counts": {
+      "through_batch_006": 142,
+      "batch_007": 20
+    },
+    "split_counts": {
+      "train": 134,
+      "validation": 28
+    },
+    "label_counts": {
+      "0": 81,
+      "1": 81
+    },
+    "duplicate_row_ids": 0,
+    "duplicate_model_inputs": 0,
+    "session_group_split_leakage": 0,
+    "crosslingual_group_split_leakage": 0,
+    "input_leakage": 0,
+    "test_rows": 0,
+    "token_lengths": {
+      "minimum": 186,
+      "mean": 291.08024691358025,
+      "median": 271.5,
+      "maximum": 506,
+      "rows_requiring_truncation": 0
+    }
+  },
+  "outputs": {
+    "all": "data/processed/agentdojo_turkish_combined_through_batch_007_v0.2.6/agentdojo_turkish_combined_through_batch_007_bert_compact_v0.2.6.jsonl",
+    "train": "data/processed/agentdojo_turkish_combined_through_batch_007_v0.2.6/agentdojo_turkish_combined_through_batch_007_bert_compact_v0.2.6_train.jsonl",
+    "validation": "data/processed/agentdojo_turkish_combined_through_batch_007_v0.2.6/agentdojo_turkish_combined_through_batch_007_bert_compact_v0.2.6_validation.jsonl",
+    "sha256_manifest": "data/processed/agentdojo_turkish_combined_through_batch_007_v0.2.6/agentdojo_turkish_combined_through_batch_007_v0.2.6_sha256.txt"
+  },
+  "sealed_test_split_accessed": false
+}
