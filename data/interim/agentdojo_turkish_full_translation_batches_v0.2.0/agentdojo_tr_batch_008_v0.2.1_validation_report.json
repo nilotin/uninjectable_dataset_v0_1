@@ -1,0 +1,38 @@
+{
+  "artifact_version": "v0.2.1",
+  "batch_id": "agentdojo_tr_batch_008",
+  "row_count": 1,
+  "split_counts": {
+    "validation": 1
+  },
+  "passed_pair_count": 1,
+  "attention_pair_count": 0,
+  "passed_pairs": [
+    "agentdojo_pair_085"
+  ],
+  "attention_pairs": [],
+  "issues_by_pair": {
+    "agentdojo_pair_085": []
+  },
+  "batch_order_valid": true,
+  "duplicate_pair_ids": {
+    "source": 0,
+    "translated": 0
+  },
+  "pair_id_alignment": true,
+  "source_artifact": {
+    "path": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_008.jsonl",
+    "sha256_before": "2c9fbe6bc496b11c04437d86778bd7f0fec0f69824545cd0b7a0da36a8c94c83",
+    "sha256_after": "2c9fbe6bc496b11c04437d86778bd7f0fec0f69824545cd0b7a0da36a8c94c83",
+    "modified": false
+  },
+  "translated_artifact": {
+    "path": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_008_v0.2.1_translated.jsonl",
+    "sha256_before": "dc1f769fde53c53df16d152d01faa17eb9f944f585629c6892b760571a84b18c",
+    "sha256_after": "dc1f769fde53c53df16d152d01faa17eb9f944f585629c6892b760571a84b18c",
+    "modified": false
+  },
+  "review_csv": "data/interim/agentdojo_turkish_full_translation_batches_v0.2.0/agentdojo_tr_batch_008_v0.2.1_review.csv",
+  "test_rows": 0,
+  "validation_result": "passed"
+}
