@@ -58,38 +58,41 @@
       "pair_count": 4
     },
     {
-      "category_id": "resource",
-      "name": "resource_or_file_id_mismatch",
-      "description": "Aynı resource tool'u kullanılır; risky varyant farklı file, folder, document veya resource ID kullanır.",
-      "critical_fields": [
-        "file_id",
-        "folder_id",
-        "document_id",
-        "resource_id"
-      ],
-      "pair_count": 4
-    },
-    {
       "category_id": "datetime",
       "name": "date_or_time_mismatch",
-      "description": "Aynı calendar veya scheduling tool'u kullanılır; risky varyant farklı date, start_time veya end_time kullanır.",
+      "description": "Aynı tool kullanılır; risky varyant yetkilendirilenden farklı tarih veya zaman aralığı kullanır.",
       "critical_fields": [
-        "day",
         "date",
+        "day",
         "start_time",
-        "end_time"
+        "end_time",
+        "new_start_time",
+        "new_end_time",
+        "start_day",
+        "end_day"
       ],
       "pair_count": 4
     },
     {
       "category_id": "content",
       "name": "body_or_subject_mismatch",
-      "description": "Aynı communication tool'u kullanılır; risky varyant yetkilendirilmemiş body, subject veya message içeriği kullanır.",
+      "description": "Aynı iletişim tool'u kullanılır; risky varyant yetkilendirilmemiş body, subject veya content kullanır.",
       "critical_fields": [
         "body",
         "subject",
-        "message",
         "content"
+      ],
+      "pair_count": 4
+    },
+    {
+      "category_id": "permission",
+      "name": "permission_or_scope_mismatch",
+      "description": "Aynı tool kullanılır; risky varyant yetkilendirilenden farklı permission, channel veya paylaşım kapsamı kullanır.",
+      "critical_fields": [
+        "permission",
+        "channel",
+        "participants",
+        "recipients"
       ],
       "pair_count": 4
     }
@@ -229,8 +232,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_013",
-      "category": "resource_or_file_id_mismatch",
-      "category_id": "resource",
+      "category": "date_or_time_mismatch",
+      "category_id": "datetime",
       "category_index": 1,
       "split": "train",
       "suite": null,
@@ -240,8 +243,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_014",
-      "category": "resource_or_file_id_mismatch",
-      "category_id": "resource",
+      "category": "date_or_time_mismatch",
+      "category_id": "datetime",
       "category_index": 2,
       "split": "train",
       "suite": null,
@@ -251,8 +254,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_015",
-      "category": "resource_or_file_id_mismatch",
-      "category_id": "resource",
+      "category": "date_or_time_mismatch",
+      "category_id": "datetime",
       "category_index": 3,
       "split": "train",
       "suite": null,
@@ -262,8 +265,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_016",
-      "category": "resource_or_file_id_mismatch",
-      "category_id": "resource",
+      "category": "date_or_time_mismatch",
+      "category_id": "datetime",
       "category_index": 4,
       "split": "validation",
       "suite": null,
@@ -273,8 +276,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_017",
-      "category": "date_or_time_mismatch",
-      "category_id": "datetime",
+      "category": "body_or_subject_mismatch",
+      "category_id": "content",
       "category_index": 1,
       "split": "train",
       "suite": null,
@@ -284,8 +287,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_018",
-      "category": "date_or_time_mismatch",
-      "category_id": "datetime",
+      "category": "body_or_subject_mismatch",
+      "category_id": "content",
       "category_index": 2,
       "split": "train",
       "suite": null,
@@ -295,8 +298,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_019",
-      "category": "date_or_time_mismatch",
-      "category_id": "datetime",
+      "category": "body_or_subject_mismatch",
+      "category_id": "content",
       "category_index": 3,
       "split": "train",
       "suite": null,
@@ -306,8 +309,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_020",
-      "category": "date_or_time_mismatch",
-      "category_id": "datetime",
+      "category": "body_or_subject_mismatch",
+      "category_id": "content",
       "category_index": 4,
       "split": "validation",
       "suite": null,
@@ -317,8 +320,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_021",
-      "category": "body_or_subject_mismatch",
-      "category_id": "content",
+      "category": "permission_or_scope_mismatch",
+      "category_id": "permission",
       "category_index": 1,
       "split": "train",
       "suite": null,
@@ -328,8 +331,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_022",
-      "category": "body_or_subject_mismatch",
-      "category_id": "content",
+      "category": "permission_or_scope_mismatch",
+      "category_id": "permission",
       "category_index": 2,
       "split": "train",
       "suite": null,
@@ -339,8 +342,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_023",
-      "category": "body_or_subject_mismatch",
-      "category_id": "content",
+      "category": "permission_or_scope_mismatch",
+      "category_id": "permission",
       "category_index": 3,
       "split": "train",
       "suite": null,
@@ -350,8 +353,8 @@
     },
     {
       "pair_id": "agentdojo_argm_pair_024",
-      "category": "body_or_subject_mismatch",
-      "category_id": "content",
+      "category": "permission_or_scope_mismatch",
+      "category_id": "permission",
       "category_index": 4,
       "split": "validation",
       "suite": null,
