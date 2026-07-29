@@ -41,6 +41,15 @@ def parse_args() -> argparse.Namespace:
         default=4
     )
 
+    parser.add_argument(
+        "--category",
+        choices=[
+            "recipient_mismatch",
+            "amount_mismatch",
+        ],
+        default="recipient_mismatch",
+    )
+
     return parser.parse_args()
 
 
@@ -197,9 +206,11 @@ def main() -> None:
                 f"{sorted(missing)}"
             )
 
-        if pair["category"] != "recipient_mismatch":
+        if pair["category"] != args.category:
             raise ValueError(
-                f"{pair_id}: unexpected category"
+                f"{pair_id}: unexpected category; "
+                f"expected={args.category}, "
+                f"found={pair['category']}"
             )
 
         if pair["suite"] not in ALLOWED_SUITES:
@@ -262,13 +273,22 @@ def main() -> None:
                 f"observed={observed_paths}"
             )
 
-        allowed_roots = {
-            "recipient",
-            "recipients",
-            "participants",
-            "destination",
-            "channel",
+        allowed_roots_by_category = {
+            "recipient_mismatch": {
+                "recipient",
+                "recipients",
+                "participants",
+                "destination",
+                "channel",
+            },
+            "amount_mismatch": {
+                "amount",
+            },
         }
+
+        allowed_roots = allowed_roots_by_category[
+            args.category
+        ]
 
         for path in observed_paths:
             root = (
@@ -278,8 +298,9 @@ def main() -> None:
 
             if root not in allowed_roots:
                 raise ValueError(
-                    f"{pair_id}: non-recipient "
-                    f"argument changed: {path}"
+                    f"{pair_id}: unexpected "
+                    f"argument changed for "
+                    f"{args.category}: {path}"
                 )
 
         source = pair["source"]
@@ -332,7 +353,7 @@ def main() -> None:
 
     print("=" * 80)
     print(
-        "RECIPIENT MISMATCH CANDIDATE "
+        f"{args.category.upper()} CANDIDATE "
         "VALIDATION v0.1.0"
     )
     print("=" * 80)
@@ -350,7 +371,9 @@ def main() -> None:
     print("Argument isolation: PASSED")
     print("Source trust validation: PASSED")
     print()
-    print("Recipient candidates: PASSED")
+    print(
+        f"{args.category} candidates: PASSED"
+    )
 
 
 if __name__ == "__main__":

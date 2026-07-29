@@ -1,0 +1,25 @@
+{
+  "artifact": "amount_mismatch_rows_v0.1.0",
+  "created_at": "2026-07-29T10:20:10.382823+00:00",
+  "source": "data/planning/agentdojo_turkish_argument_mismatch_batch_v0.1.0/amount_mismatch_candidates_v0.1.0.jsonl",
+  "tokenizer": "google-bert/bert-base-multilingual-cased",
+  "max_length": 512,
+  "counts": {
+    "pairs": 4,
+    "rows": 8,
+    "train_rows": 6,
+    "validation_rows": 2,
+    "safe_rows": 4,
+    "risky_rows": 4
+  },
+  "token_counts": {
+    "minimum": 214,
+    "maximum": 302
+  },
+  "invariants": {
+    "tool_unchanged_within_pair": true,
+    "only_amount_argument_changes": true,
+    "truncation_detected": false,
+    "labels_in_serialized_text": false
+  }
+}
