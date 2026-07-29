@@ -48,6 +48,7 @@ def parse_args() -> argparse.Namespace:
             "amount_mismatch",
             "object_or_record_id_mismatch",
             "date_or_time_mismatch",
+            "body_or_subject_mismatch",
         ],
         default="recipient_mismatch",
     )
@@ -301,6 +302,11 @@ def main() -> None:
                 "new_end_time",
                 "start_day",
                 "end_day",
+            },
+            "body_or_subject_mismatch": {
+                "body",
+                "subject",
+                "content",
             },
         }
 
