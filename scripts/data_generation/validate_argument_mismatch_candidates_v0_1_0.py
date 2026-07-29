@@ -49,6 +49,7 @@ def parse_args() -> argparse.Namespace:
             "object_or_record_id_mismatch",
             "date_or_time_mismatch",
             "body_or_subject_mismatch",
+            "permission_or_scope_mismatch",
         ],
         default="recipient_mismatch",
     )
@@ -260,10 +261,20 @@ def main() -> None:
                 "match authorized args"
             )
 
-        observed_paths = differing_paths(
+        observed_paths_raw = differing_paths(
             safe_args,
             risky_args
         )
+
+        if pair.get("category") == "permission_or_scope_mismatch":
+            observed_paths = sorted(
+                {
+                    changed_path.split("[", 1)[0]
+                    for changed_path in observed_paths_raw
+                }
+            )
+        else:
+            observed_paths = observed_paths_raw
 
         declared_paths = list(
             pair["changed_argument_paths"]
@@ -273,7 +284,8 @@ def main() -> None:
             raise ValueError(
                 f"{pair_id}: changed paths mismatch; "
                 f"declared={declared_paths}, "
-                f"observed={observed_paths}"
+                f"observed={observed_paths}, "
+                f"observed_raw={observed_paths_raw}"
             )
 
         allowed_roots_by_category = {
@@ -307,6 +319,11 @@ def main() -> None:
                 "body",
                 "subject",
                 "content",
+            },
+            "permission_or_scope_mismatch": {
+                "permission",
+                "participants",
+                "recipients",
             },
         }
 
