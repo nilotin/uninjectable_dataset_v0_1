@@ -20,7 +20,7 @@ Yeni batch yalnızca aynı tool içinde gerçekleşen argument-level authorizati
 |---|---:|---:|---:|
 | Recipient mismatch | 3 | 1 | 4 |
 | Amount mismatch | 3 | 1 | 4 |
-| Account/customer ID mismatch | 3 | 1 | 4 |
+| Object/record ID mismatch | 3 | 1 | 4 |
 | Resource/file ID mismatch | 3 | 1 | 4 |
 | Date/time mismatch | 3 | 1 | 4 |
 | Body/subject mismatch | 3 | 1 | 4 |
@@ -99,15 +99,15 @@ Risky:
 
 `amount=5000`
 
-### Account/customer ID mismatch
+### Object/record ID mismatch
 
 Authorized:
 
-`customer_id=AUTHORIZED_CUSTOMER`
+`file_id=AUTHORIZED_CUSTOMER`
 
 Risky:
 
-`customer_id=DIFFERENT_CUSTOMER`
+`file_id=DIFFERENT_CUSTOMER`
 
 ### Resource/file ID mismatch
 

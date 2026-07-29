@@ -5,7 +5,7 @@
     "session_group_id": "string",
     "crosslingual_group_id": "string|null",
     "source_scenario_id": "string",
-    "category": "recipient_mismatch | amount_mismatch | account_or_customer_id_mismatch | resource_or_file_id_mismatch | date_or_time_mismatch | body_or_subject_mismatch",
+    "category": "recipient_mismatch | amount_mismatch | object_or_record_id_mismatch | resource_or_file_id_mismatch | date_or_time_mismatch | body_or_subject_mismatch",
     "suite": "banking | slack | travel | workspace",
     "split": "train | validation",
     "language": "tr",

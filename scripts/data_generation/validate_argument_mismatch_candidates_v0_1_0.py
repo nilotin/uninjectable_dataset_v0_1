@@ -46,6 +46,7 @@ def parse_args() -> argparse.Namespace:
         choices=[
             "recipient_mismatch",
             "amount_mismatch",
+            "object_or_record_id_mismatch",
         ],
         default="recipient_mismatch",
     )
@@ -283,6 +284,12 @@ def main() -> None:
             },
             "amount_mismatch": {
                 "amount",
+            },
+            "object_or_record_id_mismatch": {
+                "id",
+                "file_id",
+                "email_id",
+                "event_id",
             },
         }
 
