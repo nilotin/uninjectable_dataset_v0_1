@@ -1,0 +1,163 @@
+{
+  "collision_policy": {
+    "duplicate_exact_text_forbidden": true,
+    "duplicate_pair_ids_forbidden": true,
+    "duplicate_row_ids_forbidden": true
+  },
+  "content_policy": {
+    "labels_must_not_change": true,
+    "max_length": 512,
+    "text_must_not_change": true,
+    "text_sha256_must_remain_valid": true,
+    "tokenization_metadata_must_be_preserved": true,
+    "truncation_forbidden": true
+  },
+  "created_at_utc": "2026-07-30T13:00:07.255978+00:00",
+  "execution_sequence": [
+    "verify v0.3.0 immutable checksum snapshot",
+    "load frozen train and validation rows",
+    "load approved expansion train and validation rows",
+    "preserve all existing split assignments",
+    "merge train with train and validation with validation",
+    "sort rows deterministically by pair_id and variant",
+    "write new v0.4.0 directory only",
+    "validate counts, hashes, leakage and schema policy",
+    "write metadata and SHA256 manifest",
+    "freeze v0.4.0 only after validation passes"
+  ],
+  "immutability_policy": {
+    "merge_output_must_use_new_directory": true,
+    "v0.3.0_checksum_snapshot_required": true,
+    "v0.3.0_must_not_be_modified": true
+  },
+  "plan_name": "agentdojo_turkish_corpus_v0.4.0_merge_plan",
+  "plan_version": "v0.1.0",
+  "planned_counts": {
+    "base": {
+      "pairs": 82,
+      "rows": 164,
+      "train_pairs": 67,
+      "train_rows": 134,
+      "validation_pairs": 15,
+      "validation_rows": 30
+    },
+    "expansion": {
+      "category_row_counts": {
+        "amount_mismatch": 8,
+        "body_or_subject_mismatch": 8,
+        "date_or_time_mismatch": 8,
+        "object_or_record_id_mismatch": 8,
+        "permission_or_scope_mismatch": 8,
+        "recipient_mismatch": 8
+      },
+      "pairs": 24,
+      "rows": 48,
+      "train_pairs": 18,
+      "train_rows": 36,
+      "validation_pairs": 6,
+      "validation_rows": 12
+    },
+    "target": {
+      "label_counts": {
+        "0": 106,
+        "1": 106
+      },
+      "pairs": 106,
+      "rows": 212,
+      "split_row_counts": {
+        "train": 170,
+        "validation": 42
+      },
+      "train_pairs": 85,
+      "train_rows": 170,
+      "validation_pairs": 21,
+      "validation_rows": 42
+    }
+  },
+  "schema_policy": {
+    "all_union_fields": [
+      "category",
+      "changed_argument_paths",
+      "compact_serialization",
+      "crosslingual_group_id",
+      "general_risk_label",
+      "label_source",
+      "language",
+      "merge_provenance",
+      "pair_id",
+      "provenance",
+      "row_id",
+      "schema_version",
+      "session_group_id",
+      "source_language",
+      "source_pair_id",
+      "source_row_id",
+      "split",
+      "suite",
+      "text",
+      "text_sha256",
+      "tokenization",
+      "variant"
+    ],
+    "crosslingual_group_id": {
+      "expansion_rows": "preserve null values",
+      "frozen_rows": "preserve existing string values",
+      "synthetic_values_forbidden": true,
+      "target_type": "string_or_null"
+    },
+    "expansion_metadata_policy": {
+      "expansion_rows": "preserve category and changed_argument_paths",
+      "frozen_rows": "do not synthesize category or changed_argument_paths"
+    },
+    "legacy_provenance_policy": {
+      "expansion_rows": "do not synthesize missing legacy fields",
+      "frozen_rows": "preserve compact_serialization, provenance, source_row_id and source_pair_id exactly when present"
+    },
+    "merge_provenance_policy": {
+      "optional_v0_4_wrapper": "may add a new top-level merge wrapper only if previous merge_provenance is nested without modification",
+      "overwrite_existing_provenance": false,
+      "preserve_existing_objects": true
+    },
+    "optional_expansion_fields": [
+      "category",
+      "changed_argument_paths"
+    ],
+    "optional_legacy_fields": [
+      "compact_serialization",
+      "provenance",
+      "source_row_id",
+      "source_pair_id"
+    ],
+    "required_common_fields": [
+      "row_id",
+      "pair_id",
+      "split",
+      "suite",
+      "language",
+      "source_language",
+      "session_group_id",
+      "variant",
+      "text",
+      "text_sha256",
+      "general_risk_label",
+      "label_source",
+      "schema_version",
+      "tokenization",
+      "merge_provenance",
+      "crosslingual_group_id"
+    ],
+    "strategy": "union_schema"
+  },
+  "source_artifacts": {
+    "approved_expansion": "agentdojo_turkish_argument_mismatch_expansion_v0.1.0",
+    "frozen_base": "agentdojo_turkish_corpus_v0.3.0"
+  },
+  "split_policy": {
+    "pair_split_integrity_required": true,
+    "preserve_existing_split_assignments": true,
+    "resplitting_forbidden": true,
+    "train_validation_pair_leakage_forbidden": true
+  },
+  "status": "approved_for_merge_execution",
+  "target_artifact": "agentdojo_turkish_corpus_v0.4.0"
+}
