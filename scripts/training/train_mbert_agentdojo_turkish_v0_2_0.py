@@ -69,6 +69,25 @@ def parse_args() -> argparse.Namespace:
         ),
     )
 
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help=(
+            "Override the training seed from the config."
+        ),
+    )
+
+    parser.add_argument(
+        "--run-suffix",
+        type=str,
+        default=None,
+        help=(
+            "Append a filesystem-safe suffix to run and "
+            "report artifact names."
+        ),
+    )
+
     return parser.parse_args()
 
 
@@ -223,7 +242,38 @@ def main() -> None:
     training_config = config["training"]
     tokenization_config = config["tokenization"]
 
-    seed = int(training_config["seed"])
+    seed = (
+        int(args.seed)
+        if args.seed is not None
+        else int(training_config["seed"])
+    )
+
+    run_suffix = args.run_suffix
+
+    if run_suffix is not None:
+        normalized_suffix = run_suffix.strip()
+
+        if not normalized_suffix:
+            raise ValueError(
+                "--run-suffix cannot be empty."
+            )
+
+        allowed = set(
+            "abcdefghijklmnopqrstuvwxyz"
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            "0123456789_-"
+        )
+
+        if any(
+            character not in allowed
+            for character in normalized_suffix
+        ):
+            raise ValueError(
+                "--run-suffix may contain only letters, "
+                "numbers, underscores, and hyphens."
+            )
+
+        run_suffix = normalized_suffix
 
     random.seed(seed)
     np.random.seed(seed)
@@ -265,6 +315,13 @@ def main() -> None:
     print("Mode:", "smoke_test" if args.smoke_test else "training")
     print("Model:", model_name)
     print("Device:", detect_device())
+    print("Seed:", seed)
+    print(
+        "Run suffix:",
+        run_suffix
+        if run_suffix is not None
+        else "<none>",
+    )
     print("Train rows:", len(train_rows))
     print("Validation rows:", len(validation_rows))
     print()
@@ -348,17 +405,30 @@ def main() -> None:
         config["output"]["run_dir"]
     )
 
-    report_dir = Path(
+    base_report_dir = Path(
         config["output"]["report_dir"]
+    )
+
+    artifact_suffix = (
+        f"_{run_suffix}"
+        if run_suffix is not None
+        else ""
     )
 
     if args.smoke_test:
         run_dir = Path(
             "artifacts/training_runs/"
             "mbert_agentdojo_turkish_smoke_test_v0.2.0"
+            f"{artifact_suffix}"
         )
     else:
-        run_dir = base_run_dir
+        run_dir = Path(
+            f"{base_run_dir}{artifact_suffix}"
+        )
+
+    report_dir = Path(
+        f"{base_report_dir}{artifact_suffix}"
+    )
 
     run_dir.mkdir(
         parents=True,
@@ -500,6 +570,9 @@ def main() -> None:
             ).isoformat(),
             "status": "passed",
             "device": detect_device(),
+            "seed": seed,
+            "run_suffix": run_suffix,
+            "run_dir": str(run_dir),
             "train_metrics": train_result.metrics,
             "environment": {
                 "python": platform.python_version(),
@@ -529,8 +602,11 @@ def main() -> None:
 
         smoke_report_path = (
             report_dir
-            / "mbert_agentdojo_turkish_"
-            "smoke_test_v0.2.0_report.json"
+            / (
+                "mbert_agentdojo_turkish_"
+                "smoke_test_v0.2.0"
+                f"{artifact_suffix}_report.json"
+            )
         )
 
         smoke_report_path.write_text(
@@ -581,12 +657,22 @@ def main() -> None:
     trainer.save_state()
 
     report = {
-        "run_name": config["run_name"],
+        "run_name": (
+            config["run_name"]
+            + artifact_suffix
+        ),
         "completed_at": datetime.now(
             timezone.utc
         ).isoformat(),
         "model_name": model_name,
         "device": detect_device(),
+        "seed": seed,
+        "run_suffix": run_suffix,
+        "run_dir": str(run_dir),
+        "best_model_checkpoint": (
+            trainer.state.best_model_checkpoint
+        ),
+        "best_metric": trainer.state.best_metric,
         "risk_score_definition": (
             config["evaluation"][
                 "risk_score_definition"
@@ -614,8 +700,11 @@ def main() -> None:
 
     report_path = (
         report_dir
-        / "mbert_agentdojo_turkish_"
-        "baseline_v0.2.0_report.json"
+        / (
+            "mbert_agentdojo_turkish_"
+            "baseline_v0.2.0"
+            f"{artifact_suffix}_report.json"
+        )
     )
 
     report_path.write_text(

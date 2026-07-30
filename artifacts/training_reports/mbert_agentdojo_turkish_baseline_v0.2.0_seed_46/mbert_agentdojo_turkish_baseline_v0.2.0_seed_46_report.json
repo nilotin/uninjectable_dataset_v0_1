@@ -1,0 +1,46 @@
+{
+  "run_name": "mbert_agentdojo_turkish_baseline_v0.2.0_seed_46",
+  "completed_at": "2026-07-30T13:48:09.999786+00:00",
+  "model_name": "google-bert/bert-base-multilingual-cased",
+  "device": "mps",
+  "seed": 46,
+  "run_suffix": "seed_46",
+  "run_dir": "artifacts/training_runs/mbert_agentdojo_turkish_baseline_v0.2.0_seed_46",
+  "best_model_checkpoint": "artifacts/training_runs/mbert_agentdojo_turkish_baseline_v0.2.0_seed_46/checkpoint-33",
+  "best_metric": 0.8333333333333334,
+  "risk_score_definition": "P(label=1)",
+  "train_metrics": {
+    "train_runtime": 140.7325,
+    "train_samples_per_second": 6.04,
+    "train_steps_per_second": 0.391,
+    "total_flos": 223644397056000.0,
+    "train_loss": 0.4992606813257391,
+    "epoch": 5.0
+  },
+  "validation_metrics": {
+    "eval_loss": 0.45551618933677673,
+    "eval_accuracy": 0.8571428571428571,
+    "eval_precision": 1.0,
+    "eval_recall": 0.7142857142857143,
+    "eval_f1": 0.8333333333333334,
+    "eval_roc_auc": 0.9387755102040816,
+    "eval_runtime": 1.3721,
+    "eval_samples_per_second": 30.609,
+    "eval_steps_per_second": 4.373,
+    "epoch": 5.0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.13.0",
+    "transformers": "4.57.6",
+    "datasets": "3.6.0",
+    "accelerate": "1.14.0",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3"
+  },
+  "source_hashes": {
+    "config": "48a4d4b3107bc8f48845a633dcacaad9f931671a81898770b9e8f4ce54f9ba22",
+    "train": "217377d5e72afa9bf222862cdfe717a7fce991dddf43cb69a23ced460f150bb5",
+    "validation": "afcc899f916ccd090f44b91f8d040fb3f7f81cba31d287daa85bff19215e1b46"
+  }
+}
