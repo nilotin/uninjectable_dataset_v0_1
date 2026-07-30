@@ -16,6 +16,29 @@
   },
   "expansion_metadata_preserved": true,
   "expansion_rows": 48,
+  "freeze_decision": "approved_and_frozen",
+  "freeze_validation": {
+    "artifact_sha_failures": 0,
+    "base_row_preservation_failures": 0,
+    "duplicate_exact_texts": 0,
+    "duplicate_row_ids": 0,
+    "expansion_row_preservation_failures": 0,
+    "labels": {
+      "0": 106,
+      "1": 106
+    },
+    "maximum_token_count": 506,
+    "pairs": 106,
+    "rows": 212,
+    "text_sha256_failures": 0,
+    "train_rows": 170,
+    "train_validation_pair_leakage": 0,
+    "train_validation_text_leakage": 0,
+    "truncated_rows": 0,
+    "validation_rows": 42
+  },
+  "frozen_at_utc": "2026-07-30T13:08:22.561637+00:00",
+  "immutable": true,
   "label_counts": {
     "0": 106,
     "1": 106
@@ -33,7 +56,7 @@
     "expansion": "agentdojo_turkish_argument_mismatch_expansion_v0.1.0",
     "merge_plan": "agentdojo_turkish_corpus_v0.4.0_merge_plan"
   },
-  "status": "built_not_frozen",
+  "status": "frozen",
   "tokenizer": "google-bert/bert-base-multilingual-cased",
   "train_pairs": 85,
   "train_rows": 170,
