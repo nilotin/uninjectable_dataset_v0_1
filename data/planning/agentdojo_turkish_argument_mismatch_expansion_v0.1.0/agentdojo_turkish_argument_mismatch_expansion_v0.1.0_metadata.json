@@ -1,0 +1,47 @@
+{
+  "artifact_name": "agentdojo_turkish_argument_mismatch_expansion_v0.1.0",
+  "artifact_version": "v0.1.0",
+  "category_pair_counts": {
+    "amount_mismatch": 4,
+    "body_or_subject_mismatch": 4,
+    "date_or_time_mismatch": 4,
+    "object_or_record_id_mismatch": 4,
+    "permission_or_scope_mismatch": 4,
+    "recipient_mismatch": 4
+  },
+  "category_row_counts": {
+    "amount_mismatch": 8,
+    "body_or_subject_mismatch": 8,
+    "date_or_time_mismatch": 8,
+    "object_or_record_id_mismatch": 8,
+    "permission_or_scope_mismatch": 8,
+    "recipient_mismatch": 8
+  },
+  "created_at_utc": "2026-07-30T12:55:20.182878+00:00",
+  "frozen_corpus_modified": false,
+  "label_counts": {
+    "0": 24,
+    "1": 24
+  },
+  "language": "tr",
+  "max_length": 512,
+  "maximum_token_count": 463,
+  "minimum_token_count": 207,
+  "pairs": 24,
+  "rows": 48,
+  "source_batch": "agentdojo_turkish_argument_mismatch_batch_v0.1.0",
+  "split_counts": {
+    "train": 36,
+    "validation": 12
+  },
+  "status": "approved_expansion_not_merged",
+  "tokenizer": "google-bert/bert-base-multilingual-cased",
+  "train_rows": 36,
+  "training_package_modified": false,
+  "truncated_rows": 0,
+  "validation_rows": 12,
+  "variant_counts": {
+    "risky": 24,
+    "safe": 24
+  }
+}
