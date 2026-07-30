@@ -1,0 +1,65 @@
+{
+  "package": "agentdojo_turkish_training_package_v0.2.0",
+  "created_at": "2026-07-30T13:15:57.699449+00:00",
+  "source_corpus": "agentdojo_turkish_corpus_v0.4.0",
+  "config_path": "configs/training/mbert_turkish_baseline_v0.2.0.json",
+  "model_name": "google-bert/bert-base-multilingual-cased",
+  "task_type": "binary_sequence_classification",
+  "label_mapping": {
+    "0": "contextually_safe",
+    "1": "contextually_risky"
+  },
+  "risk_score_definition": "P(label=1)",
+  "tokenization": {
+    "max_length": 512,
+    "padding": "max_length",
+    "truncation": true
+  },
+  "counts": {
+    "train": {
+      "rows": 170,
+      "pairs": 85,
+      "labels": {
+        "0": 85,
+        "1": 85
+      },
+      "suites": {
+        "banking": 38,
+        "slack": 34,
+        "travel": 34,
+        "workspace": 64
+      },
+      "duplicate_row_ids": 0,
+      "duplicate_inputs": 0,
+      "pair_integrity": true
+    },
+    "validation": {
+      "rows": 42,
+      "pairs": 21,
+      "labels": {
+        "0": 21,
+        "1": 21
+      },
+      "suites": {
+        "banking": 8,
+        "slack": 6,
+        "travel": 8,
+        "workspace": 20
+      },
+      "duplicate_row_ids": 0,
+      "duplicate_inputs": 0,
+      "pair_integrity": true
+    }
+  },
+  "validation": {
+    "session_group_leakage": 0,
+    "crosslingual_group_leakage": 0,
+    "test_split_accessed": false,
+    "source_artifacts_modified": false
+  },
+  "source_hashes": {
+    "config": "48a4d4b3107bc8f48845a633dcacaad9f931671a81898770b9e8f4ce54f9ba22",
+    "train": "38a2150152060f5b7b830cc70849647c8985b4eed110c8a9ad6fc276bf7161cb",
+    "validation": "222ee574fc7ab9a9718c9d767dac9f487477b3c9407f25094d2cfe9ba9c435c9"
+  }
+}
