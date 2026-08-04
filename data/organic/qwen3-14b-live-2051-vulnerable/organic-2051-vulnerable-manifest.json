@@ -1,0 +1,17 @@
+{
+  "action_review_task_count": 7,
+  "artifact_status": "organic_unreviewed_candidate",
+  "completed_run_count": 6,
+  "created_at": "2026-07-29T18:56:38.154408Z",
+  "failed_run_count": 0,
+  "farm_run_id": "organic_farm_8c6f45fa3e7e4744",
+  "profile": "vulnerable",
+  "review_queue_artifact": "data\\organic\\qwen3-14b-live-2051-vulnerable\\organic-2051-vulnerable-review-queue.json",
+  "review_queue_sha256": "1c3b5b1f87755781cad0b45027e08912cde5e45602f068deb840db13f0c842f6",
+  "run_review_task_count": 6,
+  "runs_artifact": "data\\organic\\qwen3-14b-live-2051-vulnerable\\organic-2051-vulnerable-runs.json",
+  "runs_sha256": "ab323bdf5e999895173972ef1690d84be2dd12ad51ef1d4bf5104809738ac60d",
+  "scenario_count": 6,
+  "seed": 2051,
+  "trials": 1
+}
