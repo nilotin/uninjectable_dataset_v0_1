@@ -9,10 +9,10 @@
   },
   "data": {
     "corpus_release": "agentdojo_turkish_corpus_v0.4.0",
-    "train_path": "data/processed/agentdojo_turkish_corpus_v0.4.0/agentdojo_turkish_corpus_v0.4.0_train.jsonl",
-    "validation_path": "data/processed/agentdojo_turkish_corpus_v0.4.0/agentdojo_turkish_corpus_v0.4.0_validation.jsonl",
+    "train_path": "data/processed/agentdojo_turkish_training_package_v0.2.0/agentdojo_turkish_training_v0.2.0_train.jsonl",
+    "validation_path": "data/processed/agentdojo_turkish_training_package_v0.2.0/agentdojo_turkish_training_v0.2.0_validation.jsonl",
     "text_field": "text",
-    "label_field": "general_risk_label",
+    "label_field": "label",
     "pair_id_field": "pair_id",
     "group_id_field": "session_group_id",
     "train_rows": 170,
